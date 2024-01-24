@@ -1,0 +1,1092 @@
+fileFormatVersion: 2
+guid: 87a01509b26e86c4198ddd5dcbe6efba
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 26
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 275
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7bb1e2e18901341a2b086f86ee89b5
+      internalID: -1839389953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 275
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e009b6bbb5f40c4facb404dd1602fe4
+      internalID: -1846265916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 275
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0307bd4237f8ea43b080c63ec5856ce
+      internalID: -358470676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_3
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 275
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae8a8c29e9d5ec46a7aa5fd726a85e0
+      internalID: 1337294252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_4
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 275
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de63b6e1dcefd949ad1fb6cf9f10701
+      internalID: 801061249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_5
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 275
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2158e2435a92ff4db37fc43ed45ef44
+      internalID: 1694634642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_6
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 274
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8270fb9f2979248944375afd06b822
+      internalID: -2309293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_7
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 275
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29baeaa95f86c547b144d1c1b1dd5e0
+      internalID: -1190221863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_idle
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 228
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12984528392fdff4e9e8df5e4e901796
+      internalID: -1391125188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_9
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 228
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13bbbc6aabf9ad64eaaa87c195950db1
+      internalID: 1644097768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 228
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc03cde21c4385c44b1f1c63b85945e6
+      internalID: 1310087778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 228
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751d565ff9551b4419f4c4408fc295c3
+      internalID: 363018121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 228
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f68988db46426c4ab12d95087cc045c
+      internalID: 1203611127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 228
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23addb488c371e847aed6737face0d9e
+      internalID: -1948174090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_run
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 228
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b583cb3bbe802b438cfdb56deb583a1
+      internalID: 1670747232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_15
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 188
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f51ef5ac31847e41b92421da9d36464
+      internalID: -1571871813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_16
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 188
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b41dc0adee6904bba88662cacf6df8
+      internalID: -111896057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_17
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 188
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02940f70dc6312b409f3c2e349e51f5b
+      internalID: -2104367663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_18
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 188
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedee7947b11cb54ea8d6c515c8ac96b
+      internalID: 1358701671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_19
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 188
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86689207222882f4cb66d1d21e96fd38
+      internalID: 2109132455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_20
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 188
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3d6b9b011168140a4cdb2dc72a164c
+      internalID: 151879857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario0
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 187
+        width: 50
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c4a45afc91cf245a8be77236d86a47
+      internalID: -166060868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario1
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 187
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7affcb3ee0e633e40b526728e3a9954a
+      internalID: 366530035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_23
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 143
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da5cc0b574d75e41b5bdf2e29b9d488
+      internalID: 1700144435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_24
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 143
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15aad11251195b4468af7325964ddd02
+      internalID: -622321409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_25
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 143
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ba488e99999a24a9e1717baa181dbb
+      internalID: 509621416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_26
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 143
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ecd2be6cb3ea447ada66e630dcac5a
+      internalID: 1120573531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 143
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed09e714d6750634e848f81b506070c9
+      internalID: -187877848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_28
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 143
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316a568211d594f4bade9ad8bdc44cc4
+      internalID: -1173362790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_29
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 132
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59841b74fe7a12a42be79dea6ad9df94
+      internalID: 623950050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_30
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 108
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705de385d9e2dfa4699d56ae21401afd
+      internalID: -333161174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_31
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 108
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942cfd30fdd2cc34b93dc620ea252552
+      internalID: -588097525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_32
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 108
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e7d241c166abd4f95c92fc9a2f3d59
+      internalID: -308806066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_33
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 108
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3365b4156e2d3f647941943f820165d0
+      internalID: -1585537782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_34
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 113
+        width: 22
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b7de1427ceac54091a0a6af84668e4
+      internalID: -1314426254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_35
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 112
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78fcc40df68324428589a13a67a96a7
+      internalID: 195625618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_36
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 112
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2666b3c2523755479e5dba32b7875ad
+      internalID: -78485387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_37
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 112
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d675b2cf9fb434d9f8a963b4869116
+      internalID: -1520675667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarioCustoms-Mario_38
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 107
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769bb73732946d24bbd460260e750541
+      internalID: 73211463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MarioCustoms-Mario0: -166060868
+      MarioCustoms-Mario1: 366530035
+      MarioCustoms-Mario_0: -1839389953
+      MarioCustoms-Mario_1: -1846265916
+      MarioCustoms-Mario_10: 1310087778
+      MarioCustoms-Mario_100: 837375835
+      MarioCustoms-Mario_101: -1856585109
+      MarioCustoms-Mario_102: -643900447
+      MarioCustoms-Mario_103: 369019579
+      MarioCustoms-Mario_104: -1071396668
+      MarioCustoms-Mario_105: 2101783830
+      MarioCustoms-Mario_106: 364363765
+      MarioCustoms-Mario_107: 1379045666
+      MarioCustoms-Mario_108: 1165580202
+      MarioCustoms-Mario_109: -690317832
+      MarioCustoms-Mario_11: 363018121
+      MarioCustoms-Mario_110: -1639093568
+      MarioCustoms-Mario_111: 1131585909
+      MarioCustoms-Mario_112: -1196558089
+      MarioCustoms-Mario_113: 85710273
+      MarioCustoms-Mario_114: -1332651487
+      MarioCustoms-Mario_115: -888508230
+      MarioCustoms-Mario_116: -40565366
+      MarioCustoms-Mario_117: 652311076
+      MarioCustoms-Mario_118: 1415424839
+      MarioCustoms-Mario_119: -1878472098
+      MarioCustoms-Mario_12: 1203611127
+      MarioCustoms-Mario_120: -934818996
+      MarioCustoms-Mario_121: -487653844
+      MarioCustoms-Mario_122: 1599491393
+      MarioCustoms-Mario_123: 1818675684
+      MarioCustoms-Mario_124: 2029259100
+      MarioCustoms-Mario_125: -1436816943
+      MarioCustoms-Mario_126: 344796379
+      MarioCustoms-Mario_127: 556153884
+      MarioCustoms-Mario_128: 1087253687
+      MarioCustoms-Mario_129: -1702169275
+      MarioCustoms-Mario_13: -1948174090
+      MarioCustoms-Mario_130: -1610902059
+      MarioCustoms-Mario_131: -959088515
+      MarioCustoms-Mario_132: -1712297512
+      MarioCustoms-Mario_15: -1571871813
+      MarioCustoms-Mario_16: -111896057
+      MarioCustoms-Mario_17: -2104367663
+      MarioCustoms-Mario_18: 1358701671
+      MarioCustoms-Mario_19: 2109132455
+      MarioCustoms-Mario_2: -358470676
+      MarioCustoms-Mario_20: 151879857
+      MarioCustoms-Mario_23: 1700144435
+      MarioCustoms-Mario_24: -622321409
+      MarioCustoms-Mario_25: 509621416
+      MarioCustoms-Mario_26: 1120573531
+      MarioCustoms-Mario_27: -187877848
+      MarioCustoms-Mario_28: -1173362790
+      MarioCustoms-Mario_29: 623950050
+      MarioCustoms-Mario_3: 1337294252
+      MarioCustoms-Mario_30: -333161174
+      MarioCustoms-Mario_31: -588097525
+      MarioCustoms-Mario_32: -308806066
+      MarioCustoms-Mario_33: -1585537782
+      MarioCustoms-Mario_34: -1314426254
+      MarioCustoms-Mario_35: 195625618
+      MarioCustoms-Mario_36: -78485387
+      MarioCustoms-Mario_37: -1520675667
+      MarioCustoms-Mario_38: 73211463
+      MarioCustoms-Mario_39: 681403702
+      MarioCustoms-Mario_4: 801061249
+      MarioCustoms-Mario_40: 1158991203
+      MarioCustoms-Mario_41: -1979073587
+      MarioCustoms-Mario_42: -673041975
+      MarioCustoms-Mario_43: 761177356
+      MarioCustoms-Mario_44: -1507103282
+      MarioCustoms-Mario_45: -949849252
+      MarioCustoms-Mario_46: 1548690861
+      MarioCustoms-Mario_47: 843313861
+      MarioCustoms-Mario_48: -284134427
+      MarioCustoms-Mario_49: 616238730
+      MarioCustoms-Mario_5: 1694634642
+      MarioCustoms-Mario_50: 1457387283
+      MarioCustoms-Mario_51: 1755577004
+      MarioCustoms-Mario_52: 375176531
+      MarioCustoms-Mario_53: 127969611
+      MarioCustoms-Mario_54: -1778881957
+      MarioCustoms-Mario_55: 1285708954
+      MarioCustoms-Mario_56: 1758945297
+      MarioCustoms-Mario_57: -447680160
+      MarioCustoms-Mario_58: 478333626
+      MarioCustoms-Mario_59: 155580387
+      MarioCustoms-Mario_6: -2309293
+      MarioCustoms-Mario_60: -25870956
+      MarioCustoms-Mario_61: -2077706773
+      MarioCustoms-Mario_62: 1904294831
+      MarioCustoms-Mario_63: -1476735048
+      MarioCustoms-Mario_64: 604254309
+      MarioCustoms-Mario_65: 1921665927
+      MarioCustoms-Mario_66: -1954899555
+      MarioCustoms-Mario_67: 1415070554
+      MarioCustoms-Mario_68: 583700627
+      MarioCustoms-Mario_69: 1096233653
+      MarioCustoms-Mario_7: -1190221863
+      MarioCustoms-Mario_70: -475967314
+      MarioCustoms-Mario_71: -1188881371
+      MarioCustoms-Mario_72: -598754420
+      MarioCustoms-Mario_73: -1648781550
+      MarioCustoms-Mario_74: -1794838683
+      MarioCustoms-Mario_75: 818802998
+      MarioCustoms-Mario_76: 390369761
+      MarioCustoms-Mario_77: -1615840411
+      MarioCustoms-Mario_78: 1563078892
+      MarioCustoms-Mario_79: -222729873
+      MarioCustoms-Mario_80: 575825783
+      MarioCustoms-Mario_81: 1064422239
+      MarioCustoms-Mario_82: 189386071
+      MarioCustoms-Mario_83: 461877684
+      MarioCustoms-Mario_84: 781326753
+      MarioCustoms-Mario_85: 411855798
+      MarioCustoms-Mario_86: 1018588173
+      MarioCustoms-Mario_87: -210772206
+      MarioCustoms-Mario_88: -992950846
+      MarioCustoms-Mario_89: -2005800145
+      MarioCustoms-Mario_9: 1644097768
+      MarioCustoms-Mario_90: -864873698
+      MarioCustoms-Mario_91: -1319745498
+      MarioCustoms-Mario_92: -834965007
+      MarioCustoms-Mario_93: -2029813913
+      MarioCustoms-Mario_94: -1871428239
+      MarioCustoms-Mario_95: -1389328729
+      MarioCustoms-Mario_96: -40583762
+      MarioCustoms-Mario_97: -204188282
+      MarioCustoms-Mario_98: 697957966
+      MarioCustoms-Mario_99: -1835958032
+      MarioCustoms-Mario_idle: -1391125188
+      MarioCustoms-Mario_run: 1670747232
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
