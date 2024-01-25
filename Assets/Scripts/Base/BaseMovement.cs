@@ -28,24 +28,24 @@ public class BaseMovement : MonoBehaviour
     private void Start()
     {
         _controller.OnMoveEvent += Move;
-        _controller.OnDashEvent += Dash;
     }
 
     private void FixedUpdate()
     {
-        // 더블탭이 아니어도 대쉬가 됨 -> 밸류를 버튼으로 바꿔서 해결
-        if (_inputController.IsDash)
+        if (Input.GetKey(KeyCode.LeftShift) && IsDashable)
         {
-            Debug.Log(_movementDirection);
+            Dash();
+        }
+        // 더블탭이 아니어도 대쉬가 됨 -> 밸류를 버튼으로 바꿔서 해결
+        if (IsDash)
+        {
             ApplyMovment(_movementDirection * 20);
             // 밸류를 버튼으로 바꿧더니 대쉬가 안됨
             //_rigidbody.AddForce(forcePower * _movementDirection.x, 0);
-            Debug.Log("dash");
-            //StartCoroutine(DashDelay());
-            _inputController.IsDash = false;
-            _inputController.IsDashable = true;
+            IsDash = false;
+            StartCoroutine(DashDelay());
         }
-        else if (!_inputController.IsDash)
+        else if (!IsDash)
         {
             ApplyMovment(_movementDirection);
         }
@@ -71,20 +71,16 @@ public class BaseMovement : MonoBehaviour
 
         _rigidbody.velocity = direction;
     }
-    private void Dash(Vector2 direction)
+    private void Dash()
     {
-        //if (IsDashable)
-        //    IsDash = true;
-        _inputController.IsDash = true;
-        _inputController.IsDashable = false;
+        IsDash = true;
+        IsDashable = false;
     }
 
     private IEnumerator DashDelay()
     {
-        IsDash = false;
-        IsDashable = false;
         yield return new WaitForSeconds(dashDelay);
-        Debug.Log("dashbale");
         IsDashable = true;
     }
+
 }
