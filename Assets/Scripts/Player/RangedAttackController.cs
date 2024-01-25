@@ -12,6 +12,7 @@ public class RangedAttackController : MonoBehaviour
     bool _isReady;
 
     Rigidbody2D _rigidbody;
+    Animator _animator;
 
     public bool fxOnDestroy = true;
 
@@ -21,6 +22,7 @@ public class RangedAttackController : MonoBehaviour
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        _animator = GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -49,6 +51,22 @@ public class RangedAttackController : MonoBehaviour
         transform.right = direction;
 
         _isReady = true;
+
+        if (_animator != null)
+            _animator.SetBool("IsHit", false);
+
+        speed = 10f;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Floor"))
+        {
+            if (_animator != null)
+                _animator.SetBool("IsHit", true);
+
+            speed = 0;
+        }
     }
 
     private void DestroyProjectile(Vector3 position, bool createFx)

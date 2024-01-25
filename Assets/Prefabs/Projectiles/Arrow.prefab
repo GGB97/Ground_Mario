@@ -33,7 +33,7 @@ Transform:
   m_Children:
   - {fileID: 4499670945901895723}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &5038743242080867809
 BoxCollider2D:
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 4499670945901895723}
   - component: {fileID: 2817441150083548475}
   m_Layer: 0
-  m_Name: weapon_arrow
+  m_Name: MainSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

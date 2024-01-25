@@ -40,4 +40,15 @@ public class Shooting : MonoBehaviour
     {
         _projectileManager.ShootBullet(projectileSpawnPos.position, _aimDirection);
     }
+
+    private void DestroyProjectile(Vector3 position, bool createFx)
+    {
+        if (createFx)
+        {
+            //파티클 생성
+            //_projectileManager.CreateImpactParticleesAtPosition(position, _attackData);
+        }
+
+        gameObject.SetActive(false);
+    }
 }
