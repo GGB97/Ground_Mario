@@ -20,7 +20,7 @@ public class ProjectileManager : MonoBehaviour
 
     public void ShootBullet(Vector2 startPos, Vector2 dir)
     {
-        GameObject obj = objectPool.SpawnFromPool("Arrow");
+        GameObject obj = objectPool.SpawnFromPool("Projectile");
 
         obj.transform.position = startPos;
         RangedAttackController attackController = obj.GetComponent<RangedAttackController>();

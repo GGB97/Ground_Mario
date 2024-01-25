@@ -312,7 +312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MarioCustoms-Mario_9
+      name: MarioCustoms-Mario_run0
       rect:
         serializedVersion: 2
         x: 37
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MarioCustoms-Mario_10
+      name: MarioCustoms-Mario_run1
       rect:
         serializedVersion: 2
         x: 66
@@ -417,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MarioCustoms-Mario_run
+      name: MarioCustoms-Mario_fly
       rect:
         serializedVersion: 2
         x: 191
@@ -956,7 +956,6 @@ TextureImporter:
       MarioCustoms-Mario1: 366530035
       MarioCustoms-Mario_0: -1839389953
       MarioCustoms-Mario_1: -1846265916
-      MarioCustoms-Mario_10: 1310087778
       MarioCustoms-Mario_100: 837375835
       MarioCustoms-Mario_101: -1856585109
       MarioCustoms-Mario_102: -643900447
@@ -1072,7 +1071,6 @@ TextureImporter:
       MarioCustoms-Mario_87: -210772206
       MarioCustoms-Mario_88: -992950846
       MarioCustoms-Mario_89: -2005800145
-      MarioCustoms-Mario_9: 1644097768
       MarioCustoms-Mario_90: -864873698
       MarioCustoms-Mario_91: -1319745498
       MarioCustoms-Mario_92: -834965007
@@ -1083,8 +1081,10 @@ TextureImporter:
       MarioCustoms-Mario_97: -204188282
       MarioCustoms-Mario_98: 697957966
       MarioCustoms-Mario_99: -1835958032
+      MarioCustoms-Mario_fly: 1670747232
       MarioCustoms-Mario_idle: -1391125188
-      MarioCustoms-Mario_run: 1670747232
+      MarioCustoms-Mario_run0: 1644097768
+      MarioCustoms-Mario_run1: 1310087778
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
