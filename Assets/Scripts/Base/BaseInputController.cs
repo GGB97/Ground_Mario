@@ -6,8 +6,6 @@ using UnityEngine.InputSystem;
 public class BaseInputController : BaseController
 {
     private Camera _camera;
-    public bool IsDash = false;
-    public bool IsDashable = true;
 
     // 나중에 바꾸기 - 캐릭터<>기지
     private void Awake()
@@ -18,12 +16,8 @@ public class BaseInputController : BaseController
 
     public void OnMove(InputValue value)
     {
-        if (!IsDash)
-        {
-            Vector2 moveInput = value.Get<Vector2>().normalized;
-            CallMoveEvent(moveInput);
-        }
-        
+        Vector2 moveInput = value.Get<Vector2>().normalized;
+        CallMoveEvent(moveInput);
     }
 
     public void OnLook(InputValue value)
@@ -38,12 +32,4 @@ public class BaseInputController : BaseController
         }
     }
 
-    public void OnDash(InputValue value)
-    {
-        if (IsDashable)
-        {
-            Vector2 dashInput = value.Get<Vector2>().normalized;
-            CallDashEvent(dashInput);
-        }
-    }
 }
