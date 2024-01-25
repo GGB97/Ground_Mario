@@ -12,6 +12,8 @@ public class BaseMovement : MonoBehaviour
     private Vector2 forcePower = new Vector2 (50, 0);
     private Rigidbody2D _rigidbody;
 
+    [SerializeField] private SpriteRenderer _spriteRenderer;
+
     private float dashDelay = 5f;
     private bool IsDash = false;
     private bool IsDashable = true;
@@ -47,11 +49,20 @@ public class BaseMovement : MonoBehaviour
         {
             ApplyMovment(_movementDirection);
         }
+
+    }
+
+    private void OnDirection(Vector2 direction)
+    {
+        float rotZ = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        if (direction.x != 0)
+            _spriteRenderer.flipX = Mathf.Abs(rotZ) > 90f;
     }
 
     private void Move(Vector2 direction)
     {
         _movementDirection = direction;
+        OnDirection(_movementDirection);
     }
 
     private void ApplyMovment(Vector2 direction)

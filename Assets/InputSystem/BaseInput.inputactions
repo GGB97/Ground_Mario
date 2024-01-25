@@ -24,7 +24,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Dash21312",
+                    "name": "DashOrigin",
                     "type": "Value",
                     "id": "f4167acd-a74c-42bd-bca1-0f8051dce459",
                     "expectedControlType": "Vector2",
@@ -35,7 +35,7 @@
                 {
                     "name": "Dash",
                     "type": "Value",
-                    "id": "c8105e8e-1882-4f01-9735-d1551221e7af",
+                    "id": "57c7f25e-c858-493b-be81-2443ffba23b3",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -116,7 +116,7 @@
                     "interactions": "Tap",
                     "processors": "",
                     "groups": "",
-                    "action": "Dash21312",
+                    "action": "DashOrigin",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -127,7 +127,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dash21312",
+                    "action": "DashOrigin",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -138,7 +138,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dash21312",
+                    "action": "DashOrigin",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -149,7 +149,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dash21312",
+                    "action": "DashOrigin",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -160,24 +160,13 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dash21312",
+                    "action": "DashOrigin",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "",
-                    "id": "85bfa89d-8371-4533-8aa6-6c46a6cd28d6",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Dash21312",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "9cb7efd0-ee71-4be6-b0e8-981d8e7b7fdf",
+                    "id": "c9b203af-ee47-418d-a9d6-6730d17a6c40",
                     "path": "<Keyboard>/a",
                     "interactions": "MultiTap",
                     "processors": "",
@@ -188,7 +177,7 @@
                 },
                 {
                     "name": "",
-                    "id": "307d379f-49d4-442b-9bea-bd993dd3ff04",
+                    "id": "91b0d27a-d96b-41f5-be13-808fcac4eabf",
                     "path": "<Keyboard>/d",
                     "interactions": "MultiTap",
                     "processors": "",
