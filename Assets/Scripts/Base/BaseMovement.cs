@@ -6,10 +6,8 @@ using UnityEngine;
 public class BaseMovement : MonoBehaviour
 {
     private BaseController _controller;
-    private BaseInputController _inputController;
 
     private Vector2 _movementDirection = Vector2.zero;
-    private Vector2 forcePower = new Vector2 (50, 0);
     private Rigidbody2D _rigidbody;
 
     [SerializeField] private SpriteRenderer _spriteRenderer;
@@ -22,7 +20,6 @@ public class BaseMovement : MonoBehaviour
     {
         _controller = GetComponent<BaseController>();
         _rigidbody = GetComponent<Rigidbody2D>();
-        _inputController = GetComponent<BaseInputController>();
     }
 
     private void Start()
