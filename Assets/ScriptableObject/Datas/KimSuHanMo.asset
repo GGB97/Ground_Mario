@@ -18,7 +18,7 @@ MonoBehaviour:
   speed: 10
   target:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   isInKnockBack: 0
   knockbackPower: 0
   knockbackTime: 0
@@ -27,4 +27,4 @@ MonoBehaviour:
   spread: 1
   numberofPorjectilesPerShot: 1
   multipleProjectilesAngel: 1
-  projectileColor: {r: 0, g: 0, b: 0, a: 0}
+  projectileColor: {r: 1, g: 1, b: 1, a: 1}
