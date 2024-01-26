@@ -112,6 +112,76 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Base",
+            "id": "c932ab8d-3ec2-40a8-9029-47644cfd3670",
+            "actions": [
+                {
+                    "name": "BaseMove",
+                    "type": "Value",
+                    "id": "f85a8de9-cad7-4454-a762-b08ef6c07946",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "BaseLook",
+                    "type": "Value",
+                    "id": "8f240fdb-2531-4914-933e-75423360428e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "66f50086-ee73-4c49-b060-f96bf7720fd0",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BaseMove",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "37f7c14d-46b0-4b8c-9921-518edc61ec4b",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "BaseMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "4171e24e-efe4-4f36-90b6-baa8be1e6864",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "BaseMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "bb8cc561-2a3f-458f-b70f-f84a1d981609",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "BaseLook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
