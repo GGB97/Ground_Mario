@@ -1,16 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] public Transform player;
-    
-    public static GameManager Instance { get; private set; }
+    static public GameManager Instance;
+    [SerializeField] public GameObject player;
+
     public TilemapManager tilemapManager { get; private set; }
-    
+
     public int seed;
-    
+
     private void Awake()
     {
         Instance = this;
@@ -18,5 +19,16 @@ public class GameManager : MonoBehaviour
         
         seed = (int)System.DateTime.Now.Ticks;
         Random.InitState(seed);
+    }
+
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }

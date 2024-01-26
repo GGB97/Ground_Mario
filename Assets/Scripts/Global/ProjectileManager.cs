@@ -28,4 +28,15 @@ public class ProjectileManager : MonoBehaviour
 
         obj.SetActive(true);
     }
+    
+    public void ShootBullet(Vector2 startPos, Vector2 dir,RangedAttackData attackData)
+    {
+        GameObject obj = objectPool.SpawnFromPool(attackData.bulletNameTag);
+
+        obj.transform.position = startPos;
+       MonsterBulletController attackController = obj.GetComponent<MonsterBulletController>();
+        attackController.InitializeAttack(dir,attackData,this);
+
+        obj.SetActive(true);
+    }
 }
