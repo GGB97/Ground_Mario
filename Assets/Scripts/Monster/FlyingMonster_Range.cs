@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FlyingMonster_Range : FlyingMonsterContorller
@@ -21,7 +22,9 @@ public class FlyingMonster_Range : FlyingMonsterContorller
         base.Start();
         _characterRenderer = GetComponentInChildren<SpriteRenderer>();
         _healthSystem = GetComponent<HealthSystem>();
+        currenttime = movingTime;
         //_healthSystem.OnDamage += OnDamage;
+        StartCoroutine("checkTime");
     }
 
 
@@ -30,27 +33,33 @@ public class FlyingMonster_Range : FlyingMonsterContorller
     {
         
         base.FixedUpdate();
-        currenttime += Time.deltaTime;
-        isAttacking = false;
-        Vector2 direction = Vector2.zero;
-        direction=DirectionToTarget();
-        if (Getdistance() < AttackRange)
+        
+    }
+
+    
+    IEnumerator checkTime() //시간 체크를 위한 FixedUpdate 를 만든 것
+    {
+        while (true)
         {
-            Rotate(direction);
-            CallMoveEvent(Vector2.zero);
-            CallLookEvent(direction);
-            isAttacking = true;
-        }
-        else
-        {
+            currenttime += Time.fixedDeltaTime;
+            isAttacking = false;
+            Vector2 direction = Vector2.zero;
+            direction=DirectionToTarget();
             if (currenttime > movingTime)
             {
                 CallMoveEvent(direction);
-                Rotate(direction);        
+                Rotate(direction);
+                currenttime = 0;
+            }
+            if (Getdistance() < AttackRange)
+            {
+                Rotate(direction);
+                CallLookEvent(direction);
+                isAttacking = true;
             }
             
+            yield return new WaitForFixedUpdate(); //주기는 픽스트업데이트에 맞춰서
         }
-        
     }
 
     private void Rotate(Vector2 direction)

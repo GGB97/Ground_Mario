@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="665873f7-0992-4825-a74a-addeb4ce2256" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/ProjectileManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/ProjectileManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ground_Mario/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ground_Mario/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Monster.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Monster.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Datas/RangedAttackData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Datas/RangedAttackData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Range.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Range.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStatHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStatHandler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +23,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605bf8b31fcb444b85176da963870aa746ac00/aa/029c1c68/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605bf8b31fcb444b85176da963870aa746ac00/de/afb8245b/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c2d036c16ca64e0eb93703a3b13e733a171c00/3a/dd4d1ad9/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c2d036c16ca64e0eb93703a3b13e733a171c00/50/c13f785b/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObject/Scripts/AttackSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonsterContorller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Range.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/GroundMonser_Range.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/HealthSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStat.cs" root0="FORCE_HIGHLIGHTING" />
@@ -100,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706228665338</updated>
-      <workItem from="1706228667444" duration="5380000" />
+      <workItem from="1706228667444" duration="16519000" />
     </task>
     <servers />
   </component>
@@ -116,19 +128,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Monster/HealthSystem.cs</url>
-          <line>30</line>
-          <properties documentPath="F:\Sparta\Github\Team_5\Ground_Mario\Assets\Scripts\Monster\HealthSystem.cs" initialLine="30" containingFunctionPresentation="메서드 'Start'">
-            <startOffsets>
-              <option value="784" />
-            </startOffsets>
-            <endOffsets>
-              <option value="838" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterShooting.cs</url>
           <line>56</line>
           <properties documentPath="F:\Sparta\Github\Team_5\Ground_Mario\Assets\Scripts\Monster\MonsterShooting.cs" initialLine="56" containingFunctionPresentation="메서드 'CreateProjectile'">
@@ -139,7 +138,7 @@
               <option value="1994" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

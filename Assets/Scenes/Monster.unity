@@ -219,7 +219,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -277,8 +277,8 @@ MonoBehaviour:
   _baseStats:
     StatsChangeType: 0
     maxHealth: 1
-    speed: 2.2
-    attackSO: {fileID: 11400000, guid: 26e0e44cac52d5848a45d6a3acd3eb66, type: 2}
+    speed: 0.1
+    attackSO: {fileID: 11400000, guid: 62db93e97594ae843825da1a16ca86be, type: 2}
   statsModifiers: []
 --- !u!114 &423957676
 MonoBehaviour:
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93457eaf4fafb27408d0d7a3ae3a0e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpawnPos: {fileID: 0}
+  projectileSpawnPos: {fileID: 423957683}
 --- !u!114 &423957679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,9 +331,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fce2e4004e477a4eaa3411db33ee476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackRange: 2.5
+  AttackRange: 8.8
   targetTag: Player
-  movingTime: 0
+  movingTime: 3.9
 --- !u!114 &423957680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,7 +429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423957674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalPosition: {x: 0.25, y: 7.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -923,7 +923,10 @@ MonoBehaviour:
   pools:
   - tag: Hammer
     prefab: {fileID: 4424653656553251443, guid: b4d9de22b72db8a49b3cc45c8e5b533e, type: 3}
-    size: 30
+    size: 10
+  - tag: Spikeball
+    prefab: {fileID: 7100240990735557290, guid: 1e34cdfc8fd2589438a743b414d809eb, type: 3}
+    size: 10
 --- !u!114 &1976484492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -948,7 +951,7 @@ GameObject:
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

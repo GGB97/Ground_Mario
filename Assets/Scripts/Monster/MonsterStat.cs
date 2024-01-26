@@ -13,7 +13,7 @@ public class MonsterStat
 {
     public StatsChangeType StatsChangeType;
     [Range(0,100)]public int maxHealth; //인스펙터에서 조정할 수 있게
-    [Range(1f, 20f)] public float speed;
+    [Range(0, 20f)] public float speed;
     
     //공격 데이터
     //그냥 해도 되는데 클래스 방식으로 구현하는 방식도 있겠지만 객체마다 자기 나름의 저장공간을 가지고있다
