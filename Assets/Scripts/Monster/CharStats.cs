@@ -9,7 +9,7 @@ public enum StatsChangeType
     Override,
 }
 [Serializable]
-public class MonsterStat
+public class CharStats
 {
     public StatsChangeType StatsChangeType;
     [Range(0,100)]public int maxHealth; //인스펙터에서 조정할 수 있게

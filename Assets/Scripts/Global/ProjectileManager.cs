@@ -18,24 +18,13 @@ public class ProjectileManager : MonoBehaviour
         objectPool = GetComponent<ObjectPool>();
     }
 
-    public void ShootBullet(Vector2 startPos, Vector2 dir)
-    {
-        GameObject obj = objectPool.SpawnFromPool("Projectile");
-
-        obj.transform.position = startPos;
-        RangedAttackController attackController = obj.GetComponent<RangedAttackController>();
-        attackController.InitializeAttack(dir);
-
-        obj.SetActive(true);
-    }
-    
-    public void ShootBullet(Vector2 startPos, Vector2 dir,RangedAttackData attackData)
+    public void ShootBullet(Vector2 startPos, Vector2 dir, RangedAttackData attackData)
     {
         GameObject obj = objectPool.SpawnFromPool(attackData.bulletNameTag);
 
         obj.transform.position = startPos;
-       MonsterBulletController attackController = obj.GetComponent<MonsterBulletController>();
-        attackController.InitializeAttack(dir,attackData,this);
+        RangedAttackController attackController = obj.GetComponent<RangedAttackController>();
+        attackController.InitializeAttack(dir, attackData, this);
 
         obj.SetActive(true);
     }

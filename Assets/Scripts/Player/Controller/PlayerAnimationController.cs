@@ -30,7 +30,7 @@ public class PlayerAnimationController : PlayerAnimations
         animator.SetBool(IsWalking, obj.magnitude > 0.5f);   
     }
 
-    private void Attacking(float notUse)
+    private void Attacking(AttackSO attackSO)
     {
         animator.SetTrigger(Attack);
     }

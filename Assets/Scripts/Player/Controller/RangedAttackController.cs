@@ -7,20 +7,22 @@ public class RangedAttackController : MonoBehaviour
 {
     [SerializeField] LayerMask levelCollisionLayer;
 
+    RangedAttackData _rangedAttackData;
     float _currentDuration;
     Vector2 _direction;
     bool _isReady;
 
     Rigidbody2D _rigidbody;
+    SpriteRenderer _spriteRenderer;
     Animator _animator;
+    ProjectileManager _projectileManager;
 
-    public bool fxOnDestroy = true;
-
-    float duration = 4f;
-    float speed = 10f;
+    public bool fxOnDestroy = true; // 충돌 후 파티클 터질건지 였는데 -> hit 애니메이션을 재생할건지로 사용중
 
     private void Awake()
     {
+
+        _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         _rigidbody = GetComponent<Rigidbody2D>();
         _animator = GetComponentInChildren<Animator>();
     }
@@ -34,38 +36,57 @@ public class RangedAttackController : MonoBehaviour
 
         _currentDuration += Time.deltaTime;
 
-        if(_currentDuration > duration)
+        if (_currentDuration > _rangedAttackData.duration)
         {
             DestroyProjectile(transform.position, false);
         }
 
-        _rigidbody.velocity = _direction * speed;
+        _rigidbody.velocity = _direction * _rangedAttackData.speed;
     }
 
-    public void InitializeAttack(Vector2 direction)
+    public void InitializeAttack(Vector2 direction, RangedAttackData attackData, ProjectileManager projectileManager)
     {
+        _projectileManager = projectileManager;
+        _rangedAttackData = attackData;
         _direction = direction;
 
+        UpdateProjectileSprite();
         _currentDuration = 0;
+        _spriteRenderer.color = attackData.projectileColor;
 
         transform.right = direction;
 
         _isReady = true;
+    }
 
-        if (_animator != null)
-            _animator.SetBool("IsHit", false);
-
-        speed = 10f;
+    void UpdateProjectileSprite()
+    {
+        transform.localScale = Vector3.one * _rangedAttackData.size;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Floor"))
+        if (levelCollisionLayer.value == (levelCollisionLayer.value | (1 << collision.gameObject.layer)))
         {
-            if (_animator != null)
-                _animator.SetBool("IsHit", true);
+            DestroyProjectile(collision.ClosestPoint(transform.position) - _direction * .2f, fxOnDestroy);
+        }
+        else if (_rangedAttackData.target.value == (_rangedAttackData.target.value | (1 << collision.gameObject.layer)))
 
-            speed = 0;
+        {
+            HealthSystem healthSystem = collision.GetComponent<HealthSystem>();
+            if (healthSystem != null)
+            {
+                healthSystem.ChangeHealth(-_rangedAttackData.power);
+                if (_rangedAttackData.isInKnockBack)
+                {
+                    Movement movement = collision.GetComponent<Movement>();
+                    if (movement != null)
+                    {
+                        movement.ApplyKnockback(transform, _rangedAttackData.knockbackPower, _rangedAttackData.knockbackTime);
+                    }
+                }
+                DestroyProjectile(collision.ClosestPoint(transform.position), fxOnDestroy);
+            }
         }
     }
 
@@ -73,10 +94,13 @@ public class RangedAttackController : MonoBehaviour
     {
         if (createFx)
         {
-            //파티클 생성
-            //_projectileManager.CreateImpactParticleesAtPosition(position, _attackData);
+            if (_animator != null)
+            {
+                _direction = Vector2.zero;
+                _animator.SetBool("IsHit", true);
+            }
         }
-
-        gameObject.SetActive(false);
+        else
+            gameObject.SetActive(false);
     }
 }

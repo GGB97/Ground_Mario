@@ -9,7 +9,7 @@ public class MonsterShooting : MonoBehaviour
 {
     ProjectileManager _projectileManager;
     CharacterController _controller;
-    private MonsterStatsHandler _monsterStatsHandler;
+    private CharStatsHandler _monsterStatsHandler;
 
     //[SerializeField] GameObject projectilePrefab;
     [SerializeField] Transform projectileSpawnPos;
@@ -18,7 +18,7 @@ public class MonsterShooting : MonoBehaviour
     private void Awake()
     {
         _controller = GetComponent<CharacterController>();
-        _monsterStatsHandler = GetComponent<MonsterStatsHandler>();
+        _monsterStatsHandler = GetComponent<CharStatsHandler>();
     }
 
     private void Start()
@@ -34,7 +34,7 @@ public class MonsterShooting : MonoBehaviour
         _aimDirection = newAimDirection;
     }
 
-    private void OnShoot(float notuse)
+    private void OnShoot(AttackSO attackSO) // 아마 수정 필요할 것같음.
     {
         RangedAttackData rangedAttackData = _monsterStatsHandler.CurrentStates.attackSO as RangedAttackData;
         float projectilesAngleSpace = rangedAttackData.multipleProjectilesAngel;
@@ -54,7 +54,10 @@ public class MonsterShooting : MonoBehaviour
 
     private void CreateProjectile(RangedAttackData rangedAttackData,float angle)
     {
-        _projectileManager.ShootBullet(projectileSpawnPos.position,RotateVector2(_aimDirection,angle),rangedAttackData);
+        _projectileManager.ShootBullet(
+            projectileSpawnPos.position,
+            RotateVector2(_aimDirection,angle),
+            rangedAttackData);
         //에임으로 어디다 쏘는지는 알지만 벡터를 모르기때문에 바꿔줘야됨.
        
     }
