@@ -15,7 +15,7 @@ public class MonsterStatsHandler : MonoBehaviour
   private const float MinAttackSize = 0.4f;
   private const float MinAttackSpeed = .1f;
 
-  private const float MinSpeed = 0.8f;
+  private const float MinSpeed = 0.1f;
 
   private const int MinMaxHealth = 5;
 

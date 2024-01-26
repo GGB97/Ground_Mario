@@ -5,88 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="665873f7-0992-4825-a74a-addeb4ce2256" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Ground_Mario/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Ground_Mario/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Bullet.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Bullet/Hammer.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Bullet/Hammer.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Bullet/NES-SuperMarioBros3-Enemies-ezgif_com-effects_13.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Bullet/NES-SuperMarioBros3-Enemies-ezgif_com-effects_13.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Bullet/NES-SuperMarioBros3-Enemies-ezgif_com-effects_7.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Bullet/NES-SuperMarioBros3-Enemies-ezgif_com-effects_7.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Bullet/SpikeBall.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Bullet/SpikeBall.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Gumba.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Gumba/Gumba_Dead.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Gumba/Gumba_Dead.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Gumba/Gumba_Idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Gumba/Gumba_Idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Gumba/Gumba_Move.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Gumba/Gumba_Move.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Gumba/NES-SuperMarioBros3-Enemies-ezgif_com-effects_0.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/Gumba/NES-SuperMarioBros3-Enemies-ezgif_com-effects_0.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/HammerBros.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/HammerBros/HammerBros_Attack.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/HammerBros/HammerBros_Attack.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/HammerBros/HammerBros_Move.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/HammerBros/HammerBros_Move.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/HammerBros/NES-SuperMarioBros3-Enemies-ezgif_com-effects_9.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/HammerBros/NES-SuperMarioBros3-Enemies-ezgif_com-effects_9.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ArtWorks/BaseImg/NES-SuperMarioBros3-Enemies-ezgif.com-effects.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ArtWorks/BaseImg/NES-SuperMarioBros3-Enemies-ezgif.com-effects.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Bullet.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Bullet/Bullet_Hammer.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Bullet/Bullet_Hammer.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Bullet/Bullet_SpikeBall.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Bullet/Bullet_SpikeBall.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Monster_Gumba.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Monster_Gumba.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Monster_HammerBros.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Monster_HammerBros.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Monster.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Monster.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObject.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Datas.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Datas/DefaultAttackData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Datas/DefaultAttackData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Datas/RangedAttackData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Datas/RangedAttackData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/AttackSO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/AttackSO.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/RangedAttackData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObject/Scripts/RangedAttackData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonsterContorller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonsterContorller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Movement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Movement.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Range.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Range.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/GroundMonser_Range.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/GroundMonser_Range.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/GroundMonsterControllrer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/GroundMonsterControllrer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/GroundMonster_Contact.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/GroundMonster_Contact.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/HealthSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/HealthSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterBulletController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterBulletController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterShooting.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterShooting.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStat.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStatHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStatHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/Monster_Movement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/Monster_Movement.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/GameManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Global/ProjectileManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Global/ProjectileManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Controller/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Controller/CharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ground_Mario/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ground_Mario/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Monster.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Monster.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Datas/RangedAttackData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObject/Datas/RangedAttackData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Range.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Range.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStatHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStatHandler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,17 +23,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605bf8b31fcb444b85176da963870aa746ac00/aa/029c1c68/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605bf8b31fcb444b85176da963870aa746ac00/de/afb8245b/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c2d036c16ca64e0eb93703a3b13e733a171c00/3a/dd4d1ad9/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c2d036c16ca64e0eb93703a3b13e733a171c00/50/c13f785b/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObject/Scripts/AttackSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonsterContorller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/FlyingMonster_Range.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/GroundMonser_Range.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/HealthSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/Monster_Movement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 6
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
   <component name="ProjectId" id="2bTAOVhGCne0tycOEIva2EQVCfH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -118,7 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Unity 에디터에 연결.Unity 에디터에 연결.executor": "Debug",
-    "git-widget-placeholder": "Cherry-picking in Mining__MJH",
+    "git-widget-placeholder": "Monster__PGO__2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -134,7 +66,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Attach to Unity Editor.Unity 에디터에 연결">
+  <component name="RunManager" selected="Unity 에디터에 연결.Unity 에디터에 연결">
     <configuration name="유닛 테스트(배치 모드)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="F:\unity\2022.3.2f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath F:\Sparta\Github\Team_5\Ground_Mario -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -151,10 +83,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="36800">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="36800" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -180,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706228665338</updated>
-      <workItem from="1706228667444" duration="5380000" />
+      <workItem from="1706228667444" duration="16519000" />
     </task>
     <servers />
   </component>
@@ -196,16 +128,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Monster/HealthSystem.cs</url>
-          <line>30</line>
-          <properties documentPath="F:\Sparta\Github\Team_5\Ground_Mario\Assets\Scripts\Monster\HealthSystem.cs" initialLine="30" containingFunctionPresentation="메서드 'Start'" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterShooting.cs</url>
           <line>56</line>
-          <properties documentPath="F:\Sparta\Github\Team_5\Ground_Mario\Assets\Scripts\Monster\MonsterShooting.cs" initialLine="56" containingFunctionPresentation="메서드 'CreateProjectile'" />
-          <option name="timeStamp" value="4" />
+          <properties documentPath="F:\Sparta\Github\Team_5\Ground_Mario\Assets\Scripts\Monster\MonsterShooting.cs" initialLine="56" containingFunctionPresentation="메서드 'CreateProjectile'">
+            <startOffsets>
+              <option value="1882" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1994" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
