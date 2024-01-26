@@ -12,7 +12,7 @@ public class DustParticleControl : MonoBehaviour
     private void Start()
     {
         particleTransform = dustParticleSystem.transform;
-        particlePos = particleTransform.position;
+        particlePos = particleTransform.localPosition;
     }
 
     public void CreateDustParticles()
@@ -20,6 +20,7 @@ public class DustParticleControl : MonoBehaviour
         particlePos.x = Mathf.Abs(particlePos.x);
         if(GetComponent<SpriteRenderer>().flipX == false)
             particlePos.x = -particlePos.x;
+
         particleTransform.localPosition = particlePos;
 
         if (createDustOnWalk)

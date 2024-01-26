@@ -12,15 +12,13 @@ public class BaseInputController : BaseController
     {
         _camera = Camera.main;
     }
-
-
-    public void OnMove(InputValue value)
+    public void OnBaseMove(InputValue value)
     {
         Vector2 moveInput = value.Get<Vector2>().normalized;
         CallMoveEvent(moveInput);
     }
 
-    public void OnLook(InputValue value)
+    public void OnBaseLook(InputValue value)
     {
         Vector2 newAim = value.Get<Vector2>();
         Vector2 worldPos = _camera.ScreenToWorldPoint(newAim);
