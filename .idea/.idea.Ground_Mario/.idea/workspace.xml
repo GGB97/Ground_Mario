@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="665873f7-0992-4825-a74a-addeb4ce2256" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ground_Mario/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ground_Mario/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Monster/Bob_omb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Bob_omb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Monster/Bob_omb.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Bob_omb.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Monster/Bullet/Bullet_SpikeBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Bullet/Bullet_SpikeBall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Monster/KimSuHanMu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/KimSuHanMu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Monster/Monster_Gumba.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Monster_Gumba.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Monster/Monster_HammerBros.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Monster/Monster_HammerBros.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Monster.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Monster.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,10 +43,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterStat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/Monster_Movement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2bTAOVhGCne0tycOEIva2EQVCfH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,7 +57,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Unity 에디터에 연결.Unity 에디터에 연결.executor": "Debug",
-    "git-widget-placeholder": "Monster__PGO__2",
+    "git-widget-placeholder": "Develop",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,10 +90,10 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="36800">
+    <configuration name="Unity 에디터에 연결" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="36800" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -114,6 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706228665338</updated>
       <workItem from="1706228667444" duration="26120000" />
+      <workItem from="1706265926268" duration="1753000" />
     </task>
     <servers />
   </component>
