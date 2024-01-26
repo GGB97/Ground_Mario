@@ -13,7 +13,7 @@ public class MonsterBulletController : MonoBehaviour
 
     private Rigidbody2D _rigidbody2D;
     private SpriteRenderer _spriteRenderer;
-    private TrailRenderer _trailRenderer;
+    //private TrailRenderer _trailRenderer;
     private ProjectileManager _projectileManager;
 
     public bool fxOnDestroy = true;
@@ -22,7 +22,7 @@ public class MonsterBulletController : MonoBehaviour
     {
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>(); //나를 포함해 자식까지 검사
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _trailRenderer = GetComponent<TrailRenderer>();
+        //_trailRenderer = GetComponent<TrailRenderer>();
     }
    
     void Update()

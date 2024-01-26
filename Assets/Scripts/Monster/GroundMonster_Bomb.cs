@@ -52,7 +52,7 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
         
     }
 
-    private void Bomb(float num)
+    private void Bomb(AttackSO attackSO)
     {
         ready = true;
         CallMoveEvent(Vector2.zero);
@@ -99,7 +99,7 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
         {
             return;
         }
-        CallAttackEvent(1);
+        CallAttackEvent(_Stats.CurrentStates.attackSO); // CallAttackEvent(1) 이거에서 수정함.
 
         //_collidingMovement = receiver.GetComponent<Movement>();
     }

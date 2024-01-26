@@ -11,11 +11,13 @@ public class Movement : MonoBehaviour
 
     Vector2 _knockback = Vector2.zero;
     float knockbackDuration = 0;
+    private CharStatsHandler _stats;
 
     private void Awake()
     {
         _controller = GetComponent<CharacterController>();
         _rigidbody = GetComponent<Rigidbody2D>();
+        _stats = GetComponent<CharStatsHandler>();
     }
 
     private void Start()

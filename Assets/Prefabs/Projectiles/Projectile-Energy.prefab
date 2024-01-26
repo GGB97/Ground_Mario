@@ -230,5 +230,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelCollisionLayer:
     serializedVersion: 2
-    m_Bits: 0
-  fxOnDestroy: 0
+    m_Bits: 128
+  fxOnDestroy: 1

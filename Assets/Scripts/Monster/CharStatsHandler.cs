@@ -4,78 +4,89 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class MonsterStatsHandler : MonoBehaviour
+
+/*
+        CharStats -> 이름 변경
+        CharStatsHandler -> 이름 변경
+
+        Monster_Movement / Movement 코드
+        MonsterShooting / shooting 병합
+
+        projectileManager -> shootBullet MoseterBulletController -> RangedAttackController 
+ */
+
+public class CharStatsHandler : MonoBehaviour
 {
-  [SerializeField] private MonsterStat _baseStats;
-  public MonsterStat CurrentStates { get; private set; }
-  public List<MonsterStat> statsModifiers = new List<MonsterStat>();//많이 사용되는 수정자 기억해두면 좋음
-  
-  private const float MinAttackDelay = 0.03f;
-  private const float MinAttackPower = 0.5f;
-  private const float MinAttackSize = 0.4f;
-  private const float MinAttackSpeed = .1f;
+    [SerializeField] private CharStats _baseStats;
+    public CharStats CurrentStates { get; private set; }
+    public List<CharStats> statsModifiers = new List<CharStats>();//많이 사용되는 수정자 기억해두면 좋음
 
-  private const float MinSpeed = 0.1f;
+    private const float MinAttackDelay = 0.03f;
+    private const float MinAttackPower = 0.5f;
+    private const float MinAttackSize = 0.4f;
+    private const float MinAttackSpeed = .1f;
 
-  private const int MinMaxHealth = 5;
+    private const float MinSpeed = 0.1f;
 
-  private void Awake()
-  {
-    UpdateCharacterStats();
-  }
+    private const int MinMaxHealth = 5;
 
-  public void AddStatModifier(MonsterStat statModifier)
-  {
-      statsModifiers.Add(statModifier);
-      UpdateCharacterStats();
-  }
-  
-  public void RemoveStatModifier(MonsterStat statModifier) //뭔가 변화가 있을 때 스탯 업데이트를 함.
-  {
-      statsModifiers.Remove(statModifier);
-      UpdateCharacterStats();
-  }
-  private void UpdateCharacterStats()
-  {
-    AttackSO attackSO = null;
-    if (_baseStats.attackSO != null)
+    private void Awake()
     {
-      attackSO = Instantiate(_baseStats.attackSO); //지금 걸려있는 애를 가상으로 하나 더 복제함. 자유롭게 수정하기 위해 사용함. 거의 쓸 일 없긴하다고함.
+        UpdateCharacterStats();
     }
 
-    CurrentStates = new MonsterStat{attackSO = attackSO};
-    UpdateStats((a, b) => b, _baseStats); //오퍼레이션의 비밀, a,b를 받아서 b를 쓰겠다. 여기서 어떻게 처리하겠다는 정한거임.
-    if (CurrentStates.attackSO != null)
+    public void AddStatModifier(CharStats statModifier)
     {
-        CurrentStates.attackSO.target = _baseStats.attackSO.target;
-    }
-    
-    foreach (MonsterStat modifier in statsModifiers.OrderBy(o => o.StatsChangeType))
-    {
-        if (modifier.StatsChangeType == StatsChangeType.Override)
-        {
-            UpdateStats((o, o1) => o1, modifier);
-        }
-        else if (modifier.StatsChangeType == StatsChangeType.Add)
-        {
-            UpdateStats((o, o1) => o + o1, modifier);
-        }
-        else if (modifier.StatsChangeType == StatsChangeType.Multiple)
-        {
-            UpdateStats((o, o1) => o * o1, modifier);
-        }
+        statsModifiers.Add(statModifier);
+        UpdateCharacterStats();
     }
 
-    LimitAllStats();
+    public void RemoveStatModifier(CharStats statModifier) //뭔가 변화가 있을 때 스탯 업데이트를 함.
+    {
+        statsModifiers.Remove(statModifier);
+        UpdateCharacterStats();
+    }
+    private void UpdateCharacterStats()
+    {
+        AttackSO attackSO = null;
+        if (_baseStats.attackSO != null)
+        {
+            attackSO = Instantiate(_baseStats.attackSO); //지금 걸려있는 애를 가상으로 하나 더 복제함. 자유롭게 수정하기 위해 사용함. 거의 쓸 일 없긴하다고함.
+        }
 
-  }
-  private void UpdateStats(Func<float, float, float> operation, MonsterStat newModifier) //펑션 : 매개 두개, 반환 하나
+        CurrentStates = new CharStats { attackSO = attackSO };
+        UpdateStats((a, b) => b, _baseStats); //오퍼레이션의 비밀, a,b를 받아서 b를 쓰겠다. 여기서 어떻게 처리하겠다는 정한거임.
+        if (CurrentStates.attackSO != null)
+        {
+            CurrentStates.attackSO.target = _baseStats.attackSO.target;
+        }
+
+        foreach (CharStats modifier in statsModifiers.OrderBy(o => o.StatsChangeType))
+        {
+            if (modifier.StatsChangeType == StatsChangeType.Override)
+            {
+                UpdateStats((o, o1) => o1, modifier);
+            }
+            else if (modifier.StatsChangeType == StatsChangeType.Add)
+            {
+                UpdateStats((o, o1) => o + o1, modifier);
+            }
+            else if (modifier.StatsChangeType == StatsChangeType.Multiple)
+            {
+                UpdateStats((o, o1) => o * o1, modifier);
+            }
+        }
+
+        LimitAllStats();
+
+    }
+    private void UpdateStats(Func<float, float, float> operation, CharStats newModifier) //펑션 : 매개 두개, 반환 하나
     {
         CurrentStates.maxHealth = (int)operation(CurrentStates.maxHealth, newModifier.maxHealth);
         CurrentStates.speed = operation(CurrentStates.speed, newModifier.speed);
 
-        if (CurrentStates.attackSO== null || newModifier.attackSO == null)
-           return;
+        if (CurrentStates.attackSO == null || newModifier.attackSO == null)
+            return;
 
         UpdateAttackStats(operation, CurrentStates.attackSO, newModifier.attackSO);
 
@@ -105,7 +116,7 @@ public class MonsterStatsHandler : MonoBehaviour
         currentAttack.speed = operation(currentAttack.speed, newAttack.speed);
     }
 
-    private void ApplyRangedStats(Func<float, float, float> operation, MonsterStat newModifier)
+    private void ApplyRangedStats(Func<float, float, float> operation, CharStats newModifier)
     {
         RangedAttackData currentRangedAttacks = (RangedAttackData)CurrentStates.attackSO;
 
@@ -156,7 +167,7 @@ public class MonsterStatsHandler : MonoBehaviour
 
 
 
-  
+
 
 
 

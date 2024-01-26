@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Claims;
@@ -8,14 +7,15 @@ public class Shooting : MonoBehaviour
 {
     ProjectileManager _projectileManager;
     CharacterController _controller;
+    CharStatsHandler _stats;
 
-    //[SerializeField] GameObject projectilePrefab;
     [SerializeField] Transform projectileSpawnPos;
     Vector2 _aimDirection = Vector2.right;
 
     private void Awake()
     {
         _controller = GetComponent<CharacterController>();
+        _stats = GetComponent<CharStatsHandler>();
     }
 
     private void Start()
@@ -31,14 +31,31 @@ public class Shooting : MonoBehaviour
         _aimDirection = newAimDirection;
     }
 
-    private void OnShoot(float obj)
+    void OnShoot(AttackSO attackSO)
     {
-        CreateProjectile();
+        RangedAttackData rangedAttackData = _stats.CurrentStates.attackSO as RangedAttackData;
+        float projecttilesAngleSpace = rangedAttackData.multipleProjectilesAngel;
+        int numberOfProjectilesPerShot = rangedAttackData.numberofPorjectilesPerShot;
+
+        float minAngle = -(numberOfProjectilesPerShot / 2f) * projecttilesAngleSpace + 0.5f * rangedAttackData.multipleProjectilesAngel;
+
+        float angle; float randomSpread;
+        for (int i = 0; i < numberOfProjectilesPerShot; i++)
+        {
+            angle = minAngle + projecttilesAngleSpace * i;
+            randomSpread = Random.Range(-rangedAttackData.spread, rangedAttackData.spread);
+            angle += randomSpread;
+            CreateProjectile(rangedAttackData, angle);
+        }
     }
 
-    void CreateProjectile()
+    void CreateProjectile(RangedAttackData rangedAttackData, float angle)
     {
-        _projectileManager.ShootBullet(projectileSpawnPos.position, _aimDirection);
+        _projectileManager.ShootBullet(
+            projectileSpawnPos.position, // 발사 위치
+            RotateVector2(_aimDirection, angle), // 회전각
+            rangedAttackData // 발사 정보
+            );
     }
 
     private void DestroyProjectile(Vector3 position, bool createFx)
@@ -50,5 +67,10 @@ public class Shooting : MonoBehaviour
         }
 
         gameObject.SetActive(false);
+    }
+
+    static Vector2 RotateVector2(Vector2 v, float degree)
+    {
+        return Quaternion.Euler(0, 0, degree) * v;
     }
 }

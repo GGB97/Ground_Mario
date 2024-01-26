@@ -11,13 +11,13 @@ public class Monster_Movement : MonoBehaviour
 
     Vector2 _knockback = Vector2.zero;
     float knockbackDuration = 0;
-    private MonsterStatsHandler _monsterStatsHandler; 
+    private CharStatsHandler _monsterStatsHandler; 
 
     private void Awake()
     {
         _controller = GetComponent<CharacterController>();
         _rigidbody = GetComponent<Rigidbody2D>();
-        _monsterStatsHandler = GetComponent<MonsterStatsHandler>();
+        _monsterStatsHandler = GetComponent<CharStatsHandler>();
     }
 
     private void Start()
