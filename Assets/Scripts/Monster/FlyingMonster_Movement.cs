@@ -36,6 +36,7 @@ public class FlyingMonster_Movement : MonoBehaviour
     void Move(Vector2 direction)
     {
         newdes = GetDestination();
+        StartCoroutine("GetMoving", newdes);
     }
 
     IEnumerator GetMoving(Transform transform)
