@@ -47,7 +47,7 @@ public class FlyingMonster_Range : FlyingMonsterContorller
             direction=DirectionToTarget();
             if (currenttime > movingTime)
             {
-                CallMoveEvent(direction);
+                CallMoveEvent(direction); 
                 Rotate(direction);
                 currenttime = 0;
             }

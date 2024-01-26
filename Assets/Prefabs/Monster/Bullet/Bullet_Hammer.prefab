@@ -33,7 +33,7 @@ Transform:
   m_Children:
   - {fileID: 4195766630310961208}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &4453493228744173322
 CircleCollider2D:
@@ -106,13 +106,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4424653656553251443}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef0d2e1e19c74e047805bd7ce12cd917, type: 3}
+  m_Script: {fileID: 11500000, guid: 89606e20cc3322540b5845f29ea4b29f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   levelCollisionLayer:
     serializedVersion: 2
-    m_Bits: 64
-  fxOnDestroy: 1
+    m_Bits: 128
+  fxOnDestroy: 0
 --- !u!1 &5151611690949358789
 GameObject:
   m_ObjectHideFlags: 0

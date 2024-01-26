@@ -176,7 +176,7 @@ Transform:
   - {fileID: 4874212086908135825}
   - {fileID: 5244210463139909713}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &8481406465031082229
 BoxCollider2D:
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6374773717541639279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc24eaf526b9ca1409ea920bf121f9f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 52ac18233f17d554b9b4da17152e297c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &6902949726585618983
@@ -329,7 +329,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6374773717541639279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93457eaf4fafb27408d0d7a3ae3a0e7e, type: 3}
+  m_Script: {fileID: 11500000, guid: 593ba53ed732c9c489716f4443eabe6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpawnPos: {fileID: 5244210463139909713}
+  projectileSpawnPos: {fileID: 0}
