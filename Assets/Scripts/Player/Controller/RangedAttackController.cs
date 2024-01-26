@@ -73,7 +73,7 @@ public class RangedAttackController : MonoBehaviour
     {
         if (createFx)
         {
-            //ÆÄÆ¼Å¬ »ı¼º
+            //íŒŒí‹°í´ ìƒì„±
             //_projectileManager.CreateImpactParticleesAtPosition(position, _attackData);
         }
 
