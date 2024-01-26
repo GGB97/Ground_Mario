@@ -62,6 +62,7 @@ public class HealthSystem : MonoBehaviour
         else
         {
             OnDamage?.Invoke();
+            Debug.Log(CurrentHealth);
 
             if (damageClip)
             {
