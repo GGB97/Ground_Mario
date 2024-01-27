@@ -38,7 +38,6 @@ public class GroundMonser_Range : GroundMonsterControllrer
         }
         else
         {
-            
             CallMoveEvent(direction);
             Rotate(direction);    
         }

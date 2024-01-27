@@ -13,7 +13,7 @@ public class FlyingMonster_Movement : MonoBehaviour
     Vector2 _knockback = Vector2.zero;
     float knockbackDuration = 0;
     private CharStatsHandler _monsterStatsHandler;
-    [SerializeField] private Transform[] SkyWay;
+    [SerializeField] public Transform[] SkyWay;
     Transform newdes;
 
     private void Awake()
