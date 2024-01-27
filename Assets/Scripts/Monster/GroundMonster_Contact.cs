@@ -40,16 +40,10 @@ public class GroundMonster_Contact : GroundMonsterControllrer
         else
         {
             Vector2 direction = Vector2.zero;
-            if (Getdistance() < followRange)
-            {
-                direction = DirectionToTarget();
-            }
-        
+            direction = DirectionToTarget();
             CallMoveEvent(direction);
             Rotate(direction);
         }
-        
-        
     }
 
     private void Rotate(Vector2 direction)
