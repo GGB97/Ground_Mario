@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseAnimations : MonoBehaviour
+public partial class BaseAnimations : MonoBehaviour
 {
     private Animator animator;
     private BaseController controller;
@@ -17,7 +17,7 @@ public class BaseAnimations : MonoBehaviour
 
     private void Start()
     {
-        controller.OnDashEvent += Dash;
+        //controller.OnDashEvent += Dash;
     }
 
     private void Dash(Vector2 obj)

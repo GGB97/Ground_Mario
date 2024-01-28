@@ -51,12 +51,27 @@ public class TilemapGenerator
     {
         var startPointX = -_worldSizeX / 2;
         var endPointX = _worldSizeX / 2;
-        var startPointY = _offsetY + 2;
+        var startPointY = _offsetY;
         var endPointY = _offsetY - _worldSizeY;
 
+        GenerateWall(startPointX, endPointX, startPointY, endPointY);
+        GenerateGround(startPointX, endPointX, startPointY, endPointY);
+    }
+
+    private void GenerateWall(int startPointX, int endPointX, int startPointY, int endPointY)
+    {
+        for (var y = startPointY + 20; y > endPointY; y--)
+        {
+            _tilemap.SetTile(new Vector3Int(startPointX - 1, y, 0), GetUnbreakableTile());
+            _tilemap.SetTile(new Vector3Int(endPointX, y, 0), GetUnbreakableTile());
+        }
+    }
+
+    private void GenerateGround(int startPointX, int endPointX, int startPointY, int endPointY)
+    {
         for (var x = startPointX; x < endPointX; x++)
         {
-            for (var y = startPointY; y >= endPointY; y--)
+            for (var y = startPointY; y > endPointY; y--)
             {
                 // 끝 부분은 막기 위해 unbreakableTile을 생성
                 if (y > startPointY - 2 || y == endPointY)
@@ -92,4 +107,3 @@ public class TilemapGenerator
         return !_dictionary.TryGetValue(_unbreakableTile, out var customTile) ? null : customTile;
     }
 }
-

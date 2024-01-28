@@ -274,7 +274,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276644176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -712,15 +712,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 242391702620099545}
-  customTiles:
-  - {fileID: 11400000, guid: c3ac70c28f11bf448b3d8bb1046a674a, type: 2}
-  - {fileID: 11400000, guid: 6d282bffbc900d642aab1ea060141408, type: 2}
-  - {fileID: 11400000, guid: 23eefab62867d194eb07794b2835d69d, type: 2}
-  - {fileID: 11400000, guid: 1df0b6f6fe3344d4ca57b382deeea3cf, type: 2}
-  - {fileID: 11400000, guid: 5de12a45cacf85b4ca1122ca7fb6857e, type: 2}
+  customTilesSO: {fileID: 11400000, guid: 610cbaa7f493b1a4f9a8497b1498b79d, type: 2}
   worldSizeX: 900
   worldSizeY: 100
-  offsetY: -7
+  offsetY: -5
+  chunkNum: 9
+  test: 0
 --- !u!4 &1878532801
 Transform:
   m_ObjectHideFlags: 0
@@ -765,7 +762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea20432b2887014c9b3e26287a39a7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 276644180}
+  player: {fileID: 276644176}
   seed: 0
 --- !u!4 &1991543558
 Transform:
