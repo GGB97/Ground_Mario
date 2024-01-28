@@ -4,14 +4,18 @@ using UnityEngine.Tilemaps;
 [CreateAssetMenu]
 public class CustomRuleTile : RuleTile
 {
-    public enum SibingGroup
+    public enum TileType
     {
-        Poles,
         Terrain,
+        Invisible,
+        Unbreakable,
     }
     
-    public SibingGroup sibingGroup;
-
+    [SerializeField] private string tileID;
+    public TileType tileType;
+    public bool isBreakable;
+    public int weight;
+    
     public override bool RuleMatch(int neighbor, TileBase other)
     {
         if (other is RuleOverrideTile)
@@ -20,17 +24,16 @@ public class CustomRuleTile : RuleTile
         switch (neighbor)
         {
             case TilingRule.Neighbor.This:
-            {
-                return other is CustomRuleTile
-                       && (other as CustomRuleTile).sibingGroup == this.sibingGroup;
-            }
+                return other is CustomRuleTile;
             case TilingRule.Neighbor.NotThis:
-            {
-                return !(other is CustomRuleTile
-                         && (other as CustomRuleTile).sibingGroup == this.sibingGroup);
-            }
+                return other is not CustomRuleTile;
         }
 
         return base.RuleMatch(neighbor, other);
+    }
+
+    public string GetTileID()
+    {
+        return tileID;
     }
 }
