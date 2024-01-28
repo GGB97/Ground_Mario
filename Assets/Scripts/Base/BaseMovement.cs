@@ -5,19 +5,29 @@ using UnityEngine;
 
 public class BaseMovement : MonoBehaviour
 {
+    public static BaseMovement Instance;
+
     private BaseController _controller;
 
     private Vector2 _movementDirection = Vector2.zero;
     private Rigidbody2D _rigidbody;
 
+    [SerializeField] public float moveSpeed = 5f;
+    [SerializeField] public float dashDelay = 5f;
+
     [SerializeField] private SpriteRenderer _spriteRenderer;
 
-    private float dashDelay = 5f;
+    
+
     private bool IsDash = false;
     private bool IsDashable = true;
 
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
         _controller = GetComponent<BaseController>();
         _rigidbody = GetComponent<Rigidbody2D>();
     }
@@ -64,7 +74,7 @@ public class BaseMovement : MonoBehaviour
 
     private void ApplyMovment(Vector2 direction)
     {
-        direction = direction * 5;
+        direction = direction * moveSpeed;
 
         _rigidbody.velocity = direction;
     }
