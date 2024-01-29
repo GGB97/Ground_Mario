@@ -141,9 +141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fce2e4004e477a4eaa3411db33ee476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackRange: 6
+  AttackRange: 10
   targetTag: Player
-  movingTime: 3.9
+  movingTime: 2
 --- !u!114 &8697928223321407663
 MonoBehaviour:
   m_ObjectHideFlags: 0

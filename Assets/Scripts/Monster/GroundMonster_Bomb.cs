@@ -19,12 +19,14 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
     [SerializeField]private GameObject Particle;
 
     private bool ready ;
+    private bool isFirst = true ;
     [SerializeField] [Range(1,5)]private float explosionRad; 
 
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
+        isFirst = false;
         _characterRenderer = GetComponentInChildren<SpriteRenderer>();
         _healthSystem = GetComponent<HealthSystem>();
         _Stats = GetComponent<CharStatsHandler>();
@@ -137,17 +139,22 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
 
     public void initiallize()
     {
-        ready = false;
-        
-        foreach (SpriteRenderer renderer in transform.GetComponentsInChildren<SpriteRenderer>())
+        if (!isFirst)
         {
-            Color newColor = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 255);
-            renderer.color = newColor;   
-        }
+            ready = false;
         
-        foreach (Behaviour component in transform.GetComponentsInChildren<Behaviour>())
-        {
-            component.enabled = true;
+            foreach (SpriteRenderer renderer in transform.GetComponentsInChildren<SpriteRenderer>())
+            {
+                Color newColor = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 255);
+                renderer.color = newColor;   
+            }
+        
+            foreach (Behaviour component in transform.GetComponentsInChildren<Behaviour>())
+            {
+                component.enabled = true;
+            }
+        
+            _healthSystem.InitializeHealth();
         }
     }
 }

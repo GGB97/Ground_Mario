@@ -8,23 +8,25 @@ public class GroundMonster_Contact : GroundMonsterControllrer
     [SerializeField] private string targetTag = "Player";
     private bool _isCollidingWithTarget;
     private SpriteRenderer _characterRenderer;
-
+    
     private HealthSystem _healthSystem;
     private HealthSystem _collidingTargetHealthSystem;
     private Movement _collidingMovement;
     
+    private bool isFirst = true;
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
+        isFirst = false;
         _characterRenderer = GetComponentInChildren<SpriteRenderer>();
         _healthSystem = GetComponent<HealthSystem>();
-        _healthSystem.OnDamage += OnDamage;
+        //_healthSystem.OnDamage += OnDamage;
     }
 
     private void OnDamage()
     {
-        followRange = 100f;
+        //TODO : 피격 시 빨간색 애니메이션 넣기
     }
 
     // Update is called once per frame
@@ -94,15 +96,21 @@ public class GroundMonster_Contact : GroundMonsterControllrer
     
     public void initiallize()
     {
-        foreach (SpriteRenderer renderer in transform.GetComponentsInChildren<SpriteRenderer>())
+        if (!isFirst)
         {
-            Color newColor = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 255);
-            renderer.color = newColor;   
-        }
+            foreach (SpriteRenderer renderer in transform.GetComponentsInChildren<SpriteRenderer>())
+            {
+                Color newColor = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 255);
+                renderer.color = newColor;   
+            }
         
-        foreach (Behaviour component in transform.GetComponentsInChildren<Behaviour>())
-        {
-            component.enabled = true;
+            foreach (Behaviour component in transform.GetComponentsInChildren<Behaviour>())
+            {
+                component.enabled = true;
+            }
+
+            _healthSystem.InitializeHealth();
         }
+      
     }
 }

@@ -34,6 +34,11 @@ public class ProjectileManager : MonoBehaviour
         GameObject obj = objectPool.SpawnFromPool(attackData.bulletNameTag);
 
         obj.transform.position = startPos;
+        if (attackData.bulletNameTag == "Killer")
+        {
+            SpriteRenderer renderer = obj.GetComponentInChildren<SpriteRenderer>();
+            renderer.color = new Color(255, 255, 255, 255);            
+        }
         RangedAttackController attackController = obj.GetComponent<RangedAttackController>();
         attackController.InitializeAttack(dir,attackData,this);
 
