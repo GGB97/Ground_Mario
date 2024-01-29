@@ -7,7 +7,7 @@ public class BaseInputController : CharacterController
 {
     private Camera _camera;
 
-    // ³ªÁß¿¡ ¹Ù²Ù±â - Ä³¸¯ÅÍ<>±âÁö
+    // ë‚˜ì¤‘ì— ë°”ê¾¸ê¸° - ìºë¦­í„°<>ê¸°ì§€
     protected override void Awake()
     {
         base.Awake();
