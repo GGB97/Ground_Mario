@@ -2,34 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseDroneController : BaseController
+public class BaseDroneController : CharacterController
 {
     private float followRange = 2f;
 
-    [SerializeField] private string targetTag = "DroneTarget";
+    [SerializeField] private string spawnTag = "DroneTarget";
     private GameObject _base;
+
+    [SerializeField] private string enemyTag = "Enemy";
+    private GameObject enemyTarget;
+
+    private CharStatsHandler charStatsHandler;
+
     private void Start()
     {
-        _base = GameObject.FindWithTag(targetTag);
+        _base = GameObject.FindWithTag(spawnTag);
     }
 
     private void FixedUpdate()
     {
         Vector2 direction = Vector2.zero;
-        if (DistanceToBase() > followRange)
+        if (DistanceToTarget(_base.transform) > followRange)
         {
-            direction = DirectionToBase();
+            direction = DirectionToTarget(_base.transform);
         }
         CallMoveEvent(direction);
+
+        enemyTarget = GameObject.FindWithTag(enemyTag);
     }
 
-    private float DistanceToBase()
+    private float DistanceToTarget(Transform obj)
     {
-        return Vector3.Distance(transform.position, _base.transform.position);
+        return Vector3.Distance(transform.position, obj.position);
     }
 
-    private Vector2 DirectionToBase()
+    private Vector2 DirectionToTarget(Transform obj)
     {
-        return (_base.transform.position - transform.position).normalized;
+        return (obj.position - transform.position).normalized;
+    }
+
+    private void GetTarget()
+    {
+        enemyTarget = GameObject.FindWithTag(enemyTag);
     }
 }
