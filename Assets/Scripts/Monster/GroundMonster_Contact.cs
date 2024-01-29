@@ -32,7 +32,7 @@ public class GroundMonster_Contact : GroundMonsterControllrer
     {
         base.FixedUpdate();
 
-        if (_isCollidingWithTarget) //타겟이 있을때는 이미 공격에 필요한 모든 정보가 있음.
+        if (_isCollidingWithTarget) 
         {
             ApplyHealthChange();
             CallMoveEvent(Vector2.zero);

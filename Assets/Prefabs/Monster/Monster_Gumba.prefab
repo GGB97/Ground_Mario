@@ -115,16 +115,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6413914848602536791}
-  - component: {fileID: 8887068651362741438}
   - component: {fileID: 8498289628086749322}
   - component: {fileID: 2245429779340881626}
   - component: {fileID: 6071099810645943592}
   - component: {fileID: 8523629935423614680}
   - component: {fileID: 3992677515046434202}
   - component: {fileID: 254083250819315605}
-  - component: {fileID: 4291394378092927042}
   - component: {fileID: 610100785082666573}
+  - component: {fileID: 3186324768712558082}
   - component: {fileID: 8471924244442502232}
+  - component: {fileID: 5018544800230321313}
   m_Layer: 8
   m_Name: Monster_Gumba
   m_TagString: Enemy
@@ -148,51 +148,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &8887068651362741438
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8250773598241073984}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 704
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 704
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 704
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 704
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!58 &8498289628086749322
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -310,18 +265,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddcc6abb7a4ac34fa68ba85bc69eff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4291394378092927042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8250773598241073984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52ac18233f17d554b9b4da17152e297c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &610100785082666573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,9 +280,21 @@ MonoBehaviour:
   _baseStats:
     StatsChangeType: 0
     maxHealth: 1
-    speed: 2
+    speed: 5
     attackSO: {fileID: 11400000, guid: 51be480cf7f9c7a49a74e831c09be740, type: 2}
   statsModifiers: []
+--- !u!114 &3186324768712558082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8250773598241073984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc24eaf526b9ca1409ea920bf121f9f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8471924244442502232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,3 +307,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9daf771eb851f8d4096e5d3f12f1aecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &5018544800230321313
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8250773598241073984}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 704
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 704
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 704
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 704
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 0
