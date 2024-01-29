@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class RangedAttackController : MonoBehaviour
 {
@@ -48,9 +49,15 @@ public class RangedAttackController : MonoBehaviour
     {
         _projectileManager = projectileManager;
         _rangedAttackData = attackData;
-        _direction = direction;
+        if (attackData.bulletNameTag == "Killer")
+        {
+            float speed = Random.Range(attackData.speed*0.8f, attackData.speed*1.2f);
+            _direction = direction * speed;
+        }
+        else _direction = direction;
+        
 
-        UpdateProjectileSprite();
+        UpdateProjectileSprite(attackData);
         _currentDuration = 0;
        // _spriteRenderer.color = attackData.projectileColor;
 
@@ -59,9 +66,15 @@ public class RangedAttackController : MonoBehaviour
         _isReady = true;
     }
 
-    void UpdateProjectileSprite()
+    void UpdateProjectileSprite(RangedAttackData attackData)
     {
-        transform.localScale = Vector3.one * _rangedAttackData.size;
+        if (attackData.bulletNameTag == "Killer")
+        {
+            float size = Random.Range(_rangedAttackData.size*0.8f, _rangedAttackData.size*1.2f);
+            transform.localScale = Vector3.one * size;    
+        }
+        else transform.localScale = Vector3.one;
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

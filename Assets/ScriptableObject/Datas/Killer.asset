@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62c9ec0835c96f4583a4d0c18655c09, type: 3}
   m_Name: Killer
   m_EditorClassIdentifier: 
-  size: 1.5
-  delay: 3
+  size: 2
+  delay: 1
   power: 1
-  speed: 15
+  speed: 3
   target:
     serializedVersion: 2
     m_Bits: 64
