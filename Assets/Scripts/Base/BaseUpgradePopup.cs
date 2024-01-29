@@ -26,7 +26,7 @@ public class BaseUpgradePopup : MonoBehaviour
     public delegate void PopupConfirmFunc();
     PopupConfirmFunc popupConfirmFunc;
 
-    int gold = 500; // 나중에 지우기
+    int gold = 5000; // 나중에 지우기
 
     
 

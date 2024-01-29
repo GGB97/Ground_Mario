@@ -16,6 +16,8 @@ public class BaseUpgrade : MonoBehaviour
     [SerializeField] private TMP_Text dashUpgradeCount;
     [SerializeField] private TMP_Text droneUpgradeCount;
 
+    [SerializeField] private GameObject droneObj;
+
     public class UpgradeOption
     {
         public int upgradeMax;
@@ -89,7 +91,7 @@ public class BaseUpgrade : MonoBehaviour
 
     public void UpgradeBaseDrone()
     {
-        // todo
+        Instantiate(droneObj);
         var item = upgradeDictionary["Drone"];
         droneUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
     }

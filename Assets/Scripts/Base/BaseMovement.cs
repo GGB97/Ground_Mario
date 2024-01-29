@@ -17,17 +17,11 @@ public class BaseMovement : MonoBehaviour
 
     [SerializeField] private SpriteRenderer _spriteRenderer;
 
-    
-
     private bool IsDash = false;
     private bool IsDashable = true;
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
         _controller = GetComponent<BaseController>();
         _rigidbody = GetComponent<Rigidbody2D>();
     }
