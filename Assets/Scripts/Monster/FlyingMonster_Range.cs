@@ -77,4 +77,18 @@ public class FlyingMonster_Range : FlyingMonsterContorller
             _collidingMovement.ApplyKnockback(transform, attackSo.knockbackPower, attackSo.knockbackTime);
         }
     }
+    
+    public void initiallize()
+    {
+        foreach (SpriteRenderer renderer in transform.GetComponentsInChildren<SpriteRenderer>())
+        {
+            Color newColor = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 255);
+            renderer.color = newColor;   
+        }
+        
+        foreach (Behaviour component in transform.GetComponentsInChildren<Behaviour>())
+        {
+            component.enabled = true;
+        }
+    }
 }

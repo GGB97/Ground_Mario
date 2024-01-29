@@ -9,13 +9,17 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
     [SerializeField] private string targetTag = "Player";
     private bool _isCollidingWithTarget;
     private SpriteRenderer _characterRenderer;
+    private ParticleSystem _particleSystem;
 
     private HealthSystem _healthSystem;
     private HealthSystem _collidingTargetHealthSystem;
     private CharStatsHandler _Stats;
     private Movement _collidingMovement;
 
+    [SerializeField]private GameObject Particle;
+
     private bool ready ;
+    [SerializeField] [Range(1,5)]private float explosionRad; 
 
     // Start is called before the first frame update
     protected override void Start()
@@ -25,6 +29,7 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
         _healthSystem = GetComponent<HealthSystem>();
         _Stats = GetComponent<CharStatsHandler>();
         _healthSystem.OnDamage += OnDamage;
+        _particleSystem = Particle.GetComponent<ParticleSystem>();
         OnAttackEvent += Bomb;
     }
 
@@ -56,9 +61,12 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
     IEnumerator Getbomb()
     {
         bool hasdamage = false;
+        var shapeModule = _particleSystem.shape;
+        shapeModule.radius = explosionRad;
         yield return new WaitForSeconds(1f);
         int layermask = LayerMask.GetMask("Player");
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 5f);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, explosionRad);
+       
         for (int i = 0; i < colliders.Length; i++)
         {
             if (colliders[i].tag == "Player")
@@ -79,8 +87,12 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
         {
             ApplyHealthChange();
         }
-
-        gameObject.SetActive(false);
+        Particle.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        
+        Particle.SetActive(false);
+        _healthSystem.CallDeath();
+        
     }
 
     private void Rotate(Vector2 direction)
@@ -126,11 +138,16 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
     public void initiallize()
     {
         ready = false;
-        // Color newColor = new Color(_characterRenderer.color.r, _characterRenderer.color.g, _characterRenderer.color.b, 255);
-        // _characterRenderer.color = newColor;
-        // foreach (Behaviour component in transform.GetComponentsInChildren<Behaviour>())
-        // {
-        //     component.enabled = true;
-        // }
+        
+        foreach (SpriteRenderer renderer in transform.GetComponentsInChildren<SpriteRenderer>())
+        {
+            Color newColor = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 255);
+            renderer.color = newColor;   
+        }
+        
+        foreach (Behaviour component in transform.GetComponentsInChildren<Behaviour>())
+        {
+            component.enabled = true;
+        }
     }
 }

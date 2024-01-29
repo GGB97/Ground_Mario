@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 610100785082666573}
   m_Layer: 8
   m_Name: Monster_Gumba
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,7 +145,7 @@ Transform:
   m_Children:
   - {fileID: 8695335075463258673}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &8887068651362741438
 BoxCollider2D:

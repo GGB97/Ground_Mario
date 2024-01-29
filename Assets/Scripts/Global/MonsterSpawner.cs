@@ -31,30 +31,34 @@ public class MonsterSpawner : MonoBehaviour
         currentTime_HammerBros += Time.deltaTime;
         currentTime_Kim += Time.deltaTime;
         if (currentTime_Bomb > 5)
-        // {
-        //     //스폰은 이렇게 키면 될거같은데, 종류별 스폰을 어떻게 할까.
-        //     Transform pos = groundSpawnPoint[Random.Range(0, groundSpawnPoint.Length)].transform;
-        //     GameObject obj = _objectPool.SpawnFromPool("Bob_omb");
-        //     GroundMonster_Bomb groundMonsterBomb = obj.GetComponent<GroundMonster_Bomb>();
-        //     obj.SetActive(true);
-        //     groundMonsterBomb.initiallize();
-        //     obj.transform.position = pos.position;
-        //     currentTime_Bomb = 0;
-        // }
-        // if (currentTime_Gumba > 3)
-        // {
-        //     Transform pos = groundSpawnPoint[Random.Range(0, groundSpawnPoint.Length)].transform;
-        //     GameObject obj = _objectPool.SpawnFromPool("Gumba");
-        //     obj.transform.position = pos.position;
-        //     obj.SetActive(true);
-        //     currentTime_Gumba = 0;
-        // }
+        {
+            //스폰은 이렇게 키면 될거같은데, 종류별 스폰을 어떻게 할까.
+            Transform pos = groundSpawnPoint[Random.Range(0, groundSpawnPoint.Length)].transform;
+            GameObject obj = _objectPool.SpawnFromPool("Bob_omb");
+            GroundMonster_Bomb groundMonsterBomb = obj.GetComponent<GroundMonster_Bomb>();
+            obj.SetActive(true);
+            groundMonsterBomb.initiallize();
+            obj.transform.position = pos.position;
+            currentTime_Bomb = 0;
+        }
+        if (currentTime_Gumba > 3)
+        {
+            Transform pos = groundSpawnPoint[Random.Range(0, groundSpawnPoint.Length)].transform;
+            GameObject obj = _objectPool.SpawnFromPool("Gumba");
+            obj.transform.position = pos.position;
+            GroundMonster_Contact groundMonsterContact = obj.GetComponent<GroundMonster_Contact>();
+            obj.SetActive(true);
+            groundMonsterContact.initiallize();
+            currentTime_Gumba = 0;
+        }
         if (currentTime_HammerBros > 10)
         {
             Transform pos = groundSpawnPoint[Random.Range(0, groundSpawnPoint.Length)].transform;
             GameObject obj = _objectPool.SpawnFromPool("HammerBros");
             obj.transform.position = pos.position;
+            GroundMonser_Range groundMonsterRange = obj.GetComponent<GroundMonser_Range>();
             obj.SetActive(true);
+            groundMonsterRange.initiallize();
             currentTime_HammerBros = 0;
         }
         if (currentTime_Kim > 10)
@@ -62,10 +66,12 @@ public class MonsterSpawner : MonoBehaviour
             Transform pos = skySpawnPoint[Random.Range(0, skySpawnPoint.Length)].transform;
             GameObject obj = _objectPool.SpawnFromPool("KimSuHanMu");
             FlyingMonster_Movement flyingMonsterMovement = obj.GetComponent<FlyingMonster_Movement>();
+            FlyingMonster_Range flyingMonsterRange = obj.GetComponent<FlyingMonster_Range>();
             flyingMonsterMovement.SkyWay[0] = skyRallyPoint[0].transform;
             flyingMonsterMovement.SkyWay[1] = skyRallyPoint[1].transform;
             obj.transform.position = pos.position;
             obj.SetActive(true);
+            flyingMonsterRange.initiallize();
             currentTime_Kim = 0;
         }
     }

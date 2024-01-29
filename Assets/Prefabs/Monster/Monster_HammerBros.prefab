@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4874212086908135825}
   - component: {fileID: 8127002496287717858}
   - component: {fileID: 4214763448073071086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5244210463139909713}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HammerSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,9 +154,9 @@ GameObject:
   - component: {fileID: 6902949726585618983}
   - component: {fileID: 1147205346141977309}
   - component: {fileID: 8338900206722431289}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Monster_HammerBros
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,7 +176,7 @@ Transform:
   - {fileID: 4874212086908135825}
   - {fileID: 5244210463139909713}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &8481406465031082229
 BoxCollider2D:
