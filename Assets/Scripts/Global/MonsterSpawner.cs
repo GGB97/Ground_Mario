@@ -23,7 +23,7 @@ public class MonsterSpawner : MonoBehaviour
         _objectPool = GetComponent<ObjectPool>();
     }
     
-    //TODO : 1. 게임매니저에서 낮밤 구분 받아서 소환 할 지 말지 조건 걸어주고 2. 몬스터 종류에 따라 위치를 다르게 설정해야됨.
+    //TODO : 1. 게임매니저에서 낮밤 구분 받아서 소환 할 지 말지 조건 걸어주고, 밤 시간동안 계속 스폰? 아니면 일정 마릿수만?
     void Update()
     {
         currentTime_Bomb += Time.deltaTime;
@@ -36,9 +36,9 @@ public class MonsterSpawner : MonoBehaviour
             Transform pos = groundSpawnPoint[Random.Range(0, groundSpawnPoint.Length)].transform;
             GameObject obj = _objectPool.SpawnFromPool("Bob_omb");
             GroundMonster_Bomb groundMonsterBomb = obj.GetComponent<GroundMonster_Bomb>();
+            obj.SetActive(true);
             groundMonsterBomb.initiallize();
             obj.transform.position = pos.position;
-            obj.SetActive(true);
             currentTime_Bomb = 0;
         }
         if (currentTime_Gumba > 3)
