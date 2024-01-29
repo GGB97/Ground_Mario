@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4083357521843600770}
   - component: {fileID: 8033537087985341718}
   - component: {fileID: 4674659841175403900}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BaseBullet1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelCollisionLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   fxOnDestroy: 1
 --- !u!1 &9192348578349735063
 GameObject:
@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4712421896308265321}
   - component: {fileID: 2758973549470530766}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MainSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
