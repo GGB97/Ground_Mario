@@ -1,0 +1,734 @@
+fileFormatVersion: 2
+guid: 6a35e2329b021a9458d33e9a7bd2c1ce
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 874
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421285e7db3c78141823e55cd19f1444
+      internalID: -465757095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 874
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2846610f63961e845a8cdf8c5faa3f80
+      internalID: 698252848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 874
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99a372aa268b4c4d9e73c044bb0a7ae
+      internalID: -940200888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 842
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87624e317baa79a41ac0a36b5078bc8c
+      internalID: 671288031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 842
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2e992db1e68024f817226c2c6b57a8
+      internalID: 1190237692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 754
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7391f3ac42e82b945a6e8e6fa0d7e8b7
+      internalID: -2049650492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_6
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 730
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a6d65c537f16a479783d58c9edb3b3
+      internalID: 1829293276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd65f6e3decfd474eb49e6b60a968be8
+      internalID: 1479672600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_8
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c4c1c75a8b07c4599a62f10fc0264e
+      internalID: -601790026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 434
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b2d7bc0287bad4f94f4d40454d43d9
+      internalID: 1586275697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 434
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ba3999a255c954f945d179000020b3
+      internalID: 1921211871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 434
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125c3397034e5c34ebda59ef03af11a2
+      internalID: 1723904299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 434
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e34caf29e4db41409aad236b15a1760
+      internalID: -2067160713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 370
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbd4739e64b83a44a340482d3ae47b5
+      internalID: 263127868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 370
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52cad71e875a5b4e870c314e47c9d30
+      internalID: -901561952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 370
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46726b3007d5e94439157e50d0e57122
+      internalID: 2096860758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_16
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 370
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9ad907c9f419549996ba72cc608d3b
+      internalID: -52710790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 354
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3cf25075bde9343bc24cee21911bb3
+      internalID: -1918211794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 354
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2f1f236ecfb214a9f0f1e62428dbce
+      internalID: 434010844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 354
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa16e9a3311cbc48a143e1d97f3aa20
+      internalID: -87419531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 354
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a6369ff05448849b1a3b4952060112
+      internalID: -1700189935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 490
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296adcf31f5be27448915445cd6e74fb
+      internalID: 1936350531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_22
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 490
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f1a1fb6c7ce924083a87b0e22cc4c9
+      internalID: 1632489863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 409
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8c6f21e82025249a33f7425a850968
+      internalID: 986979330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_24
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 409
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3509baa55f1a95d4b8a05bc4c92ce585
+      internalID: 1236573057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_25
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 441
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e124e1f2727e5743897b46f88aac2d5
+      internalID: 335626166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_26
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 441
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78fd6a81ff0dbe449b05cc9a60bcf8b
+      internalID: 1966467420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_0: -465757095
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_1: 698252848
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_10: 1921211871
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_11: 1723904299
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_12: -2067160713
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_13: 263127868
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_14: -901561952
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_15: 2096860758
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_16: -52710790
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_17: -1918211794
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_18: 434010844
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_19: -87419531
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_2: -940200888
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_20: -1700189935
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_21: 1936350531
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_22: 1632489863
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_23: 986979330
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_24: 1236573057
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_25: 335626166
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_26: 1966467420
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_3: 671288031
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_4: 1190237692
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_5: -2049650492
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_6: 1829293276
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_7: 1479672600
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_8: -601790026
+      NES-SuperMarioBros3-Enemies-ezgif.com-effects_9: 1586275697
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
