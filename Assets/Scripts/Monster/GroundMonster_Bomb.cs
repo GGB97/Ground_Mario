@@ -124,11 +124,5 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
     public void initiallize()
     {
         ready = false;
-        // Color newColor = new Color(_characterRenderer.color.r, _characterRenderer.color.g, _characterRenderer.color.b, 255);
-        // _characterRenderer.color = newColor;
-        // foreach (Behaviour component in transform.GetComponentsInChildren<Behaviour>())
-        // {
-        //     component.enabled = true;
-        // }
     }
 }
