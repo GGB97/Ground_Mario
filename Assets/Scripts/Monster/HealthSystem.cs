@@ -82,4 +82,9 @@ public class HealthSystem : MonoBehaviour
     {
         OnDeath?.Invoke();
     }
+
+    public void InitializeHealth()
+    {
+        CurrentHealth = MaxHealth;
+    }
 }

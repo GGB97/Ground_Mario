@@ -11,6 +11,7 @@ public class MonsterSpawner : MonoBehaviour
     
     private ObjectPool _objectPool;
     private GameManager _gameManager;
+    private Transform _playerPos;
 
     private float currentTime_Bomb;
     private float currentTime_Gumba;
@@ -30,7 +31,13 @@ public class MonsterSpawner : MonoBehaviour
         currentTime_Gumba += Time.deltaTime;
         currentTime_HammerBros += Time.deltaTime;
         currentTime_Kim += Time.deltaTime;
-        if (currentTime_Bomb > 5)
+        SpawnMonster();
+        MoveSpawnPosition();
+    }
+
+    private void SpawnMonster()
+    {
+         if (currentTime_Bomb > 5)
         {
             //스폰은 이렇게 키면 될거같은데, 종류별 스폰을 어떻게 할까.
             Transform pos = groundSpawnPoint[Random.Range(0, groundSpawnPoint.Length)].transform;
@@ -74,6 +81,16 @@ public class MonsterSpawner : MonoBehaviour
             flyingMonsterRange.initiallize();
             currentTime_Kim = 0;
         }
+    }
+
+    private void MoveSpawnPosition()
+    {
+        _playerPos = _gameManager.player.transform;
+        groundSpawnPoint[0].transform.position = new Vector3(_playerPos.position.x-20,-3.4f,0f);
+        groundSpawnPoint[1].transform.position = new Vector3(_playerPos.position.x+20,-3.4f,0f);
+        skySpawnPoint[0].transform.position = new Vector3(_playerPos.position.x, 13f, 0);
+        skyRallyPoint[0].transform.position = new Vector3(_playerPos.position.x-10,5f,0f);
+        skyRallyPoint[1].transform.position = new Vector3(_playerPos.position.x+10,5f,0f);
     }
 }
 

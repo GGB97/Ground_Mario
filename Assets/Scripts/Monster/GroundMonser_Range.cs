@@ -12,10 +12,13 @@ public class GroundMonser_Range : GroundMonsterControllrer
     private HealthSystem _collidingTargetHealthSystem;
     private Movement _collidingMovement;
 
+    private bool isFirst = true;
+
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
+        isFirst = false;
         _characterRenderer = GetComponentInChildren<SpriteRenderer>();
         _healthSystem = GetComponent<HealthSystem>();
         //_healthSystem.OnDamage += OnDamage;
@@ -52,15 +55,20 @@ public class GroundMonser_Range : GroundMonsterControllrer
    
     public void initiallize()
     {
-        foreach (SpriteRenderer renderer in transform.GetComponentsInChildren<SpriteRenderer>())
+        if (!isFirst)
         {
-            Color newColor = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 255);
-            renderer.color = newColor;   
-        }
+            foreach (SpriteRenderer renderer in transform.GetComponentsInChildren<SpriteRenderer>())
+            {
+                Color newColor = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 255);
+                renderer.color = newColor;   
+            }
         
-        foreach (Behaviour component in transform.GetComponentsInChildren<Behaviour>())
-        {
-            component.enabled = true;
+            foreach (Behaviour component in transform.GetComponentsInChildren<Behaviour>())
+            {
+                component.enabled = true;
+            }
+        
+            _healthSystem.InitializeHealth();    
         }
     }
 }
