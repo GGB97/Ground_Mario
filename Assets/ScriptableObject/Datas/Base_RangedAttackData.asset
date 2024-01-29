@@ -18,7 +18,7 @@ MonoBehaviour:
   speed: 10
   target:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 384
   isInKnockBack: 0
   knockbackPower: 0
   knockbackTime: 0

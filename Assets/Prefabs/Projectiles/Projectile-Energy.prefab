@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3034433222090039261}
   - component: {fileID: 1531180449785427446}
   - component: {fileID: 81988833975712018}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MainSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 2453558376216921652}
   - component: {fileID: 6386277994218815272}
   - component: {fileID: 7654882878807945156}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Projectile-Energy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
