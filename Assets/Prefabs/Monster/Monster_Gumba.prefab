@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8695335075463258673}
   - component: {fileID: 2422346835335471857}
   - component: {fileID: 4581284937560068824}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 254083250819315605}
   - component: {fileID: 4291394378092927042}
   - component: {fileID: 610100785082666573}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Monster_Gumba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8250773598241073984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -166,16 +166,16 @@ BoxCollider2D:
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   m_ContactCaptureLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   m_CallbackLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8250773598241073984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc24eaf526b9ca1409ea920bf121f9f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 52ac18233f17d554b9b4da17152e297c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &610100785082666573

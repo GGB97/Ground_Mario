@@ -12,15 +12,15 @@ public class FlyingMonster_Movement : MonoBehaviour
 
     Vector2 _knockback = Vector2.zero;
     float knockbackDuration = 0;
-    private MonsterStatsHandler _monsterStatsHandler;
-    [SerializeField] private Transform[] SkyWay;
+    private CharStatsHandler _monsterStatsHandler;
+    [SerializeField] public Transform[] SkyWay;
     Transform newdes;
 
     private void Awake()
     {
         _controller = GetComponent<CharacterController>();
         _rigidbody = GetComponent<Rigidbody2D>();
-        _monsterStatsHandler = GetComponent<MonsterStatsHandler>();
+        _monsterStatsHandler = GetComponent<CharStatsHandler>();
     }
 
     private void Start()

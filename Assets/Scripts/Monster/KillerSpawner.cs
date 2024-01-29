@@ -19,9 +19,9 @@ public class KillerSpawner : MonoBehaviour
     void Update()
     {
         CurrentTime += Time.deltaTime;
-        if (CurrentTime > KiierSO.delay)
+        if (CurrentTime > KiierSO.delay) //TODO : 나중에 보고 간격 줄이는 방식으로 회피 난이도 올리기
         {
-            int randomspawh = Random.Range(0,5);
+            int randomspawh = Random.Range(2,7);
             for (int i = 0; i < randomspawh; i++)
             {
                 spawnposX = Random.Range(-10, 10);
