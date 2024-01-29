@@ -4961,7 +4961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 154bd9215dc8f66468fcf48e9f95a42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthChangeDelay: 0.5
+  healthChangeDelay: 0
   damageClip: {fileID: 0}
 --- !u!114 &7694162536152403003
 MonoBehaviour:
@@ -5005,6 +5005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddcc6abb7a4ac34fa68ba85bc69eff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBase: 0
 --- !u!114 &7315210563589769484
 MonoBehaviour:
   m_ObjectHideFlags: 0

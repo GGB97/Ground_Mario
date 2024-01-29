@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 154bd9215dc8f66468fcf48e9f95a42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthChangeDelay: 0.5
+  healthChangeDelay: 0
   damageClip: {fileID: 0}
 --- !u!114 &6902949726585618983
 MonoBehaviour:
@@ -276,6 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddcc6abb7a4ac34fa68ba85bc69eff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBase: 0
 --- !u!114 &8338900206722431289
 MonoBehaviour:
   m_ObjectHideFlags: 0

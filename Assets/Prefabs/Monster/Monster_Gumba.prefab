@@ -117,8 +117,8 @@ GameObject:
   - component: {fileID: 6413914848602536791}
   - component: {fileID: 8498289628086749322}
   - component: {fileID: 2245429779340881626}
-  - component: {fileID: 6071099810645943592}
   - component: {fileID: 8523629935423614680}
+  - component: {fileID: 2708446418619411331}
   - component: {fileID: 3992677515046434202}
   - component: {fileID: 254083250819315605}
   - component: {fileID: 610100785082666573}
@@ -146,7 +146,7 @@ Transform:
   m_Children:
   - {fileID: 8695335075463258673}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &8498289628086749322
 CircleCollider2D:
@@ -210,20 +210,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6071099810645943592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8250773598241073984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 154bd9215dc8f66468fcf48e9f95a42b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthChangeDelay: 0.5
-  damageClip: {fileID: 0}
 --- !u!114 &8523629935423614680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,6 +224,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followRange: 26.4
   targetTag: Player
+--- !u!114 &2708446418619411331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8250773598241073984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 154bd9215dc8f66468fcf48e9f95a42b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthChangeDelay: 0
+  damageClip: {fileID: 0}
 --- !u!114 &3992677515046434202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cddcc6abb7a4ac34fa68ba85bc69eff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBase: 0
 --- !u!114 &610100785082666573
 MonoBehaviour:
   m_ObjectHideFlags: 0

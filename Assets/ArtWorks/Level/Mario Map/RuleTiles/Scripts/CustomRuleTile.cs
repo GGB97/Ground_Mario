@@ -16,6 +16,7 @@ public class CustomRuleTile : RuleTile
     public bool isBreakable;
     public int weight;
     public float hardness;
+    public int coin;
     
     public override bool RuleMatch(int neighbor, TileBase other)
     {

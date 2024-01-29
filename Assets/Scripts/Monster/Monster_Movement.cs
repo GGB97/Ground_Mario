@@ -32,7 +32,6 @@ public class Monster_Movement : MonoBehaviour
         {
             knockbackDuration -= Time.fixedDeltaTime;
         }                                             
-
     }
     
     public void ApplyKnockback(Transform other, float power, float duration)
