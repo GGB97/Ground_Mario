@@ -64,7 +64,8 @@ public class Mining : MonoBehaviour
 
         DeactivateDestroyStage();
         _recentHit = _targetPos;
-        _target = (CustomRuleTile)tilemap.GetTile(_targetPos);
+        
+        _target = tilemap.GetTile<CustomRuleTile>(_targetPos); //_target = (CustomRuleTile)tilemap.GetTile(_targetPos);
         return true;
     }
     
