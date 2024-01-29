@@ -124,9 +124,10 @@ GameObject:
   - component: {fileID: 254083250819315605}
   - component: {fileID: 4291394378092927042}
   - component: {fileID: 610100785082666573}
+  - component: {fileID: 8471924244442502232}
   m_Layer: 8
   m_Name: Monster_Gumba
-  m_TagString: Monster
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,7 +243,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -339,3 +340,15 @@ MonoBehaviour:
     speed: 2
     attackSO: {fileID: 11400000, guid: 51be480cf7f9c7a49a74e831c09be740, type: 2}
   statsModifiers: []
+--- !u!114 &8471924244442502232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8250773598241073984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9daf771eb851f8d4096e5d3f12f1aecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

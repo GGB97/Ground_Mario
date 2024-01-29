@@ -4849,7 +4849,7 @@ GameObject:
   - component: {fileID: 7315210563589769484}
   m_Layer: 8
   m_Name: Bob_omb
-  m_TagString: Monster
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4966,7 +4966,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -5062,7 +5062,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9daf771eb851f8d4096e5d3f12f1aecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  check: 0
 --- !u!1 &5759539891256048882
 GameObject:
   m_ObjectHideFlags: 0

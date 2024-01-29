@@ -49,17 +49,7 @@ public class GroundMonser_Range : GroundMonsterControllrer
         float rotZ = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         _characterRenderer.flipX = Mathf.Abs(rotZ) < 90;
     }
-
-    private void ApplyHealthChange()
-    {
-        AttackSO attackSo = _monsterStatsHandler.CurrentStates.attackSO;
-        bool hasBeenChanged = _collidingTargetHealthSystem.ChangeHealth(-attackSo.power);
-        if (attackSo.isInKnockBack && _collidingMovement != null)
-        {
-            _collidingMovement.ApplyKnockback(transform, attackSo.knockbackPower, attackSo.knockbackTime);
-        }
-    }
-    
+   
     public void initiallize()
     {
         foreach (SpriteRenderer renderer in transform.GetComponentsInChildren<SpriteRenderer>())

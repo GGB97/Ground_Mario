@@ -10,7 +10,6 @@ public class MonsterDisapear : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
 
     private float fadeDuration = 2f;
-    [SerializeField] private bool check;
     
     void Start()
     {
