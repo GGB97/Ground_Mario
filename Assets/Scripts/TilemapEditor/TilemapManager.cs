@@ -44,6 +44,8 @@ public class TilemapManager : MonoBehaviour
         _tilemapGenerator.Generate();
     }
 
+    // 기지에서 플레이어 전환하면서 처음 땅 팔 때, 토관 생성.
+    //TODO 이미 토관이 있는 자리 체크해야됨.
     public void StartDig(float positionX)
     {
         var tiles = Enumerable.Repeat<TileBase>(null, 4).ToList();
@@ -56,6 +58,11 @@ public class TilemapManager : MonoBehaviour
         };
         
         tilemap.SetTilesBlock(bounds, tiles.ToArray());
+    }
+
+    public void DestroyTarget(Vector3Int target)
+    {
+        tilemap.SetTile(target, null);
     }
 }
     

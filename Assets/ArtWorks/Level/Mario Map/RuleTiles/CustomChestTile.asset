@@ -105,3 +105,4 @@ MonoBehaviour:
   tileType: 0
   isBreakable: 1
   weight: 5
+  hardness: 3
