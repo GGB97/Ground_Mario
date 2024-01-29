@@ -8,11 +8,11 @@ public class BaseAimController : MonoBehaviour
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private Transform weaponPivot;
 
-    private BaseController _controller;
+    private CharacterController _controller;
 
     private void Awake()
     {
-        _controller = GetComponent<BaseController>();
+        _controller = GetComponent<CharacterController>();
     }
 
     private void Start()

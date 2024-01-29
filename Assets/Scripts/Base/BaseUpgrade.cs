@@ -62,31 +62,32 @@ public class BaseUpgrade : MonoBehaviour
 
     public void UpgradeBaseAttack()
     {
-        // todo
+        _stats.AddStatModifier(statsModifiers[0]);
+
         var item = upgradeDictionary["Attack"];
         attackUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
     }
 
     public void UpgradeBaseHp()
     {
-        // todo
+        _stats.AddStatModifier(statsModifiers[1]);
+
         var item = upgradeDictionary["HP"];
         hpUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
     }
 
     public void UpgradeBaseSpeed()
     {
-        foreach (CharStats stat in statsModifiers)
-        {
-            _stats.AddStatModifier(stat);
-        }
+        _stats.AddStatModifier(statsModifiers[2]);
+
         var item = upgradeDictionary["Speed"];
         speedUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
     }
 
     public void UpgradeBaseAttackspeed()
     {
-        // todo
+        _stats.AddStatModifier(statsModifiers[3]);
+
         var item = upgradeDictionary["Attackspeed"];
         attackspeedUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
     }
