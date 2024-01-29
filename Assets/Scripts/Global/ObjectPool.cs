@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
+    [SerializeField] private Transform parent;
     [System.Serializable]
     public struct Pool
     {
@@ -25,7 +26,7 @@ public class ObjectPool : MonoBehaviour
 
             for (int i = 0; i < pool.size; i++)
             {
-                GameObject obj = Instantiate(pool.prefab);
+                GameObject obj = Instantiate(pool.prefab,parent);
                 obj.SetActive(false);
                 objectPool.Enqueue(obj);
             }

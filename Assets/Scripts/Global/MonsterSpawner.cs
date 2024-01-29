@@ -8,6 +8,7 @@ public class MonsterSpawner : MonoBehaviour
     [SerializeField] private GameObject[] groundSpawnPoint;
     [SerializeField] private GameObject[] skySpawnPoint;
     [SerializeField] private GameObject[] skyRallyPoint;
+    [SerializeField] private GameObject MonsterPool;
     
     private ObjectPool _objectPool;
     private GameManager _gameManager;
@@ -27,12 +28,24 @@ public class MonsterSpawner : MonoBehaviour
     //TODO : 1. 게임매니저에서 낮밤 구분 받아서 소환 할 지 말지 조건 걸어주고, 밤 시간동안 계속 스폰? 아니면 일정 마릿수만?
     void Update()
     {
-        currentTime_Bomb += Time.deltaTime;
-        currentTime_Gumba += Time.deltaTime;
-        currentTime_HammerBros += Time.deltaTime;
-        currentTime_Kim += Time.deltaTime;
-        SpawnMonster();
-        MoveSpawnPosition();
+        if (_gameManager.gameState == GameState.Ground) //TODO : 동작은 하지만, 시간이 끝나면 몹들이 사라지게 해야 될 것 같다.
+        {
+            currentTime_Bomb += Time.deltaTime;
+            currentTime_Gumba += Time.deltaTime;
+            currentTime_HammerBros += Time.deltaTime;
+            currentTime_Kim += Time.deltaTime;
+            SpawnMonster();
+            MoveSpawnPosition();
+        }
+        else
+        {
+            DisableAllChildren();
+            currentTime_Bomb = 0;
+            currentTime_Gumba = 0;
+            currentTime_HammerBros = 0;
+            currentTime_Kim = 0;
+        }
+       
     }
 
     private void SpawnMonster()
@@ -91,6 +104,16 @@ public class MonsterSpawner : MonoBehaviour
         skySpawnPoint[0].transform.position = new Vector3(_playerPos.position.x, 13f, 0);
         skyRallyPoint[0].transform.position = new Vector3(_playerPos.position.x-10,5f,0f);
         skyRallyPoint[1].transform.position = new Vector3(_playerPos.position.x+10,5f,0f);
+    }
+    
+    private void DisableAllChildren()
+    {
+        // 모든 자식 오브젝트 끄기
+        for (int i = 0; i < MonsterPool.transform.childCount; i++)
+        {
+            Transform childTransform = MonsterPool.transform.GetChild(i);
+            childTransform.gameObject.SetActive(false);
+        }
     }
 }
 
