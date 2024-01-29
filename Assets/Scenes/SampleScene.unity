@@ -373,10 +373,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 545042268865863063, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 892029976094768235, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -548,10 +544,6 @@ PrefabInstance:
     - target: {fileID: 8812284637095332680, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9009292335316648140, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
-      propertyPath: m_text
-      value: Drone Upgrade
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

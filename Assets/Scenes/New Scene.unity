@@ -1094,6 +1094,101 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1793410342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1793410343}
+  - component: {fileID: 1793410345}
+  - component: {fileID: 1793410344}
+  m_Layer: 0
+  m_Name: UpgradeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1793410343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793410342}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1991543558}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1793410344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793410342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcad9c54fc00d5749b1a3f259750f3af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackUpgradeCount: {fileID: 0}
+  hpUpgradeCount: {fileID: 0}
+  speedUpgradeCount: {fileID: 0}
+  attackspeedUpgradeCount: {fileID: 0}
+  dashUpgradeCount: {fileID: 0}
+  droneUpgradeCount: {fileID: 0}
+  droneObj: {fileID: 2473507061105558449, guid: e3a786a15123642468b6d7335c8efaaf, type: 3}
+  _base: Base
+  statsModifiers:
+  - StatsChangeType: 0
+    maxHealth: 0
+    speed: 0
+    attackSO: {fileID: 11400000, guid: 194f53b261c8f2b4983b857597627f62, type: 2}
+  - StatsChangeType: 0
+    maxHealth: 10
+    speed: 0
+    attackSO: {fileID: 0}
+  - StatsChangeType: 0
+    maxHealth: 0
+    speed: 1
+    attackSO: {fileID: 0}
+  - StatsChangeType: 0
+    maxHealth: 0
+    speed: 0
+    attackSO: {fileID: 11400000, guid: 14f4aea6e0a60ff4b89e2642a50dea45, type: 2}
+--- !u!114 &1793410345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793410342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8f8393721c3a84429f926a52657ca5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PopupText: {fileID: 0}
+  PopupFailText: {fileID: 0}
+  btnAttack: {fileID: 0}
+  btnHp: {fileID: 0}
+  btnSpeed: {fileID: 0}
+  btnAttackspeed: {fileID: 0}
+  btnDash: {fileID: 0}
+  btnDrone: {fileID: 0}
+  btnYes: {fileID: 0}
+  btnNo: {fileID: 0}
+  btnOk: {fileID: 0}
+  _UpgradeCheckPopup: {fileID: 0}
+  _UpgradeFailPopup: {fileID: 0}
 --- !u!1 &1878532799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,6 +1286,7 @@ Transform:
   - {fileID: 607297408}
   - {fileID: 860018613}
   - {fileID: 1509269534}
+  - {fileID: 1793410343}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
