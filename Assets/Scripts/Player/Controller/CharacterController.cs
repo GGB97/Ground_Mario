@@ -9,7 +9,6 @@ public class CharacterController : MonoBehaviour
     public event Action<Vector2> OnLookEvent;
     public event Action<AttackSO> OnAttackEvent;
 
-    float attackDelay = .2f;
     float _timeSinceLastAttact = float.MaxValue;
     protected bool isAttacking {  get; set; }
     protected CharStatsHandler _MonsterStatsHandler { get; private set; }

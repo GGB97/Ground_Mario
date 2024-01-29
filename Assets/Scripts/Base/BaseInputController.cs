@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class BaseInputController : BaseController
+public class BaseInputController : CharacterController
 {
     private Camera _camera;
 
-    // ³ªÁß¿¡ ¹Ù²Ù±â - Ä³¸¯ÅÍ<>±âÁö
-    private void Awake()
+    // ë‚˜ì¤‘ì— ë°”ê¾¸ê¸° - ìºë¦­í„°<>ê¸°ì§€
+    protected override void Awake()
     {
+        base.Awake();
         _camera = Camera.main;
     }
 
