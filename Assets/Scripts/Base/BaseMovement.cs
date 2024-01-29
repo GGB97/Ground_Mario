@@ -69,7 +69,6 @@ public class BaseMovement : MonoBehaviour
     private void ApplyMovment(Vector2 direction)
     {
         direction = direction * _stats.CurrentStates.speed;
-        Debug.Log(_stats.CurrentStates.speed);
         _rigidbody.velocity = direction;
     }
     private void Dash()

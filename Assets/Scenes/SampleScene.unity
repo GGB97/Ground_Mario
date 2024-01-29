@@ -156,11 +156,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &475599881 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6817752365657737501, guid: e35a5f91839fd4b49819c1860cd62164, type: 3}
-  m_PrefabInstance: {fileID: 1824761727}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,11 +270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &732028153 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 4579830231561097334, guid: e35a5f91839fd4b49819c1860cd62164, type: 3}
-  m_PrefabInstance: {fileID: 1824761727}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &783223938
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,44 +675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1345125503 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5429752884263759426, guid: e35a5f91839fd4b49819c1860cd62164, type: 3}
-  m_PrefabInstance: {fileID: 1824761727}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1345125511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345125503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6b4cd931d4e8b74fbb02e94b6f8ca1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  armRenderer: {fileID: 1846432046}
-  armPivot: {fileID: 475599881}
-  charRenderer: {fileID: 732028153}
---- !u!114 &1345125512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345125503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0887531d1beef241b48e32ae9c84c14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _baseStats:
-    StatsChangeType: 2
-    maxHealth: 20
-    speed: 5
-    attackSO: {fileID: 11400000, guid: c9c21e02bdecf4e4c903e594b435f8b8, type: 2}
-  statsModifiers: []
 --- !u!114 &1678107756 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6011586251260323554, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
@@ -761,14 +713,6 @@ PrefabInstance:
     - target: {fileID: 5429752884263759426, guid: e35a5f91839fd4b49819c1860cd62164, type: 3}
       propertyPath: m_Name
       value: Base
-      objectReference: {fileID: 0}
-    - target: {fileID: 5429752884263759426, guid: e35a5f91839fd4b49819c1860cd62164, type: 3}
-      propertyPath: m_TagString
-      value: Base
-      objectReference: {fileID: 0}
-    - target: {fileID: 6120176419414583392, guid: e35a5f91839fd4b49819c1860cd62164, type: 3}
-      propertyPath: m_TagString
-      value: DroneTarget
       objectReference: {fileID: 0}
     - target: {fileID: 7162852372143817288, guid: e35a5f91839fd4b49819c1860cd62164, type: 3}
       propertyPath: m_RootOrder
@@ -814,27 +758,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8506362163733519341, guid: e35a5f91839fd4b49819c1860cd62164, type: 3}
-      propertyPath: m_Actions
-      value: 
-      objectReference: {fileID: -944628639613478452, guid: ec652e4b88b5efd448c730b1315afb30, type: 3}
-    m_RemovedComponents:
-    - {fileID: 9120181442938186786, guid: e35a5f91839fd4b49819c1860cd62164, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5429752884263759426, guid: e35a5f91839fd4b49819c1860cd62164, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1345125511}
-    - targetCorrespondingSourceObject: {fileID: 5429752884263759426, guid: e35a5f91839fd4b49819c1860cd62164, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1345125512}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e35a5f91839fd4b49819c1860cd62164, type: 3}
---- !u!212 &1846432046 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 4273660867556119146, guid: e35a5f91839fd4b49819c1860cd62164, type: 3}
-  m_PrefabInstance: {fileID: 1824761727}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1927054939 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 203400618859272435, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
@@ -938,5 +866,17 @@ MonoBehaviour:
   statsModifiers:
   - StatsChangeType: 0
     maxHealth: 0
+    speed: 0
+    attackSO: {fileID: 11400000, guid: 194f53b261c8f2b4983b857597627f62, type: 2}
+  - StatsChangeType: 0
+    maxHealth: 10
+    speed: 0
+    attackSO: {fileID: 0}
+  - StatsChangeType: 0
+    maxHealth: 0
     speed: 1
     attackSO: {fileID: 0}
+  - StatsChangeType: 0
+    maxHealth: 0
+    speed: 0
+    attackSO: {fileID: 11400000, guid: 14f4aea6e0a60ff4b89e2642a50dea45, type: 2}
