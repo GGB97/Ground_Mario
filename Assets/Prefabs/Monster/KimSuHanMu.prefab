@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 4375612290427824706}
   m_Layer: 8
   m_Name: KimSuHanMu
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ Transform:
   - {fileID: 1821275435474696878}
   - {fileID: 8690388852200153051}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &6656381036056314614
 Rigidbody2D:

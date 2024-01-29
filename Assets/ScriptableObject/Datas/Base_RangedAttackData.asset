@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b62c9ec0835c96f4583a4d0c18655c09, type: 3}
-  m_Name: Player_RangedAttackData
+  m_Name: Base_RangedAttackData
   m_EditorClassIdentifier: 
   size: 1
   delay: 0.2
@@ -18,13 +18,13 @@ MonoBehaviour:
   speed: 10
   target:
     serializedVersion: 2
-    m_Bits: 384
-  isInKnockBack: 1
-  knockbackPower: 2
-  knockbackTime: 0.5
+    m_Bits: 256
+  isInKnockBack: 0
+  knockbackPower: 0
+  knockbackTime: 0
   bulletNameTag: Projectile
   duration: 5
   spread: 2
   numberofPorjectilesPerShot: 1
   multipleProjectilesAngel: 6
-  projectileColor: {r: 1, g: 1, b: 1, a: 1}
+  projectileColor: {r: 0, g: 0, b: 0, a: 0}

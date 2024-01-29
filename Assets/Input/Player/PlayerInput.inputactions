@@ -115,21 +115,21 @@
         },
         {
             "name": "Base",
-            "id": "c932ab8d-3ec2-40a8-9029-47644cfd3670",
+            "id": "d6be02f0-0c00-46d7-898e-0500d9f35613",
             "actions": [
                 {
-                    "name": "BaseMove",
+                    "name": "Move",
                     "type": "Value",
-                    "id": "f85a8de9-cad7-4454-a762-b08ef6c07946",
+                    "id": "845750d6-855d-4952-8d5b-563b776d013b",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "BaseLook",
+                    "name": "Look",
                     "type": "Value",
-                    "id": "8f240fdb-2531-4914-933e-75423360428e",
+                    "id": "22c9bfba-6572-4ff1-95d3-b832271c29e6",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -139,45 +139,45 @@
             "bindings": [
                 {
                     "name": "2D Vector",
-                    "id": "66f50086-ee73-4c49-b060-f96bf7720fd0",
+                    "id": "0869146d-379c-4887-be45-e05d68089a97",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "BaseMove",
+                    "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "left",
-                    "id": "37f7c14d-46b0-4b8c-9921-518edc61ec4b",
+                    "id": "d16e8298-f800-4d07-891e-730c141648c6",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "PC",
-                    "action": "BaseMove",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "right",
-                    "id": "4171e24e-efe4-4f36-90b6-baa8be1e6864",
+                    "id": "96b92179-0112-4e74-8b9e-e15038a075fe",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "PC",
-                    "action": "BaseMove",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "",
-                    "id": "bb8cc561-2a3f-458f-b70f-f84a1d981609",
+                    "id": "05d1a08b-446a-432c-8ad1-e01390559fed",
                     "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "PC",
-                    "action": "BaseLook",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

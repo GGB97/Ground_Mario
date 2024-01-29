@@ -15,8 +15,8 @@ public class PlayerInputController : CharacterController
 
     public void OnMove(InputValue value) // 키를 누를 때 1, 땔 때 0
     {
-        Vector2 moveInput = value.Get<Vector2>().normalized;
-
+        Vector2 moveInput = value.Get<Vector2>().normalized; 
+        
         CallMoveEvent(moveInput);
     }
     public void OnLook(InputValue value)

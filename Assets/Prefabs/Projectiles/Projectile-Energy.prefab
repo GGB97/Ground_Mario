@@ -152,7 +152,7 @@ Transform:
   m_Children:
   - {fileID: 7900257071832059009}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &2453558376216921652
 Rigidbody2D:
@@ -230,5 +230,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelCollisionLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   fxOnDestroy: 1

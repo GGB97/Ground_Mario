@@ -47,7 +47,7 @@ public class FlyingMonster_Range : FlyingMonsterContorller
             direction=DirectionToTarget();
             if (currenttime > movingTime)
             {
-                CallMoveEvent(direction); 
+                CallMoveEvent(direction);
                 Rotate(direction);
                 currenttime = 0;
             }
@@ -75,6 +75,20 @@ public class FlyingMonster_Range : FlyingMonsterContorller
         if (attackSo.isInKnockBack && _collidingMovement != null)
         {
             _collidingMovement.ApplyKnockback(transform, attackSo.knockbackPower, attackSo.knockbackTime);
+        }
+    }
+    
+    public void initiallize()
+    {
+        foreach (SpriteRenderer renderer in transform.GetComponentsInChildren<SpriteRenderer>())
+        {
+            Color newColor = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 255);
+            renderer.color = newColor;   
+        }
+        
+        foreach (Behaviour component in transform.GetComponentsInChildren<Behaviour>())
+        {
+            component.enabled = true;
         }
     }
 }

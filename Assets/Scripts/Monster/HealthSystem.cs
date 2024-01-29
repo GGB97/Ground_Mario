@@ -78,7 +78,7 @@ public class HealthSystem : MonoBehaviour
         return true;
     }
 
-    private void CallDeath()
+    public void CallDeath()
     {
         OnDeath?.Invoke();
     }
