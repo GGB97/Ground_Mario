@@ -32,7 +32,6 @@ public class Movement : MonoBehaviour
         {
             knockbackDuration -= Time.fixedDeltaTime;
         }                                             
-
     }
     
     public void ApplyKnockback(Transform other, float power, float duration)
@@ -48,7 +47,7 @@ public class Movement : MonoBehaviour
 
     void ApplyMovent(Vector2 direction)
     {
-        direction = direction * 5f;
+        direction = direction * _stats.CurrentStates.speed;
         if(knockbackDuration > 0)
         {
             direction += _knockback;
