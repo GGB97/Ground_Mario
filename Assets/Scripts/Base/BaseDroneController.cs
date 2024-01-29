@@ -1,35 +1,62 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class BaseDroneController : CharacterController
 {
-    private float followRange = 2f;
+    private float shootRange = 15f;
 
-    [SerializeField] private string spawnTag = "DroneTarget";
-    private GameObject _base;
-
+    
     [SerializeField] private string enemyTag = "Enemy";
-    private GameObject enemyTarget;
+    private Collider2D _closestTarget;
 
-    private CharStatsHandler charStatsHandler;
+    public LayerMask EnemyLayer;
 
     private void Start()
     {
-        _base = GameObject.FindWithTag(spawnTag);
+        StartCoroutine("CheckTarget");
     }
 
-    private void FixedUpdate()
+
+    private IEnumerator CheckTarget()
     {
-        Vector2 direction = Vector2.zero;
-        if (DistanceToTarget(_base.transform) > followRange)
+        while (true)
         {
-            direction = DirectionToTarget(_base.transform);
-        }
-        CallMoveEvent(direction);
+            yield return new WaitForSeconds(0.2f);
 
-        enemyTarget = GameObject.FindWithTag(enemyTag);
+            // 범위 안 모두 찾기
+            var collisions = Physics2D.OverlapCircleAll(transform.position, shootRange, EnemyLayer);
+            float _shortestDistance = float.MaxValue;
+
+            // 최단 거리 찾기
+            if (collisions.Length != 0)
+            {
+                for (int i = 0; i < collisions.Length; i++)
+                {
+                    if (DistanceToTarget(collisions[i].transform) < _shortestDistance)
+                    {
+                        _shortestDistance = DistanceToTarget(collisions[i].transform);
+                        _closestTarget = collisions[i];
+                    }
+                }
+            }
+
+
+            if (_closestTarget != null)
+            {
+                var direction = DirectionToTarget(_closestTarget.transform);
+                CallLookEvent(direction);
+                isAttacking = true;
+            }
+
+
+        }
+
     }
+
+  
 
     private float DistanceToTarget(Transform obj)
     {
@@ -40,9 +67,5 @@ public class BaseDroneController : CharacterController
     {
         return (obj.position - transform.position).normalized;
     }
-
-    private void GetTarget()
-    {
-        enemyTarget = GameObject.FindWithTag(enemyTag);
-    }
 }
+

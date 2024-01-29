@@ -17,7 +17,7 @@ public class BaseUpgrade : MonoBehaviour
     [SerializeField] private TMP_Text droneUpgradeCount;
 
     [SerializeField] private GameObject droneObj;
-    [SerializeField] private string _base = "Base";
+    [SerializeField] private string _player = "Player";
 
     [SerializeField] private List<CharStats> statsModifiers;
     private CharStatsHandler _stats;
@@ -56,7 +56,7 @@ public class BaseUpgrade : MonoBehaviour
             Instance = this;
         }
 
-        _stats = GameObject.FindWithTag(_base).GetComponent<CharStatsHandler>();
+        _stats = GameObject.FindWithTag(_player).GetComponent<CharStatsHandler>();
     }
 
 
