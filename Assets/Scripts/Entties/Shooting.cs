@@ -52,9 +52,9 @@ public class Shooting : MonoBehaviour
     void CreateProjectile(RangedAttackData rangedAttackData, float angle)
     {
         _projectileManager.ShootBullet(
-            projectileSpawnPos.position, // ë°œì‚¬ ìœ„ì¹˜
-            RotateVector2(_aimDirection, angle), // íšŒì „ê°
-            rangedAttackData // ë°œì‚¬ ì •ë³´
+            projectileSpawnPos.position, // ¹ß»ç À§Ä¡
+            RotateVector2(_aimDirection, angle), // È¸Àü°¢
+            rangedAttackData // ¹ß»ç Á¤º¸
             );
     }
 
@@ -62,7 +62,7 @@ public class Shooting : MonoBehaviour
     {
         if (createFx)
         {
-            //íŒŒí‹°í´ ìƒì„±
+            //ÆÄÆ¼Å¬ »ı¼º
             //_projectileManager.CreateImpactParticleesAtPosition(position, _attackData);
         }
 
