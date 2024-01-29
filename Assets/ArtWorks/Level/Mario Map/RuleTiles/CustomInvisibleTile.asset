@@ -37,7 +37,8 @@ MonoBehaviour:
     - {x: 0, y: -1, z: 0}
     - {x: 1, y: -1, z: 0}
     m_RuleTransform: 0
-  tileID: invisible
+  tileID: 2
   tileType: 1
   isBreakable: 0
   weight: 0
+  hardness: 0

@@ -1,23 +1,39 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+
+public enum TileID
+{
+    unbreakable,
+    soil,
+    invisible,
+    chest,
+    reward
+}
+public enum TileType
+{
+    Terrain,
+    Invisible,
+    Unbreakable,
+}
+
+public enum CoinValue
+{
+    Coin_10,
+    Coin_30,
+    Coin_50,
+    NoValue = 99
+}
 
 [CreateAssetMenu]
 public class CustomRuleTile : RuleTile
 {
-    public enum TileType
-    {
-        Terrain,
-        Invisible,
-        Unbreakable,
-    }
-    
-    [SerializeField] private string tileID;
+    [SerializeField] private TileID tileID;
     public TileType tileType;
     public bool isBreakable;
     public int weight;
     public float hardness;
-    public int coin;
-    
+
     public override bool RuleMatch(int neighbor, TileBase other)
     {
         if (other is RuleOverrideTile)
@@ -34,7 +50,7 @@ public class CustomRuleTile : RuleTile
         return base.RuleMatch(neighbor, other);
     }
 
-    public string GetTileID()
+    public TileID GetTileID()
     {
         return tileID;
     }
