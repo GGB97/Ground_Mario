@@ -5,20 +5,24 @@ using UnityEngine;
 
 public class BaseMovement : MonoBehaviour
 {
+    public static BaseMovement Instance;
+
     private CharacterController _controller;
+    private CharStatsHandler _stats;
 
     private Vector2 _movementDirection = Vector2.zero;
     private Rigidbody2D _rigidbody;
 
     [SerializeField] private SpriteRenderer _spriteRenderer;
 
-    private float dashDelay = 5f;
+    public float dashDelay = 5f;
     private bool IsDash = false;
     public bool IsDashable = true;
 
     private void Awake()
     {
         _controller = GetComponent<CharacterController>();
+        _stats = GetComponent<CharStatsHandler>();
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
@@ -33,11 +37,11 @@ public class BaseMovement : MonoBehaviour
         {
             Dash();
         }
-        // ´õºíÅÇÀÌ ¾Æ´Ï¾îµµ ´ë½¬°¡ µÊ -> ¹ë·ù¸¦ ¹öÆ°À¸·Î ¹Ù²ã¼­ ÇØ°á
+        // ë”ë¸”íƒ­ì´ ì•„ë‹ˆì–´ë„ ëŒ€ì‰¬ê°€ ë¨ -> ë°¸ë¥˜ë¥¼ ë²„íŠ¼ìœ¼ë¡œ ë°”ê¿”ì„œ í•´ê²°
         if (IsDash)
         {
             ApplyMovment(_movementDirection * 20);
-            // ¹ë·ù¸¦ ¹öÆ°À¸·Î ¹Ù…f´õ´Ï ´ë½¬°¡ ¾ÈµÊ
+            // ë°¸ë¥˜ë¥¼ ë²„íŠ¼ìœ¼ë¡œ ë°”ê¿§ë”ë‹ˆ ëŒ€ì‰¬ê°€ ì•ˆë¨
             //_rigidbody.AddForce(forcePower * _movementDirection.x, 0);
             IsDash = false;
             StartCoroutine(DashDelay());
@@ -64,15 +68,14 @@ public class BaseMovement : MonoBehaviour
 
     private void ApplyMovment(Vector2 direction)
     {
-        direction = direction * 5;
-
+        direction = direction * _stats.CurrentStates.speed;
+        Debug.Log(_stats.CurrentStates.speed);
         _rigidbody.velocity = direction;
     }
     private void Dash()
     {
         IsDash = true;
         IsDashable = false;
-        Debug.Log("dash");
     }
 
     private IEnumerator DashDelay()

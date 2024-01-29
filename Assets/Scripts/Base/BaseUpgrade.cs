@@ -17,6 +17,10 @@ public class BaseUpgrade : MonoBehaviour
     [SerializeField] private TMP_Text droneUpgradeCount;
 
     [SerializeField] private GameObject droneObj;
+    [SerializeField] private string _base = "Base";
+
+    [SerializeField] private List<CharStats> statsModifiers;
+    private CharStatsHandler _stats;
 
     public class UpgradeOption
     {
@@ -51,6 +55,8 @@ public class BaseUpgrade : MonoBehaviour
         {
             Instance = this;
         }
+
+        _stats = GameObject.FindWithTag(_base).GetComponent<CharStatsHandler>();
     }
 
 
@@ -70,7 +76,10 @@ public class BaseUpgrade : MonoBehaviour
 
     public void UpgradeBaseSpeed()
     {
-        BaseMovement.Instance.moveSpeed += 1f;
+        foreach (CharStats stat in statsModifiers)
+        {
+            _stats.AddStatModifier(stat);
+        }
         var item = upgradeDictionary["Speed"];
         speedUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
     }
