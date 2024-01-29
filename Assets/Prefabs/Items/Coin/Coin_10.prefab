@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8086339621333278541}
   - component: {fileID: 6801001590382604615}
   - component: {fileID: 5653929630805613071}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MainSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 6026390963664467606}
   - component: {fileID: 3088423552187755408}
   - component: {fileID: 6205194269486544774}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Coin_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,13 +132,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7539112248704130500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8086339621333278541}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &3088423552187755408
 CircleCollider2D:

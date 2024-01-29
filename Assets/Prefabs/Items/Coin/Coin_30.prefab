@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1737319889565367840}
   - component: {fileID: 7052408795568931964}
   - component: {fileID: 3890762187256882215}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Coin_30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,13 +26,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906562542203286015}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 688833251603596510}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &7052408795568931964
 CircleCollider2D:
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 688833251603596510}
   - component: {fileID: 972701962726344894}
   - component: {fileID: 4797251224030146172}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MainSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
