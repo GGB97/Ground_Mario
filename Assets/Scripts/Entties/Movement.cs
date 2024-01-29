@@ -38,7 +38,7 @@ public class Movement : MonoBehaviour
     public void ApplyKnockback(Transform other, float power, float duration)
     {
         knockbackDuration = duration;
-        _knockback = -(other.position - transform.position).normalized * power; // ³Ë¹é ¹æÇâ
+        _knockback = -(other.position - transform.position).normalized * power; // ï¿½Ë¹ï¿½ ï¿½ï¿½ï¿½ï¿½
     }
 
     void Move(Vector2 direction)

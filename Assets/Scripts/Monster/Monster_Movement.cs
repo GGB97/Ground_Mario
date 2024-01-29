@@ -43,7 +43,7 @@ public class Monster_Movement : MonoBehaviour
 
     void Move(Vector2 direction)
     {
-        _moventDirection = direction;
+        _moventDirection = new Vector2(direction.x,0);
     }
 
     void ApplyMovent(Vector2 direction)
