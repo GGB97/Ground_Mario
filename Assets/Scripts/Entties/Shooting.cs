@@ -51,7 +51,6 @@ public class Shooting : MonoBehaviour
 
     void CreateProjectile(RangedAttackData rangedAttackData, float angle)
     {
-        Debug.Log("debug");
         _projectileManager.ShootBullet(
             projectileSpawnPos.position, // 발사 위치
             RotateVector2(_aimDirection, angle), // 회전각
