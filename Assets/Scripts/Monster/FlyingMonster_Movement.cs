@@ -49,7 +49,8 @@ public class FlyingMonster_Movement : MonoBehaviour
             {
                 yield break;
             }
-            transform.position = Vector3.MoveTowards(transform.position, pos, _monsterStatsHandler.CurrentStates.speed); //이동할 때는 이렇게
+            transform.position = Vector3.MoveTowards(transform.position, pos, 
+                _monsterStatsHandler.CurrentStates.speed*Time.fixedDeltaTime); //이동할 때는 이렇게
             // Vector3 speed = Vector3.zero;
             // transform.position = Vector3.SmoothDamp(transform.position, pos, ref speed,3f);
             

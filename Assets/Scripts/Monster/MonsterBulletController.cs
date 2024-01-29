@@ -54,7 +54,6 @@ public class MonsterBulletController : MonoBehaviour
             DestroyProjectile(collision.ClosestPoint(transform.position) - _direction * .2f, fxOnDestroy);
         }
         else if (_rangedAttackData.target.value == (_rangedAttackData.target.value | (1<<collision.gameObject.layer)))
-           
         {
             HealthSystem healthSystem = collision.GetComponent<HealthSystem>();
             if (healthSystem != null)

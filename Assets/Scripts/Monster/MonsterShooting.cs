@@ -9,7 +9,7 @@ public class MonsterShooting : MonoBehaviour
 {
     ProjectileManager _projectileManager;
     CharacterController _controller;
-    private MonsterStatsHandler _monsterStatsHandler;
+    private CharStatsHandler _monsterStatsHandler;
 
     //[SerializeField] GameObject projectilePrefab;
     [SerializeField] Transform projectileSpawnPos;
@@ -18,7 +18,7 @@ public class MonsterShooting : MonoBehaviour
     private void Awake()
     {
         _controller = GetComponent<CharacterController>();
-        _monsterStatsHandler = GetComponent<MonsterStatsHandler>();
+        _monsterStatsHandler = GetComponent<CharStatsHandler>();
     }
 
     private void Start()
@@ -34,7 +34,7 @@ public class MonsterShooting : MonoBehaviour
         _aimDirection = newAimDirection;
     }
 
-    private void OnShoot(float notuse)
+    private void OnShoot(AttackSO notuse)
     {
         RangedAttackData rangedAttackData = _monsterStatsHandler.CurrentStates.attackSO as RangedAttackData;
         float projectilesAngleSpace = rangedAttackData.multipleProjectilesAngel;

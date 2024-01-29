@@ -12,6 +12,7 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
 
     private HealthSystem _healthSystem;
     private HealthSystem _collidingTargetHealthSystem;
+    private CharStatsHandler _Stats;
     private Movement _collidingMovement;
 
     private bool ready ;
@@ -22,6 +23,7 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
         base.Start();
         _characterRenderer = GetComponentInChildren<SpriteRenderer>();
         _healthSystem = GetComponent<HealthSystem>();
+        _Stats = GetComponent<CharStatsHandler>();
         _healthSystem.OnDamage += OnDamage;
         OnAttackEvent += Bomb;
     }

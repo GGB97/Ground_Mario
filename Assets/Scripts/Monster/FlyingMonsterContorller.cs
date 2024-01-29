@@ -5,12 +5,12 @@ using UnityEngine;
 public class FlyingMonsterContorller : CharacterController
 {
     private GameObject _player;
-    protected MonsterStatsHandler _monsterStatsHandler;
+    protected CharStatsHandler _monsterStatsHandler;
    
     protected virtual void Start()
     {
         _player = GameManager.Instance.player;
-        _monsterStatsHandler = GetComponent<MonsterStatsHandler>();
+        _monsterStatsHandler = GetComponent<CharStatsHandler>();
        
     }
    

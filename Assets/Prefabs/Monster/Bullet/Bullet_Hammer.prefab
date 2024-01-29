@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7879727904995160124}
   - component: {fileID: 4453493228744173322}
   - component: {fileID: 8757862210862527952}
-  - component: {fileID: 5825588643624565690}
+  - component: {fileID: 2626802391585228444}
   m_Layer: 0
   m_Name: Bullet_Hammer
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   m_Children:
   - {fileID: 4195766630310961208}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &4453493228744173322
 CircleCollider2D:
@@ -97,7 +97,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5825588643624565690
+--- !u!114 &2626802391585228444
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,13 +106,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4424653656553251443}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef0d2e1e19c74e047805bd7ce12cd917, type: 3}
+  m_Script: {fileID: 11500000, guid: 89606e20cc3322540b5845f29ea4b29f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   levelCollisionLayer:
     serializedVersion: 2
-    m_Bits: 64
-  fxOnDestroy: 1
+    m_Bits: 128
+  fxOnDestroy: 0
 --- !u!1 &5151611690949358789
 GameObject:
   m_ObjectHideFlags: 0

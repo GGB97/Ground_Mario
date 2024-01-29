@@ -8,7 +8,7 @@ public class HealthSystem : MonoBehaviour
 {
     [SerializeField] private float healthChangeDelay = .5f; //변경 딜레이(무적시간)
 
-    private MonsterStatsHandler _statsHandler;
+    private CharStatsHandler _statsHandler;
     private float _timeSinceLastChange = float.MaxValue;
 
     public event Action OnDamage;
@@ -23,7 +23,7 @@ public class HealthSystem : MonoBehaviour
 
     private void Awake()
     {
-        _statsHandler = GetComponent<MonsterStatsHandler>();
+        _statsHandler = GetComponent<CharStatsHandler>();
     }
 
     private void Start()
