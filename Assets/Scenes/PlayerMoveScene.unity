@@ -724,17 +724,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arrow
       objectReference: {fileID: 0}
+    - target: {fileID: 5038743242080867809, guid: 9e89608d2fa53144fae73888733b9b44, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5221661814770295139, guid: 9e89608d2fa53144fae73888733b9b44, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5221661814770295139, guid: 9e89608d2fa53144fae73888733b9b44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: 7.31
       objectReference: {fileID: 0}
     - target: {fileID: 5221661814770295139, guid: 9e89608d2fa53144fae73888733b9b44, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.73
       objectReference: {fileID: 0}
     - target: {fileID: 5221661814770295139, guid: 9e89608d2fa53144fae73888733b9b44, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1170,6 +1174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 4579830231902406453}
+  IsDashable: 1
 --- !u!50 &3169969514799507279
 Rigidbody2D:
   serializedVersion: 4
@@ -1331,7 +1336,8 @@ GameObject:
   - component: {fileID: 8506362163391155374}
   - component: {fileID: 9120181442554936162}
   - component: {fileID: 2440554025135058869}
-  - component: {fileID: 9120181442554936161}
+  - component: {fileID: 9120181442554936164}
+  - component: {fileID: 9120181442554936163}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -1419,11 +1425,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4388100418665507324, guid: c86461993512d04468d7cfe6b8c51f23, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: 7.31
       objectReference: {fileID: 0}
     - target: {fileID: 4388100418665507324, guid: c86461993512d04468d7cfe6b8c51f23, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 3.73
       objectReference: {fileID: 0}
     - target: {fileID: 4388100418665507324, guid: c86461993512d04468d7cfe6b8c51f23, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1457,6 +1463,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6386277994218815272, guid: c86461993512d04468d7cfe6b8c51f23, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6921888379047190109, guid: c86461993512d04468d7cfe6b8c51f23, type: 3}
       propertyPath: m_Name
       value: Projectile-Energy
@@ -1476,7 +1486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6817752365537680990}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: WeaponPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1551,20 +1561,6 @@ Transform:
   m_Father: {fileID: 7162852372070946059}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9120181442554936161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5429752884442544385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 848298d9fe82ee84787906dd07794c7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _spriteRenderer: {fileID: 4273660867717072169}
-  weaponPivot: {fileID: 6817752365537680990}
 --- !u!114 &9120181442554936162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1577,3 +1573,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d55910ce6a447e49a3a1aaa66e22718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9120181442554936163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5429752884442544385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0887531d1beef241b48e32ae9c84c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _baseStats:
+    StatsChangeType: 2
+    maxHealth: 30
+    speed: 5
+    attackSO: {fileID: 11400000, guid: c9c21e02bdecf4e4c903e594b435f8b8, type: 2}
+  statsModifiers: []
+--- !u!114 &9120181442554936164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5429752884442544385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b4cd931d4e8b74fbb02e94b6f8ca1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armRenderer: {fileID: 4273660867717072169}
+  armPivot: {fileID: 6817752365537680990}
+  charRenderer: {fileID: 4579830231902406453}

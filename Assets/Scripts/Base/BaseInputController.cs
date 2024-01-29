@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class BaseInputController : BaseController
+public class BaseInputController : CharacterController
 {
     private Camera _camera;
 
     // 나중에 바꾸기 - 캐릭터<>기지
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         _camera = Camera.main;
     }
     public void OnBaseMove(InputValue value)
