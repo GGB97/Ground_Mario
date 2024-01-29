@@ -13,7 +13,7 @@ public class PlayerInputController : CharacterController
         _camera = Camera.main;
     }
 
-    public void OnMove(InputValue value) // Å°¸¦ ´©¸¦ ¶§ 1, ¶ª ¶§ 0
+    public void OnMove(InputValue value) // í‚¤ë¥¼ ëˆ„ë¥¼ ë•Œ 1, ë•” ë•Œ 0
     {
         Vector2 moveInput = value.Get<Vector2>().normalized;
 
