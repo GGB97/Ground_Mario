@@ -4993,7 +4993,7 @@ MonoBehaviour:
   followRange: 11.9
   targetTag: Player
   Particle: {fileID: 429789144361797850}
-  explosionRad: 5
+  explosionRad: 2.5
 --- !u!114 &3613296944643812996
 MonoBehaviour:
   m_ObjectHideFlags: 0
