@@ -22,7 +22,7 @@ MonoBehaviour:
   isInKnockBack: 1
   knockbackPower: 2
   knockbackTime: 0.5
-  bulletNameTag: Projectile
+  bulletNameTag: Player_Projectile
   duration: 5
   spread: 2
   numberofPorjectilesPerShot: 1
