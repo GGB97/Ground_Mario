@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5038743242080867809}
   - component: {fileID: 1927935738721959224}
   - component: {fileID: 4669473302261912736}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4499670945901895723}
   - component: {fileID: 2817441150083548475}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MainSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

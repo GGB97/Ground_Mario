@@ -146,7 +146,7 @@ Transform:
   m_Children:
   - {fileID: 8695335075463258673}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &8887068651362741438
 BoxCollider2D:
@@ -167,16 +167,16 @@ BoxCollider2D:
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 704
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 704
   m_ContactCaptureLayers:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 704
   m_CallbackLayers:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 704
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -218,10 +218,10 @@ CircleCollider2D:
     m_Bits: 4294967295
   m_ContactCaptureLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
   m_CallbackLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
