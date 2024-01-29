@@ -4935,6 +4935,7 @@ GameObject:
   - component: {fileID: 1534267277779847803}
   - component: {fileID: 5631401931430513649}
   - component: {fileID: 7011574489010314271}
+  - component: {fileID: 2026134910752878438}
   m_Layer: 0
   m_Name: Player_Mario
   m_TagString: Player
@@ -5174,6 +5175,21 @@ MonoBehaviour:
     speed: 5
     attackSO: {fileID: 11400000, guid: c7e32639ce2a08f44beee686f1db31a4, type: 2}
   statsModifiers: []
+--- !u!114 &2026134910752878438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2582536472762836499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a28d6cc2693fa047aeac2d9d636694b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 0}
+  destroyStage: {fileID: 0}
+  distance: 5
 --- !u!1 &4553834385214338568
 GameObject:
   m_ObjectHideFlags: 0
