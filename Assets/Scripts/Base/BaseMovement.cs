@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BaseMovement : MonoBehaviour
 {
-    private BaseController _controller;
+    private CharacterController _controller;
 
     private Vector2 _movementDirection = Vector2.zero;
     private Rigidbody2D _rigidbody;
@@ -14,11 +14,11 @@ public class BaseMovement : MonoBehaviour
 
     private float dashDelay = 5f;
     private bool IsDash = false;
-    private bool IsDashable = true;
+    public bool IsDashable = true;
 
     private void Awake()
     {
-        _controller = GetComponent<BaseController>();
+        _controller = GetComponent<CharacterController>();
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
@@ -72,6 +72,7 @@ public class BaseMovement : MonoBehaviour
     {
         IsDash = true;
         IsDashable = false;
+        Debug.Log("dash");
     }
 
     private IEnumerator DashDelay()
