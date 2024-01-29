@@ -131,33 +131,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 776062713204065257, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1442589533182569761, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1947615454871655809, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.199
-      objectReference: {fileID: 0}
-    - target: {fileID: 2405621424680563672, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
-      propertyPath: m_Size.y
-      value: 1.112218
-      objectReference: {fileID: 0}
-    - target: {fileID: 2405621424680563672, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.056109354
-      objectReference: {fileID: 0}
     - target: {fileID: 2582536472762836499, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
       propertyPath: m_Name
       value: Player_Mario
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582536472762836499, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3987205616141843961, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
       propertyPath: m_RootOrder
@@ -203,33 +179,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4553834385214338568, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8379713705910981986, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8395586229269066782, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8692824706527493100, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8806336411433906272, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -1391125188, guid: 87a01509b26e86c4198ddd5dcbe6efba, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2582536472762836499, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 782991896}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
 --- !u!1 &244098294
 GameObject:
@@ -613,11 +566,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1108d01af0232c14d84a742ec1ba0662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &480545590 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2582536472762836499, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
-  m_PrefabInstance: {fileID: 2881681}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &661078603
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,30 +706,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1358906929588102099, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
   m_PrefabInstance: {fileID: 2881681}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 480545590}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &782991896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 480545590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0887531d1beef241b48e32ae9c84c14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _baseStats:
-    StatsChangeType: 2
-    maxHealth: 10
-    speed: 5
-    attackSO: {fileID: 11400000, guid: c7e32639ce2a08f44beee686f1db31a4, type: 2}
-  statsModifiers: []
 --- !u!1001 &957899357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1248,6 +1178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spriteRenderer: {fileID: 4579830231902406453}
+  dashDelay: 5
   IsDashable: 1
 --- !u!50 &3169969514799507279
 Rigidbody2D:
