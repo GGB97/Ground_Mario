@@ -169,14 +169,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6374773717541639279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.397, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4874212086908135825}
   - {fileID: 5244210463139909713}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &8481406465031082229
 BoxCollider2D:
@@ -197,16 +197,16 @@ BoxCollider2D:
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 192
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 192
   m_ContactCaptureLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 192
   m_CallbackLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 192
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10434dd12287ee04891397671d410dd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackRange: 31.4
+  AttackRange: 5
   targetTag: Player
 --- !u!114 &6049034327992217759
 MonoBehaviour:
@@ -332,4 +332,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593ba53ed732c9c489716f4443eabe6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpawnPos: {fileID: 0}
+  projectileSpawnPos: {fileID: 5244210463139909713}

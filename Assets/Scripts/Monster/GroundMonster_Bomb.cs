@@ -14,8 +14,8 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
     private HealthSystem _collidingTargetHealthSystem;
     private Movement _collidingMovement;
 
-    private bool ready=false;
-    
+    private bool ready ;
+
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -35,21 +35,13 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
-
-       
         if (!ready)
         {
             Vector2 direction = Vector2.zero;
-            if (Getdistance() < followRange)
-            {
-                direction = DirectionToTarget();
-            }
-        
+            direction = DirectionToTarget();
             CallMoveEvent(direction);
             Rotate(direction);
         }
-        
-        
     }
 
     private void Bomb(AttackSO attackSO)
@@ -76,16 +68,19 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
                 }
                 else
                 {
-                    hasdamage = true;    
+                    hasdamage = true;
                 }
             }
         }
-        if (hasdamage) 
+
+        if (hasdamage)
         {
             ApplyHealthChange();
         }
+
         gameObject.SetActive(false);
     }
+
     private void Rotate(Vector2 direction)
     {
         float rotZ = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
@@ -99,7 +94,7 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
         {
             return;
         }
-        CallAttackEvent(_Stats.CurrentStates.attackSO); // CallAttackEvent(1) ÀÌ°Å¿¡¼­ ¼öÁ¤ÇÔ.
+        CallAttackEvent(_Stats.CurrentStates.attackSO); // CallAttackEvent(1) ì´ê±°ì—ì„œ ìˆ˜ì •í•¨.
 
         //_collidingMovement = receiver.GetComponent<Movement>();
     }
@@ -107,7 +102,7 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
     private void OnTriggerExit2D(Collider2D collision)
     {
         GameObject receiver = collision.gameObject;
-        
+
         if (!receiver.CompareTag(targetTag))
         {
             return;
@@ -118,11 +113,16 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
 
     private void ApplyHealthChange()
     {
-        AttackSO attackSo =  _monsterStatsHandler.CurrentStates.attackSO;
+        AttackSO attackSo = _monsterStatsHandler.CurrentStates.attackSO;
         bool hasBeenChanged = _collidingTargetHealthSystem.ChangeHealth(-attackSo.power);
         if (attackSo.isInKnockBack && _collidingMovement != null)
         {
-            _collidingMovement.ApplyKnockback(transform,attackSo.knockbackPower,attackSo.knockbackTime);
+            _collidingMovement.ApplyKnockback(transform, attackSo.knockbackPower, attackSo.knockbackTime);
         }
+    }
+
+    public void initiallize()
+    {
+        ready = false;
     }
 }
