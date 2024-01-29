@@ -33,6 +33,7 @@ public class HealthSystem : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(CurrentHealth);
         if (_timeSinceLastChange < healthChangeDelay)
         {
             _timeSinceLastChange += Time.deltaTime;
