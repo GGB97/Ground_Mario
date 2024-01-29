@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    [SerializeField] LayerMask playerLayer; // 이것도 데이터 안에 넣어버리면 좋으려나?
+    [SerializeField] LayerMask playerLayer; // 이것도 so 안에 넣어버리면 좋으려나?
     [SerializeField] Resource_Data _data;
 
     private void OnTriggerEnter2D(Collider2D collision)
