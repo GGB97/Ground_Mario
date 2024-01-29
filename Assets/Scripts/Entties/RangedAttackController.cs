@@ -52,7 +52,7 @@ public class RangedAttackController : MonoBehaviour
 
         UpdateProjectileSprite();
         _currentDuration = 0;
-        _spriteRenderer.color = attackData.projectileColor;
+       // _spriteRenderer.color = attackData.projectileColor;
 
         transform.right = direction;
 

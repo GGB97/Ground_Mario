@@ -12,11 +12,11 @@ public class CharacterController : MonoBehaviour
     float attackDelay = .2f;
     float _timeSinceLastAttact = float.MaxValue;
     protected bool isAttacking {  get; set; }
-    protected CharStatsHandler _Stats { get; private set; }
+    protected CharStatsHandler _MonsterStatsHandler { get; private set; }
 
     protected virtual void Awake()
     {
-        _Stats = GetComponent<CharStatsHandler>();
+        _MonsterStatsHandler = GetComponent<CharStatsHandler>();
     }
     protected virtual void Update()
     {
@@ -28,14 +28,14 @@ public class CharacterController : MonoBehaviour
         //if (Stats.CurrentStats.attackSO == null)
         //    return;
 
-        if (_timeSinceLastAttact <= _Stats.CurrentStates.attackSO.delay)
+        if (_timeSinceLastAttact <= _MonsterStatsHandler.CurrentStates.attackSO.delay)
         {
             _timeSinceLastAttact += Time.deltaTime;
         }
-        if(isAttacking && _timeSinceLastAttact > _Stats.CurrentStates.attackSO.delay)
+        if(isAttacking && _timeSinceLastAttact > _MonsterStatsHandler.CurrentStates.attackSO.delay)
         {
             _timeSinceLastAttact = 0f;
-            CallAttackEvent(_Stats.CurrentStates.attackSO);
+            CallAttackEvent(_MonsterStatsHandler.CurrentStates.attackSO);
         }
     }
 
@@ -47,8 +47,8 @@ public class CharacterController : MonoBehaviour
     {
         OnLookEvent?.Invoke(direction);
     }
-    public void CallAttackEvent(AttackSO attackSO)
+    public void CallAttackEvent(AttackSO attackSo)
     {
-        OnAttackEvent?.Invoke(attackSO);
+        OnAttackEvent?.Invoke(attackSo);
     }
 }

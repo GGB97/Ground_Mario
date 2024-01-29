@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 100828325004044782}
   - component: {fileID: 6903181721872193870}
   - component: {fileID: 7198406311944277995}
-  - component: {fileID: -4396269249679143089}
+  - component: {fileID: 5092184121156457405}
   m_Layer: 0
   m_Name: Bullet_SpikeBall
   m_TagString: Untagged
@@ -139,7 +139,7 @@ Transform:
   m_Children:
   - {fileID: 1160677724530653536}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &6903181721872193870
 CircleCollider2D:
@@ -191,7 +191,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -203,7 +203,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-4396269249679143089
+--- !u!114 &5092184121156457405
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
