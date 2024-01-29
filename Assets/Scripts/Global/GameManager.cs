@@ -6,30 +6,38 @@ using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
-    static public GameManager Instance;
+    public static GameManager Instance { get; private set; }
     [SerializeField] public GameObject player;
 
+    private int _randomSeed;
+    public event Action OnStartGameEvent;
+    public GameState gameState = GameState.Ground;
     public TilemapManager tilemapManager { get; private set; }
-
-    public int seed;
-
+    public TimeScheduler timeScheduler { get; private set; }
+    
     private void Awake()
     {
         Instance = this;
         tilemapManager = GetComponentInChildren<TilemapManager>();
+        timeScheduler = new TimeScheduler();
         
-        seed = (int)System.DateTime.Now.Ticks;
-        Random.InitState(seed);
+        _randomSeed = (int)DateTime.Now.Ticks;
+        Random.InitState(_randomSeed);
     }
 
-    void Start()
+    private void Start()
     {
-        
+        OnStartGameEvent += StartTimer;
+        CallStartGameEvent();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CallStartGameEvent()
     {
-        
+        OnStartGameEvent?.Invoke();
+    }
+
+    private void StartTimer()
+    {
+        StartCoroutine(timeScheduler.Timer());
     }
 }
