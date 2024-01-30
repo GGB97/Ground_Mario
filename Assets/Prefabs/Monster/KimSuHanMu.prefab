@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackRange: 10
-  targetTag: Player
+  targetTag: Base
   movingTime: 2
 --- !u!114 &8697928223321407663
 MonoBehaviour:

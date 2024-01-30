@@ -6,7 +6,7 @@ using UnityEngine;
 public class GroundMonster_Bomb : GroundMonsterControllrer
 {
     [SerializeField] [Range(0, 100f)] private float followRange;
-    [SerializeField] private string targetTag = "Player";
+    [SerializeField] private string targetTag = "Base";
     private bool _isCollidingWithTarget;
     private SpriteRenderer _characterRenderer;
     private ParticleSystem _particleSystem;
@@ -31,15 +31,17 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
         _characterRenderer = GetComponentInChildren<SpriteRenderer>();
         _healthSystem = GetComponent<HealthSystem>();
         _Stats = GetComponent<CharStatsHandler>();
-        _healthSystem.OnDamage += OnDamage;
+        _healthSystem.OnDeath += stopbomb;
         _particleSystem = Particle.GetComponent<ParticleSystem>();
         _monsterDisapear = GetComponent<MonsterDisapear>();
         OnAttackEvent += Bomb;
     }
 
-    private void OnDamage()
+  
+
+    private void stopbomb()
     {
-        followRange = 100f;
+        StopAllCoroutines();
     }
 
     // Update is called once per frame
@@ -69,11 +71,10 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
         shapeModule.radius = explosionRad;
         yield return new WaitForSeconds(1f);
         int layermask = LayerMask.GetMask("Player");
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, explosionRad);
-       
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, explosionRad,layermask);
         for (int i = 0; i < colliders.Length; i++)
         {
-            if (colliders[i].tag == "Player")
+            if (colliders[i].tag == "Base")
             {
                 _collidingTargetHealthSystem = colliders[i].GetComponent<HealthSystem>();
                 if (_collidingTargetHealthSystem == null)
@@ -107,6 +108,7 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+       
         GameObject receiver = collision.gameObject;
         if (!receiver.CompareTag(targetTag))
         {
@@ -143,6 +145,7 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
     {
         if (!isFirst)
         {
+            
             ready = false;
         
             foreach (SpriteRenderer renderer in transform.GetComponentsInChildren<SpriteRenderer>())

@@ -5,7 +5,7 @@ using UnityEngine;
 public class GroundMonster_Contact : GroundMonsterControllrer
 {
     [SerializeField] [Range(0, 100f)] private float followRange;
-    [SerializeField] private string targetTag = "Player";
+    [SerializeField] private string targetTag = "Base";
     private bool _isCollidingWithTarget;
     private SpriteRenderer _characterRenderer;
 
@@ -98,11 +98,12 @@ public class GroundMonster_Contact : GroundMonsterControllrer
     
     public void initiallize()
     {
+        
         if (!isFirst)
         {
             foreach (SpriteRenderer renderer in transform.GetComponentsInChildren<SpriteRenderer>())
             {
-                Color newColor = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 255);
+                Color newColor = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 1);
                 renderer.color = newColor;   
             }
         

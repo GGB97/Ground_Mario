@@ -4869,7 +4869,7 @@ Transform:
   - {fileID: 4630662277703064206}
   - {fileID: 3517812299949692355}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &5000842267642357245
 CircleCollider2D:
@@ -4946,7 +4946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followRange: 11.9
-  targetTag: Player
+  targetTag: Base
   Particle: {fileID: 429789144361797850}
   explosionRad: 2.5
 --- !u!114 &3613296944643812996
@@ -5051,7 +5051,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.8, y: 0.8}
   m_Direction: 0
 --- !u!1 &5759539891256048882
 GameObject:

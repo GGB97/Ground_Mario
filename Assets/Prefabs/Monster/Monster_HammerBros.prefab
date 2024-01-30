@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackRange: 5
-  targetTag: Player
+  targetTag: Base
 --- !u!114 &6049034327992217759
 MonoBehaviour:
   m_ObjectHideFlags: 0

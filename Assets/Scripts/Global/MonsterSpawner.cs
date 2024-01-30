@@ -35,7 +35,7 @@ public class MonsterSpawner : MonoBehaviour
     {
         if (_gameManager.gameState == GameState.Ground) //TODO : 동작은 하지만, 시간이 끝나면 몹들이 사라지게 해야 될 것 같다.
         {
-            currentTime_Bomb += Time.deltaTime;
+          currentTime_Bomb += Time.deltaTime;
             currentTime_Gumba += Time.deltaTime;
             currentTime_HammerBros += Time.deltaTime;
             currentTime_Kim += Time.deltaTime;
@@ -44,7 +44,6 @@ public class MonsterSpawner : MonoBehaviour
         }
         else
         {
-            DisableAllChildren();
             currentTime_Bomb = 0;
             currentTime_Gumba = 0;
             currentTime_HammerBros = 0;
@@ -66,7 +65,7 @@ public class MonsterSpawner : MonoBehaviour
             obj.transform.position = pos.position;
             currentTime_Bomb = 0;
         }
-        if (currentTime_Gumba > 3)
+        if (currentTime_Gumba > 7)
         {
             Transform pos = groundSpawnPoint[Random.Range(0, groundSpawnPoint.Length)].transform;
             GameObject obj = _objectPool.SpawnFromPool("Gumba");
