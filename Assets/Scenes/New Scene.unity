@@ -296,7 +296,7 @@ Transform:
   - {fileID: 1779326299}
   - {fileID: 2057158510}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &605648576 stripped
 MonoBehaviour:
@@ -424,7 +424,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &673951045 stripped
 MonoBehaviour:
@@ -685,7 +685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6660318743783985117, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6660318743783985117, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
       propertyPath: m_AnchorMax.x
@@ -966,7 +966,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1010320630468193532, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1010320630468193532, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1294,7 +1294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7931248013883247898, guid: ba32e724146ab1640937d4a5db028933, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7931248013883247898, guid: ba32e724146ab1640937d4a5db028933, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1470,7 +1470,7 @@ MonoBehaviour:
   dashUpgradeCount: {fileID: 837803141}
   droneUpgradeCount: {fileID: 1661838141}
   turretBtn: {fileID: 1654561129}
-  _player: Player
+  _player: {fileID: 0}
   statsModifiers:
   - StatsChangeType: 0
     maxHealth: 0
@@ -1488,6 +1488,7 @@ MonoBehaviour:
     maxHealth: 0
     speed: 0
     attackSO: {fileID: 11400000, guid: 14f4aea6e0a60ff4b89e2642a50dea45, type: 2}
+  resource_Data: {fileID: 0}
 --- !u!114 &1793410345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1873,6 +1874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_Mario
       objectReference: {fileID: 0}
+    - target: {fileID: 547539139664761188, guid: 9a1bbb7f4ab9a4a4a9be8e1fb569cfc9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1639254035070418110, guid: 9a1bbb7f4ab9a4a4a9be8e1fb569cfc9, type: 3}
       propertyPath: tilemap
       value: 
@@ -1887,7 +1892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3592612785686407665, guid: 9a1bbb7f4ab9a4a4a9be8e1fb569cfc9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3592612785686407665, guid: 9a1bbb7f4ab9a4a4a9be8e1fb569cfc9, type: 3}
       propertyPath: m_LocalPosition.y

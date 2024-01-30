@@ -43,7 +43,6 @@ public class PlayerMovement : Movement
         if (levelLayer.value == collision.gameObject.layer)
         {
             flyingDuration = maxFlyingDuration;
-            Debug.Log("Player OnTrigger : Level");
         }
     }
 }

@@ -23,7 +23,7 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         var playerObj = GameManager.Instance.playerBase;
-        resource_Data = GameManager.Instance.player.GetComponent<Resource_Data>();
+        resource_Data = GameManager.Instance.player.GetComponent<PlayerResourceController>()._data;
         playerHealthSystem = playerObj.GetComponent<HealthSystem>();
         playerHealthSystem.OnDamage += UpdateHPUI;
         playerHealthSystem.OnHeal += UpdateHPUI;

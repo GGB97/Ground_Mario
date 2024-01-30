@@ -36,7 +36,7 @@ public class PlayerInputController : CharacterController
         Vector2 worldPos = _camera.ScreenToWorldPoint(newAim);
         newAim = (worldPos - (Vector2)transform.position).normalized;
 
-        if (newAim.magnitude >= .9f)
+        if (newAim.magnitude >= .5f)
         {
             CallLookEvent(newAim);
         }

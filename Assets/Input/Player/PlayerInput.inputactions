@@ -35,7 +35,7 @@
                 {
                     "name": "Switch",
                     "type": "Button",
-                    "id": "10bfa69b-1fe4-4f86-984b-64817e423021",
+                    "id": "94d29db4-ffc0-464d-8805-a84ae4774a2d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -122,7 +122,7 @@
                 },
                 {
                     "name": "",
-                    "id": "0dd019d7-2903-4a1c-9ad3-45e34a060755",
+                    "id": "0b691d04-9e42-466f-bd72-42e61e62c2a6",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
@@ -138,19 +138,19 @@
             "id": "d6be02f0-0c00-46d7-898e-0500d9f35613",
             "actions": [
                 {
-                    "name": "Look",
-                    "type": "Button",
-                    "id": "22c9bfba-6572-4ff1-95d3-b832271c29e6",
-                    "expectedControlType": "Button",
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "d1f510ff-3f15-4b00-87d8-d8ce8ea9c1c8",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Move",
-                    "type": "Value",
-                    "id": "d1f510ff-3f15-4b00-87d8-d8ce8ea9c1c8",
-                    "expectedControlType": "Vector2",
+                    "name": "Look",
+                    "type": "Button",
+                    "id": "22c9bfba-6572-4ff1-95d3-b832271c29e6",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -167,7 +167,7 @@
                 {
                     "name": "Switch",
                     "type": "Button",
-                    "id": "fc3fe778-f8b3-49ce-bcbc-0935ea1eca09",
+                    "id": "8268a98e-6f78-496b-a9f6-a7cbd29cb6e3",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -232,7 +232,7 @@
                 },
                 {
                     "name": "",
-                    "id": "822b5fb1-4524-4987-a3b4-ee82edf4f889",
+                    "id": "5b5a85ca-abc3-4b9d-b2c9-b1cde1624b44",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
