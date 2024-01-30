@@ -20,12 +20,12 @@ public class Movement : MonoBehaviour
         _stats = GetComponent<CharStatsHandler>();
     }
 
-    private void Start()
+    protected void Start()
     {
         _controller.OnMoveEvent += Move;
     }
 
-    private void FixedUpdate()
+    protected void FixedUpdate()
     {
         ApplyMovent(_moventDirection);
         if(knockbackDuration > 0)
@@ -40,12 +40,12 @@ public class Movement : MonoBehaviour
         _knockback = -(other.position - transform.position).normalized * power; // �˹� ����
     }
 
-    protected virtual void Move(Vector2 direction)
+    protected void Move(Vector2 direction)
     {
         _moventDirection = direction;
     }
 
-    void ApplyMovent(Vector2 direction)
+    protected virtual void ApplyMovent(Vector2 direction)
     {
         direction = direction * _stats.CurrentStates.speed;
         if(knockbackDuration > 0)
