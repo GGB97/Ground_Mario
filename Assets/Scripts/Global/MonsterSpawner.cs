@@ -17,7 +17,7 @@ public class MonsterSpawner : MonoBehaviour
     
     private MonsterObjectPool _objectPool;
     private GameManager _gameManager;
-    private Transform _playerPos;
+    private Transform _basePos;
 
     private float currentTime_Bomb;
     private float currentTime_Gumba;
@@ -103,12 +103,12 @@ public class MonsterSpawner : MonoBehaviour
 
     private void MoveSpawnPosition()
     {
-        _playerPos = _gameManager.player.transform;
-        groundSpawnPoint[0].transform.position = new Vector3(_playerPos.position.x-20,-3.4f,0f);
-        groundSpawnPoint[1].transform.position = new Vector3(_playerPos.position.x+20,-3.4f,0f);
-        skySpawnPoint[0].transform.position = new Vector3(_playerPos.position.x, 13f, 0);
-        skyRallyPoint[0].transform.position = new Vector3(_playerPos.position.x-10,5f,0f);
-        skyRallyPoint[1].transform.position = new Vector3(_playerPos.position.x+10,5f,0f);
+        _basePos = _gameManager.playerBase.transform;
+        groundSpawnPoint[0].transform.position = new Vector3(_basePos.position.x-20,-3.4f,0f);
+        groundSpawnPoint[1].transform.position = new Vector3(_basePos.position.x+20,-3.4f,0f);
+        skySpawnPoint[0].transform.position = new Vector3(_basePos.position.x, 13f, 0);
+        skyRallyPoint[0].transform.position = new Vector3(_basePos.position.x-10,5f,0f);
+        skyRallyPoint[1].transform.position = new Vector3(_basePos.position.x+10,5f,0f);
     }
     
     private void DisableAllChildren()
