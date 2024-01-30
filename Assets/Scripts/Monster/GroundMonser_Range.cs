@@ -5,7 +5,7 @@ using UnityEngine;
 public class GroundMonser_Range : GroundMonsterControllrer
 {
     [SerializeField] [Range(0, 100f)] private float AttackRange;
-    [SerializeField] private string targetTag = "Player";
+    [SerializeField] private string targetTag = "Base";
     private SpriteRenderer _characterRenderer;
 
     private HealthSystem _healthSystem;

@@ -6,7 +6,7 @@ using UnityEngine;
 public class FlyingMonster_Range : FlyingMonsterContorller
 {
     [SerializeField] [Range(0, 100f)] private float AttackRange;
-    [SerializeField] private string targetTag = "Player";
+    [SerializeField] private string targetTag = "Base";
     [SerializeField] [Range(0, 10)] private float movingTime;
     private float currenttime;
     private SpriteRenderer _characterRenderer;
@@ -28,8 +28,14 @@ public class FlyingMonster_Range : FlyingMonsterContorller
         _healthSystem = GetComponent<HealthSystem>();
         _monsterDisapear = GetComponent<MonsterDisapear>();
         currenttime = movingTime;
-        //_healthSystem.OnDamage += OnDamage;
+        _healthSystem.OnDeath += stopflying;
         StartCoroutine("checkTime");
+    }
+
+    private void stopflying()
+    {
+        StopAllCoroutines();
+        gameObject.GetComponent<Rigidbody2D>().gravityScale = 2;
     }
 
 
@@ -77,6 +83,7 @@ public class FlyingMonster_Range : FlyingMonsterContorller
     {
         if (!isFirst)
         {
+            StartCoroutine("checkTime");
             foreach (SpriteRenderer renderer in transform.GetComponentsInChildren<SpriteRenderer>())
             {
                 Color newColor = new Color(renderer.color.r, renderer.color.g, renderer.color.b, 255);
@@ -87,7 +94,7 @@ public class FlyingMonster_Range : FlyingMonsterContorller
             {
                 component.enabled = true;
             }
-        
+            gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
             _monsterDisapear.reset();
             _healthSystem.InitializeHealth();
         }

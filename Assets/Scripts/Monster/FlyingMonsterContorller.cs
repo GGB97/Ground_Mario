@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class FlyingMonsterContorller : CharacterController
 {
-    private GameObject _player;
+    private GameObject _base;
     protected CharStatsHandler _monsterStatsHandler;
    
     protected virtual void Start()
     {
-        _player = GameManager.Instance.player;
+        _base = GameManager.Instance.playerBase;
         _monsterStatsHandler = GetComponent<CharStatsHandler>();
        
     }
@@ -22,12 +22,12 @@ public class FlyingMonsterContorller : CharacterController
 
     protected float Getdistance()
     {
-        return Vector3.Distance(transform.position, _player.transform.position);
+        return Vector3.Distance(transform.position, _base.transform.position);
     }
     
    
     protected Vector2 DirectionToTarget()
     {
-        return (_player.transform.position - transform.position).normalized; //바라보는 방향이 나옴.
+        return (_base.transform.position - transform.position).normalized; //바라보는 방향이 나옴.
     }
 }

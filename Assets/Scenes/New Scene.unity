@@ -1076,25 +1076,25 @@ MonoBehaviour:
   - {fileID: 1779326298}
   - {fileID: 2057158509}
   DefaultStat:
-    StatsChangeType: 0
-    maxHealth: 0
-    speed: 0
-    attackSO: {fileID: 0}
+    StatsChangeType: 2
+    maxHealth: 2
+    speed: 3
+    attackSO: {fileID: 11400000, guid: 51be480cf7f9c7a49a74e831c09be740, type: 2}
   BombStat:
-    StatsChangeType: 0
-    maxHealth: 0
-    speed: 0
-    attackSO: {fileID: 0}
+    StatsChangeType: 2
+    maxHealth: 3
+    speed: 2
+    attackSO: {fileID: 11400000, guid: 720fce2fc631db8488e1b7ddbe24577c, type: 2}
   HammerbrosStat:
-    StatsChangeType: 0
-    maxHealth: 0
-    speed: 0
-    attackSO: {fileID: 0}
+    StatsChangeType: 2
+    maxHealth: 4
+    speed: 3
+    attackSO: {fileID: 11400000, guid: 26e0e44cac52d5848a45d6a3acd3eb66, type: 2}
   KimStat:
-    StatsChangeType: 0
-    maxHealth: 0
-    speed: 0
-    attackSO: {fileID: 0}
+    StatsChangeType: 2
+    maxHealth: 2
+    speed: 5
+    attackSO: {fileID: 11400000, guid: 62db93e97594ae843825da1a16ca86be, type: 2}
 --- !u!114 &1509269536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1291,6 +1291,10 @@ PrefabInstance:
     - target: {fileID: 334547916177628489, guid: ba32e724146ab1640937d4a5db028933, type: 3}
       propertyPath: m_Name
       value: Base_TurtleShell_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 1666487799681492913, guid: ba32e724146ab1640937d4a5db028933, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7931248013883247898, guid: ba32e724146ab1640937d4a5db028933, type: 3}
       propertyPath: m_RootOrder

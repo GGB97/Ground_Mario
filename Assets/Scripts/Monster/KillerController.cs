@@ -5,16 +5,16 @@ using UnityEngine;
 public class KillerController : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
-    private GameObject _player; 
+    private GameObject _base; 
     void Start()
     {
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        _player = GameManager.Instance.player;
+        _base = GameManager.Instance.playerBase;
     }
     
     void Update()
     {
-        float range = Vector3.Distance(_player.transform.position, transform.position);
+        float range = Vector3.Distance(_base.transform.position, transform.position);
         if (range < 3f)
         {
             _spriteRenderer.color = Color.red;
