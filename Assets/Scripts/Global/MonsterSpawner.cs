@@ -108,11 +108,11 @@ public class MonsterSpawner : MonoBehaviour
     
     private void DisableAllChildren()
     {
-        // 모든 자식 오브젝트 끄기
         for (int i = 0; i < MonsterPool.transform.childCount; i++)
         {
             Transform childTransform = MonsterPool.transform.GetChild(i);
-            childTransform.gameObject.SetActive(false);
+            MonsterDisapear monsterDisapear = childTransform.GetComponent<MonsterDisapear>();
+            monsterDisapear.die();
         }
     }
 }
