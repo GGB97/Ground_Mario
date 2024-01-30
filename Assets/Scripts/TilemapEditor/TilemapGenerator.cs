@@ -35,11 +35,11 @@ public class TilemapGenerator
         {
             switch (item.Value.tileType)
             {
-                case CustomRuleTile.TileType.Terrain:
+                case TileType.Terrain:
                     _terrainTiles.Add(item.Key);
                     _totalWeight += item.Value.weight;
                     break;
-                case CustomRuleTile.TileType.Unbreakable:
+                case TileType.Unbreakable:
                     _unbreakableTile = item.Key;
                     break;
             }

@@ -11,6 +11,7 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
     private SpriteRenderer _characterRenderer;
     private ParticleSystem _particleSystem;
 
+    private MonsterDisapear _monsterDisapear;
     private HealthSystem _healthSystem;
     private HealthSystem _collidingTargetHealthSystem;
     private CharStatsHandler _Stats;
@@ -32,6 +33,7 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
         _Stats = GetComponent<CharStatsHandler>();
         _healthSystem.OnDamage += OnDamage;
         _particleSystem = Particle.GetComponent<ParticleSystem>();
+        _monsterDisapear = GetComponent<MonsterDisapear>();
         OnAttackEvent += Bomb;
     }
 
@@ -153,7 +155,7 @@ public class GroundMonster_Bomb : GroundMonsterControllrer
             {
                 component.enabled = true;
             }
-        
+            _monsterDisapear.reset();
             _healthSystem.InitializeHealth();
         }
     }

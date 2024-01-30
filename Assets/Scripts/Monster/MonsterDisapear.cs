@@ -8,6 +8,7 @@ public class MonsterDisapear : MonoBehaviour
     private HealthSystem _healthSystem;
     private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rigidbody2D;
+    public bool isDie { get; private set; }
 
     private float fadeDuration = 2f;
     
@@ -19,9 +20,14 @@ public class MonsterDisapear : MonoBehaviour
         _healthSystem.OnDeath += die;
     }
 
-    void die()
+    public void die()
     {
-        StartCoroutine("disapear");
+        if (!isDie)
+        {
+            isDie = true;
+            StartCoroutine("disapear");    
+        }
+        
     }
 
     IEnumerator disapear()
@@ -52,5 +58,10 @@ public class MonsterDisapear : MonoBehaviour
             renderer.color = newColor;
             yield return null;
         }
+    }
+
+    public void reset()
+    {
+        isDie = false;
     }
 }
