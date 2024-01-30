@@ -42,12 +42,12 @@ public class BaseUpgrade : MonoBehaviour
 
     public Dictionary<string, UpgradeOption> upgradeDictionary = new Dictionary<string, UpgradeOption>()
     {
-        {"Attack", new UpgradeOption(5, 0, 300)},
-        {"HP", new  UpgradeOption(5, 0, 300)},
-        {"Speed", new UpgradeOption(5, 0, 300)},
-        {"Attackspeed", new UpgradeOption(5, 0, 300)},
-        {"Dash", new UpgradeOption(3, 0, 500)},
-        {"Drone", new UpgradeOption(1, 0, 1000)}
+        {"Attack", new UpgradeOption(5, 0, 30)},
+        {"HP", new  UpgradeOption(5, 0, 30)},
+        {"Speed", new UpgradeOption(5, 0, 30)},
+        {"Attackspeed", new UpgradeOption(5, 0, 30)},
+        {"Dash", new UpgradeOption(3, 0, 50)},
+        {"Drone", new UpgradeOption(1, 0, 100)}
     };
 
 

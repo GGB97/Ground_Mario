@@ -241,17 +241,6 @@ Transform:
   m_Father: {fileID: 1157559982}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &550232372 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5055516072760847848, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
-  m_PrefabInstance: {fileID: 1050760012}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &580300842 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9201109417323104481, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
@@ -629,6 +618,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2598235463350579908, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2598235463350579908, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30
+      objectReference: {fileID: 0}
     - target: {fileID: 2793886626152140632, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -660,6 +657,14 @@ PrefabInstance:
     - target: {fileID: 4003679391200906935, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080158000447990069, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080158000447990069, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6660318743783985117, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
       propertyPath: m_Pivot.x
@@ -750,7 +755,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1308100403}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8170545516290337631, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
+    - {fileID: 7749666790118959708, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6660318743783985117, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
       insertIndex: -1
@@ -914,7 +921,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveText: {fileID: 2059039442}
   hpGaugeSlider: {fileID: 605648576}
-  fuelGaugeSlider: {fileID: 550232372}
   coinText: {fileID: 1605038074}
   upgradeUI: {fileID: 2132105164}
   gamOverObj: {fileID: 963004341771716111}
@@ -2214,7 +2220,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1308100403}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ReTryBtn
         m_Mode: 1
