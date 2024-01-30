@@ -7,7 +7,7 @@ public class PlayerMovement : Movement
     LayerMask levelLayer;
     public bool _isFlying = false;
     public float maxFlyingDuration = 5f; // <- 이걸 어디에 배치하는게 제일 나으려나
-    public float flyingDuration;
+    public float flyingDuration { get; protected set; }
 
     protected override void Awake()
     {
