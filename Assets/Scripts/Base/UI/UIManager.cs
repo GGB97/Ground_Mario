@@ -13,7 +13,6 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private TMP_Text waveText;
     [SerializeField] private Slider hpGaugeSlider;
-    [SerializeField] private Slider fuelGaugeSlider;
     [SerializeField] private TMP_Text coinText;
     [SerializeField] private GameObject upgradeUI;
 
