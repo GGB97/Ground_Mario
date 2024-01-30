@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: KimSuHanMo
   m_EditorClassIdentifier: 
   size: 1
-  delay: 1
-  power: 1
-  speed: 10
+  delay: 3
+  power: 3
+  speed: 5
   target:
     serializedVersion: 2
     m_Bits: 64

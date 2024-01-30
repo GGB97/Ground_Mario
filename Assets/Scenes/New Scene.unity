@@ -682,6 +682,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &823294548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4796733927865741624, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
+  m_PrefabInstance: {fileID: 1488287402}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &835634557 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 203400618859272435, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
@@ -1096,6 +1101,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4649549002282140626, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
+      propertyPath: tilemap
+      value: 
+      objectReference: {fileID: 242391702620099545}
+    - target: {fileID: 4649549002282140626, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
+      propertyPath: destroyStage
+      value: 
+      objectReference: {fileID: 823294548}
     - target: {fileID: 5964532231304729388, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1153,6 +1166,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1488287402
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1010320630468193532, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010320630468193532, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010320630468193532, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010320630468193532, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010320630468193532, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010320630468193532, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010320630468193532, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010320630468193532, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010320630468193532, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010320630468193532, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010320630468193532, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796733927865741624, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
+      propertyPath: m_Name
+      value: DestroyingBlock
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc50ca23e388ccc4296c1bacf45ae553, type: 3}
 --- !u!1 &1509269533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,6 +1280,7 @@ MonoBehaviour:
   skyRallyPoint:
   - {fileID: 2094860800}
   - {fileID: 367419610}
+  MonsterPool: {fileID: 580503431}
 --- !u!114 &1509269536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1583,6 +1658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilemap: {fileID: 242391702620099545}
   customTilesSO: {fileID: 11400000, guid: 610cbaa7f493b1a4f9a8497b1498b79d, type: 2}
+  coinPrefabs: []
   worldSizeX: 900
   worldSizeY: 100
   offsetY: -5

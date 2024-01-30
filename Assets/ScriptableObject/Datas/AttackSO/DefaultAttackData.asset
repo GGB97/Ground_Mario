@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DefaultAttackData
   m_EditorClassIdentifier: 
   size: 1
-  delay: 1
+  delay: 2
   power: 1
   speed: 2
   target:
