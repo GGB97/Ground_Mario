@@ -29,7 +29,6 @@ public class TilemapManager : MonoBehaviour
     {
         InitTileDict();
         GenerateMap();
-        StartDig();
     }
 
     // customTiles의 값을 dictionary에 추가하는 method
@@ -49,7 +48,7 @@ public class TilemapManager : MonoBehaviour
     // 기지에서 플레이어 전환하면서 땅 팔 때, 토관 생성.
     public void StartDig()
     {
-        var positionX = GameManager.Instance.playerBase.transform.position.x - 1;
+        var positionX = GameManager.Instance.playerBase.transform.position.x - 1.5f;
 
         if (IsPassTile(positionX) || IsPassTile(positionX + 1))
             return;

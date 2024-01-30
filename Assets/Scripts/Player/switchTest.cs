@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -8,38 +7,51 @@ public class switchTest : MonoBehaviour
 {
     [SerializeField] PlayerInput playerInput;
     [SerializeField] PlayerInput baseInput;
+    private GameManager _gameManager;
+    private GameObject _player;
+    private GameObject _playerBase;
 
     private void Awake()
     {
         this.GetComponent<Button>().onClick.AddListener(Click);
-        playerInput.enabled = true;
-        baseInput.enabled = false;
+        playerInput.enabled = false;
+        baseInput.enabled = true;
+    }
+
+    private void Start()
+    {
+        _gameManager = GameManager.Instance;;
+        _player = _gameManager.player;
+        _playerBase = _gameManager.playerBase;
     }
 
     public void Click()
     {
-        if(playerInput.enabled == true)
-        {
-            GameManager.Instance.playerState = GameState.Ground;
-            playerInput.enabled = false;
-            baseInput.enabled = true;
-        }
+        if(playerInput.enabled)
+            ClimbFromGround();
         else
-        {
-            GameManager.Instance.playerState = GameState.Underground;
             DigGround();
-            baseInput.enabled = false;
-            playerInput.enabled = true;
-        }
     }
 
     private void DigGround()
     {
-        var player = GameManager.Instance.player;
-        var playerBase = GameManager.Instance.playerBase;
+        _gameManager.playerState = GameState.Underground;
+        _gameManager.tilemapManager.StartDig();
         
-        GameManager.Instance.tilemapManager.StartDig();
+        _player.transform.position = new Vector3((int)(_playerBase.transform.position.x - .5f), -8f, 0);
         
-        player.transform.position = new Vector3((int)playerBase.transform.position.x, -8f, 0);
+        baseInput.enabled = false;
+        playerInput.enabled = true;
+    }
+
+    private void ClimbFromGround()
+    {
+        if (Mathf.Abs(_playerBase.transform.position.x - _player.transform.position.x) > 2 || _player.transform.position.y < -9f)
+            return;
+        
+        _gameManager.playerState = GameState.Ground;
+        
+        playerInput.enabled = false;
+        baseInput.enabled = true;
     }
 }
