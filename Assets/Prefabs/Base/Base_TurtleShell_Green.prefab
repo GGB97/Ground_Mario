@@ -15,10 +15,10 @@ GameObject:
   - component: {fileID: 1418264370237236473}
   - component: {fileID: 4079757906727354176}
   - component: {fileID: 7567654143331496192}
-  - component: {fileID: 8978095479617713591}
   - component: {fileID: 5126041610015046242}
   - component: {fileID: 6134938316238609676}
   - component: {fileID: 3936738364970533878}
+  - component: {fileID: 8578742065643530444}
   m_Layer: 6
   m_Name: Base_TurtleShell_Green
   m_TagString: Base
@@ -201,25 +201,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _baseStats:
     StatsChangeType: 2
-    maxHealth: 2
+    maxHealth: 30
     speed: 5
     attackSO: {fileID: 11400000, guid: c9c21e02bdecf4e4c903e594b435f8b8, type: 2}
   statsModifiers: []
---- !u!114 &8978095479617713591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334547916177628489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6b4cd931d4e8b74fbb02e94b6f8ca1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  armRenderer: {fileID: 1230517195200133424}
-  armPivot: {fileID: 8913970831317278383}
-  charRenderer: {fileID: 741554233537839510}
 --- !u!114 &5126041610015046242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,6 +245,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponSprite: {fileID: 1230517195200133424}
+--- !u!114 &8578742065643530444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334547916177628489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2ac2a02749ff54f9e5f9f427e89c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armRenderer: {fileID: 1230517195200133424}
+  armPivot: {fileID: 6060910791213516167}
+  charRenderer: {fileID: 741554233537839510}
 --- !u!1 &855571885335565482
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,7 +314,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999637115592915933}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

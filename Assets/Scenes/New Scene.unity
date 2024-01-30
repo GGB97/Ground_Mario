@@ -1425,14 +1425,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base_TurtleShell_Green
       objectReference: {fileID: 0}
-    - target: {fileID: 1666487799681492913, guid: ba32e724146ab1640937d4a5db028933, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7567654143331496192, guid: ba32e724146ab1640937d4a5db028933, type: 3}
-      propertyPath: _baseStats.maxHealth
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 7931248013883247898, guid: ba32e724146ab1640937d4a5db028933, type: 3}
       propertyPath: m_RootOrder
       value: 7
