@@ -29,7 +29,7 @@ public class TilemapManager : MonoBehaviour
     {
         InitTileDict();
         GenerateMap();
-        StartDig(GameManager.Instance.player.transform.position.x);
+        StartDig();
     }
 
     // customTiles의 값을 dictionary에 추가하는 method
@@ -46,12 +46,16 @@ public class TilemapManager : MonoBehaviour
         _tilemapGenerator.Generate();
     }
 
-    // 기지에서 플레이어 전환하면서 처음 땅 팔 때, 토관 생성.
-    //TODO 이미 토관이 있는 자리 체크해야됨.
-    public void StartDig(float positionX)
+    // 기지에서 플레이어 전환하면서 땅 팔 때, 토관 생성.
+    public void StartDig()
     {
+        var positionX = GameManager.Instance.playerBase.transform.position.x - 1;
+
+        if (IsPassTile(positionX) || IsPassTile(positionX + 1))
+            return;
+        
         var tiles = Enumerable.Repeat<TileBase>(null, 4).ToList();
-        tiles.InsertRange(tiles.Count, customTilesSO.passTiles);
+        tiles.AddRange(customTilesSO.passTiles);
 
         var bounds = new BoundsInt()
         {
@@ -60,6 +64,11 @@ public class TilemapManager : MonoBehaviour
         };
 
         tilemap.SetTilesBlock(bounds, tiles.ToArray());
+    }
+    
+    private bool IsPassTile(float positionX)
+    {
+        return tilemap.GetTile<CustomRuleTile>(new Vector3Int((int)positionX, offsetY, 0)).GetTileID() == TileID.pass;
     }
 
     public void DestroyTarget(Vector3Int target)
