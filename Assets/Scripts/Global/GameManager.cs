@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
         OnStartGameEvent += StartTimer;
         OnStateChangeEvent += ChangeState;
         CallStartGameEvent();
+        Switch();
     }
 
     public void CallStartGameEvent()
