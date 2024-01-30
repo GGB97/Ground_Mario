@@ -24,7 +24,7 @@ public class TimeScheduler
                 CurrentTime += Time.fixedDeltaTime;
             }
             
-            GameManager.Instance.Waveup();
+           
             CurrentTime = 0f;
             GameManager.Instance.gameState = GameState.MiddleTime;
             while (CurrentTime < middleTime) //중간 대기 시간 짧게 (지하로 이동할 시간)
@@ -40,6 +40,7 @@ public class TimeScheduler
                 yield return _fixedUpdate;
                 CurrentTime += Time.fixedDeltaTime;
             }
+            GameManager.Instance.Waveup();
         }
     }
 }

@@ -10,6 +10,7 @@ public class MonsterDisapear : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private Monster_Movement _monsterMovement;
     private FlyingMonster_Movement _flyingMonsterMovement;
+    private CharacterController _characterController;
     public bool isDie { get; private set; }
 
     private float fadeDuration = 2f;
@@ -21,6 +22,7 @@ public class MonsterDisapear : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _monsterMovement = GetComponent<Monster_Movement>();
         _flyingMonsterMovement = GetComponent<FlyingMonster_Movement>();
+        _characterController = GetComponent<CharacterController>();
         _healthSystem.OnDeath += die;
     }
 
@@ -33,6 +35,7 @@ public class MonsterDisapear : MonoBehaviour
                 _monsterMovement.enabled = false;
             if (_flyingMonsterMovement != null)
                 _flyingMonsterMovement.enabled = false;
+            _characterController.enabled = false;
             StartCoroutine("disapear");    
         }
         
