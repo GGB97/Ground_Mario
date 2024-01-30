@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     [SerializeField] public GameObject player;
-
+    [SerializeField] public GameObject playerBase;
     private int _randomSeed;
     public int WaveCnt { get; private set; }
     public event Action OnStartGameEvent;
