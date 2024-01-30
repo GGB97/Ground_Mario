@@ -111,8 +111,7 @@ public class MonsterSpawner : MonoBehaviour
         for (int i = 0; i < MonsterPool.transform.childCount; i++)
         {
             Transform childTransform = MonsterPool.transform.GetChild(i);
-            MonsterDisapear monsterDisapear = childTransform.GetComponent<MonsterDisapear>();
-            monsterDisapear.die();
+            childTransform.gameObject.SetActive(false);
         }
     }
 }

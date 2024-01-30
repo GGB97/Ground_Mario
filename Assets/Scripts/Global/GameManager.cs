@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameObject player;
 
     private int _randomSeed;
+    public int WaveCnt { get; private set; }
     public event Action OnStartGameEvent;
     public GameState gameState = GameState.Ground;
     public TilemapManager tilemapManager { get; private set; }
@@ -39,5 +40,10 @@ public class GameManager : MonoBehaviour
     private void StartTimer()
     {
         StartCoroutine(timeScheduler.Timer());
+    }
+
+    public void Waveup()
+    {
+        WaveCnt++;
     }
 }
