@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour
 
         playerInput.enabled = false;
         baseInput.enabled = true;
+
+        Time.timeScale = 1;
     }
 
     private void Start()

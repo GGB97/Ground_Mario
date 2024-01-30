@@ -9,14 +9,12 @@ public class PlayerAnimationController : PlayerAnimations
     static readonly int Attack = Animator.StringToHash("Attack");
     static readonly int Hit = Animator.StringToHash("Hit");
 
-    [SerializeField] bool isBase;
-
     protected override void Awake()
     {
         base.Awake();
     }
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         animator = GetComponentsInChildren<Animator>();
         if (healthSystem != null)
@@ -24,33 +22,32 @@ public class PlayerAnimationController : PlayerAnimations
             healthSystem.OnDamage += damaged;
             healthSystem.OnInvincibilityEnd += InvinciblilityEnd;
         }
+
             
         controller.OnMoveEvent += Move;
-        if (!isBase)
-            controller.OnAttackEvent += Attacking;
     }
 
-    private void damaged()
+    protected void damaged()
     {
         foreach (var anim in animator)
             anim.SetBool(Hit,true);
     }
     
-    private void InvinciblilityEnd()
+    protected void InvinciblilityEnd()
     {
         foreach (var anim in animator)
             anim.SetBool(Hit,false);
     }
 
-    private void Move(Vector2 obj)
+    protected void Move(Vector2 obj)
     {
         foreach (var anim in animator)
             anim.SetBool(IsWalking, obj.magnitude > 0.5f);
     }
 
-    private void Attacking(AttackSO notuse)
-    {
-        foreach (var anim in animator)
-            anim.SetTrigger(Attack);
-    }
+    //private void Attacking(AttackSO notuse) // 아직 공격 애니메이션 없음.
+    //{
+    //    foreach (var anim in animator)
+    //        anim.SetTrigger(Attack);
+    //}
 }
