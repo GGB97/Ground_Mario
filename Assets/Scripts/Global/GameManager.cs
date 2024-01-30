@@ -1,9 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
-using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
 
@@ -18,7 +14,9 @@ public class GameManager : MonoBehaviour
     private int _randomSeed;
     public int WaveCnt { get; private set; }
     public event Action OnStartGameEvent;
-    public event Action OnWaveUpEvent; 
+    public event Action OnWaveUpEvent;
+    public event Action<GameState> OnStateChange;
+    
     public GameState gameState = GameState.Ground;
     public GameState playerState = GameState.Ground;
     public TilemapManager tilemapManager { get; private set; }
@@ -46,6 +44,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         OnStartGameEvent += StartTimer;
+        OnStateChange += ChangeState;
         CallStartGameEvent();
     }
 
@@ -69,6 +68,16 @@ public class GameManager : MonoBehaviour
     public void callWaveUpEvent()
     {
         OnWaveUpEvent?.Invoke();
+    }
+
+    public void CallStateChangeEvent(GameState state)
+    {
+        OnStateChange?.Invoke(state);
+    }
+
+    public void ChangeState(GameState state)
+    {
+        gameState = state;
     }
 
     public void Switch()
