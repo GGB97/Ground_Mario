@@ -6,17 +6,28 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputController : CharacterController
 {
+    PlayerMovement player;
     Camera _camera;
     protected override void Awake()
     {
         base.Awake();
         _camera = Camera.main;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
 
     public void OnMove(InputValue value) // 키를 누를 때 1, 땔 때 0
     {
-        Vector2 moveInput = value.Get<Vector2>().normalized; 
-        
+        Vector2 moveInput = value.Get<Vector2>().normalized;
+
+        player._isFlying = moveInput.y > 0.5f;
+        if(player._isFlying)
+        {
+            if (player.flyingDuration > 0)
+                moveInput.y *= 1.5f;
+            else
+                moveInput.y = 0;
+        }
+
         CallMoveEvent(moveInput);
     }
     public void OnLook(InputValue value)

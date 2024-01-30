@@ -992,10 +992,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 927640125044084493, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 927640125044084493, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1358906929588102099, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 411423778}
+    - target: {fileID: 2081607377852012732, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2081607377852012732, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2081607377852012732, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.039
+      objectReference: {fileID: 0}
     - target: {fileID: 2582536472762836499, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
       propertyPath: m_Name
       value: Player_Mario
@@ -1006,11 +1026,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3987205616141843961, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5
+      value: 6.11
       objectReference: {fileID: 0}
     - target: {fileID: 3987205616141843961, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8
+      value: -1.83
       objectReference: {fileID: 0}
     - target: {fileID: 3987205616141843961, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1052,8 +1072,13 @@ PrefabInstance:
       propertyPath: destroyStage
       value: 
       objectReference: {fileID: 614667612}
+    - target: {fileID: 8806336411433906272, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8830730369691030573, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
