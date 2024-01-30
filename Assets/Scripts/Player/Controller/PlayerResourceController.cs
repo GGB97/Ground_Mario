@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerResourceController : MonoBehaviour
 {
-    [SerializeField] Resource_Data _data;
-    
+    [SerializeField] public Resource_Data _data;
     public void ChangeResource(Resource_Data data)
     {
         _data.AddResource(data);

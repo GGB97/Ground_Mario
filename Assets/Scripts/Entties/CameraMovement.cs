@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
@@ -8,9 +9,15 @@ public class CameraMovement : MonoBehaviour
     private Vector3 _targetPos;
     
     public float cameraZ = -10;
-    public float speed = 5f;
-    public int dayLimitY = 0;
+    public float speed = 8f;
+    public int dayLimitY = 3;
     public int nightLimitY = -9;
+    private Camera _camera;
+
+    private void Start()
+    {
+        _camera = Camera.main.GetComponent<Camera>();
+    }
 
     private void FixedUpdate()
     {
@@ -24,11 +31,16 @@ public class CameraMovement : MonoBehaviour
 
     private Vector3 GetPosition()
     {
-        return GameManager.Instance.playerState switch
+        switch (GameManager.Instance.playerState)
         {
-            GameState.Ground => GameManager.Instance.playerBase.transform.position,
-            GameState.Underground => GameManager.Instance.player.transform.position
-        };
+            case GameState.Ground:
+                _camera.orthographicSize = 8f;
+                return GameManager.Instance.playerBase.transform.position;
+            case GameState.Underground:
+                _camera.orthographicSize = 5f;
+                return GameManager.Instance.player.transform.position;
+        }
+        return GameManager.Instance.player.transform.position;
     }
     
     private float CalculateTargetY()

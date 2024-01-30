@@ -26,9 +26,7 @@ public class BaseUpgradePopup : MonoBehaviour
     public delegate void PopupConfirmFunc();
     PopupConfirmFunc popupConfirmFunc;
 
-    int gold = 5000; // 나중에 지우기
 
-    
 
     private void Start()
     {
@@ -52,7 +50,7 @@ public class BaseUpgradePopup : MonoBehaviour
             _UpgradeFailPopup.gameObject.SetActive(true);
             PopupFailText.text = "Max Upgrade";
         }
-        else if (item.price > gold)
+        else if (item.price > BaseUpgrade.Instance.resource_Data._data.coin)
         {
             _UpgradeFailPopup.gameObject.SetActive(true);
             PopupFailText.text = "No Money";
