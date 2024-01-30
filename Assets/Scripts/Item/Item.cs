@@ -12,8 +12,8 @@ public class Item : MonoBehaviour
         if (IsPlayer(collision))
         {
             collision.GetComponent<PlayerResourceController>().ChangeResource(_data);
-            UIManager.instance.UpdateCoinUI();
             DestroyItem();
+            UIManager.instance.UpdateCoinUI();
         }
     }
 

@@ -20,6 +20,11 @@ public class UIManager : MonoBehaviour
     private Resource_Data resource_Data;
     private HealthSystem playerHealthSystem;
 
+    private void Awake()
+    {
+        instance = this;
+    }
+
     private void Start()
     {
         var playerObj = GameManager.Instance.playerBase;
@@ -27,6 +32,8 @@ public class UIManager : MonoBehaviour
         playerHealthSystem = playerObj.GetComponent<HealthSystem>();
         playerHealthSystem.OnDamage += UpdateHPUI;
         playerHealthSystem.OnHeal += UpdateHPUI;
+
+        UpdateCoinUI();
     }
 
     private void UpdateHPUI()
