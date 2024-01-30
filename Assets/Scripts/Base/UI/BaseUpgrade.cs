@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class BaseUpgrade : MonoBehaviour
 {
@@ -15,11 +14,13 @@ public class BaseUpgrade : MonoBehaviour
     [SerializeField] private TMP_Text attackspeedUpgradeCount;
     [SerializeField] private TMP_Text dashUpgradeCount;
     [SerializeField] private TMP_Text droneUpgradeCount;
+    [SerializeField] private GameObject turretBtn;
 
     [SerializeField] private string _player = "Player";
 
     [SerializeField] private List<CharStats> statsModifiers;
-    private CharStatsHandler _stats;
+    private CharStatsHandler _statsPlayer;
+    private CharStatsHandler _statsBase;
 
     public class UpgradeOption
     {
@@ -55,13 +56,20 @@ public class BaseUpgrade : MonoBehaviour
             Instance = this;
         }
 
-        _stats = GameObject.FindWithTag(_player).GetComponent<CharStatsHandler>();
+        
+    }
+
+    private void Start()
+    {
+        _statsPlayer = GameManager.Instance.player.GetComponent<CharStatsHandler>();
+        _statsBase = GameManager.Instance.playerBase.GetComponent<CharStatsHandler>();
     }
 
 
     public void UpgradeBaseAttack()
     {
-        _stats.AddStatModifier(statsModifiers[0]);
+        _statsPlayer.AddStatModifier(statsModifiers[0]);
+        _statsBase.AddStatModifier(statsModifiers[0]);
 
         var item = upgradeDictionary["Attack"];
         attackUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
@@ -69,7 +77,8 @@ public class BaseUpgrade : MonoBehaviour
 
     public void UpgradeBaseHp()
     {
-        _stats.AddStatModifier(statsModifiers[1]);
+        _statsPlayer.AddStatModifier(statsModifiers[1]);
+        _statsBase.AddStatModifier(statsModifiers[1]);
 
         var item = upgradeDictionary["HP"];
         hpUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
@@ -77,7 +86,8 @@ public class BaseUpgrade : MonoBehaviour
 
     public void UpgradeBaseSpeed()
     {
-        _stats.AddStatModifier(statsModifiers[2]);
+        _statsPlayer.AddStatModifier(statsModifiers[2]);
+        _statsBase.AddStatModifier(statsModifiers[2]);
 
         var item = upgradeDictionary["Speed"];
         speedUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
@@ -85,7 +95,8 @@ public class BaseUpgrade : MonoBehaviour
 
     public void UpgradeBaseAttackspeed()
     {
-        _stats.AddStatModifier(statsModifiers[3]);
+        _statsPlayer.AddStatModifier(statsModifiers[3]);
+        _statsBase.AddStatModifier(statsModifiers[3]);
 
         var item = upgradeDictionary["Attackspeed"];
         attackspeedUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
@@ -100,10 +111,12 @@ public class BaseUpgrade : MonoBehaviour
 
     public void UpgradeBaseDrone()
     {
-        
-        Debug.Log(BaseTurretMove.instance._turret);
         BaseTurretMove.instance._turret.SetActive(true);
+        BaseTurretMove.instance.CallBaseMoveEvent();
+        turretBtn.SetActive(true);
         var item = upgradeDictionary["Drone"];
         droneUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
     }
+
+
 }

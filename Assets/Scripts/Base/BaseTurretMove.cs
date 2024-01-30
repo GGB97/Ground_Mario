@@ -7,43 +7,41 @@ public class BaseTurretMove : MonoBehaviour
 {
     public static BaseTurretMove instance;
 
-    public event Action OnBaseMove;
+    public event Action OnTurretMove;
 
-    [SerializeField] private string baseTag = "Base";
-
-    private GameObject _player;
     private GameObject _base;
-    [SerializeField] public GameObject _turret;
+    public GameObject _turret;
 
     private void Awake()
     {
         instance = this;
 
         _turret = Instantiate(_turret);
+        _turret.SetActive(false);
+        
 
-        _base = GameObject.FindGameObjectWithTag(baseTag);
-
-        OnBaseMove += MoveTurret;
+        OnTurretMove += MoveTurret;
     }
 
     private void Start()
     {
-        OnBaseMove();
-        _turret.SetActive(false);
+        _base = GameManager.Instance.playerBase;
     }
+
+
 
     public void CallBaseMoveEvent()
     {
-        OnBaseMove?.Invoke();
+        OnTurretMove?.Invoke();
     }
 
+ 
 
 
-    private void MoveTurret()
+    public void MoveTurret()
     {
         var pos = _base.transform.position;
-        pos.x += 2;
-        pos.y += 1.4f;
+        pos.y = -1.4f;
         _turret.transform.position = pos;
     }
 

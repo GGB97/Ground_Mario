@@ -9,7 +9,6 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
 
     public Transform Player { get; private set; }
-    [SerializeField] private string playerTag = "Player";
 
     [SerializeField] private TMP_Text waveText;
     [SerializeField] private Slider hpGaugeSlider;
@@ -22,11 +21,10 @@ public class UIManager : MonoBehaviour
     private int waveCount;
     private int coinCount;
 
-    private void Awake()
+    private void Start()
     {
-        Player = GameObject.FindGameObjectWithTag(playerTag).transform;
-
-        playerHealthSystem = Player.GetComponent<HealthSystem>();
+        var playerObj = GameManager.Instance.playerBase;
+        playerHealthSystem = playerObj.GetComponent<HealthSystem>();
         playerHealthSystem.OnDamage += UpdateHPUI;
         playerHealthSystem.OnHeal += UpdateHPUI;
     }
@@ -61,5 +59,10 @@ public class UIManager : MonoBehaviour
         {
             upgradeUI.SetActive(true);
         }
+    }
+
+    private void OnClickTurretBtn()
+    {
+
     }
 }
