@@ -77,6 +77,6 @@ public class UIManager : MonoBehaviour
 
     public void ReTryBtn()
     {
-        SceneManager.LoadScene("GameOver"); // 시작 씬으로 변경 예정
+        SceneManager.LoadScene("StartScene");
     }
 }
