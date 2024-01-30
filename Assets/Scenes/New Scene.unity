@@ -1780,6 +1780,10 @@ MonoBehaviour:
   playerBase: {fileID: 955710154}
   gameState: 1
   playerState: 1
+  skyBoxMat:
+  - {fileID: 2100000, guid: 52b6d30a38a2c844dbd84eb9828b22b8, type: 2}
+  - {fileID: 2100000, guid: fa95802f80bd745cfb5e9c89f7e22341, type: 2}
+  - {fileID: 2100000, guid: f3b3f6a697514944da8524250aa64277, type: 2}
   monsterSpawner: {fileID: 1509269533}
 --- !u!4 &1991543558
 Transform:

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
@@ -22,7 +23,9 @@ public class GameManager : MonoBehaviour
     public TilemapManager tilemapManager { get; private set; }
     public TimeScheduler timeScheduler { get; private set; }
 
-   [SerializeField] public GameObject monsterSpawner;
+    [SerializeField] List<Material> skyBoxMat;
+
+    [SerializeField] public GameObject monsterSpawner;
     
     private void Awake()
     {
@@ -81,6 +84,9 @@ public class GameManager : MonoBehaviour
     public void ChangeState(GameState state)
     {
         gameState = state;
+
+        if (skyBoxMat != null && (int)state < 3)
+            RenderSettings.skybox = skyBoxMat[(int)state];
     }
 
     public void Switch()
