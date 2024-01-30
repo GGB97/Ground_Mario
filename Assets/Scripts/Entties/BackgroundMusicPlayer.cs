@@ -35,6 +35,11 @@ public class BackgroundMusicPlayer : MonoBehaviour
                 bgmSource.loop = false;
                 bgmSource.PlayOneShot(levelCompleteTheme);
                 break;
+            case GameState.Fail:
+                bgmSource.Stop();
+                bgmSource.loop = false;
+                bgmSource.PlayOneShot(levelCompleteTheme);
+                break;
         }
     }
 }

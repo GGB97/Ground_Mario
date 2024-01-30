@@ -923,6 +923,7 @@ MonoBehaviour:
   fuelGaugeSlider: {fileID: 550232372}
   coinText: {fileID: 1605038074}
   upgradeUI: {fileID: 2132105164}
+  gamOverObj: {fileID: 0}
 --- !u!114 &1388147685 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8607091665163378587, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
@@ -1466,6 +1467,7 @@ MonoBehaviour:
   groundTheme: {fileID: 8300000, guid: 27289705cb5d6a44da06f3a11eb3c922, type: 3}
   undergroundTheme: {fileID: 8300000, guid: fa2834ce017784e43ab25669e288f5e0, type: 3}
   levelCompleteTheme: {fileID: 8300000, guid: e126e89c1aeb86f43808a354d1d5efcb, type: 3}
+  deathSound: {fileID: 8300000, guid: 452be845fe6538b42b68bf8983b84783, type: 3}
 --- !u!82 &1782651255
 AudioSource:
   m_ObjectHideFlags: 0
