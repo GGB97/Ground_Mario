@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 public class TimeScheduler
@@ -6,7 +7,7 @@ public class TimeScheduler
     private readonly WaitForFixedUpdate _fixedUpdate = new WaitForFixedUpdate();
     
     private float undergroundTime = 5f; //낮보단 길게
-    private float groundTime = 5f;
+    private float groundTime = 15f;
     private float middleTime = 5f;
     
     public float CurrentTime;
@@ -31,7 +32,6 @@ public class TimeScheduler
                 yield return _fixedUpdate;
                 CurrentTime += Time.fixedDeltaTime;
             }
-            //TODO : 전환 시 대기시간 enum 저기서 끌어다 쓰면 어떨까
             
             CurrentTime = 0f;
             GameManager.Instance.gameState = GameState.Underground;
@@ -39,7 +39,6 @@ public class TimeScheduler
             {
                 yield return _fixedUpdate;
                 CurrentTime += Time.fixedDeltaTime;
-                //TODO : 조건하나 달아서 시간 얼마안남았을 때 준비하라고하기?
             }
         }
     }

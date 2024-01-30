@@ -4869,7 +4869,7 @@ Transform:
   - {fileID: 4630662277703064206}
   - {fileID: 3517812299949692355}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &5000842267642357245
 CircleCollider2D:
@@ -4961,7 +4961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 154bd9215dc8f66468fcf48e9f95a42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthChangeDelay: 0
+  healthChangeDelay: 0.2
   damageClip: {fileID: 0}
 --- !u!114 &7694162536152403003
 MonoBehaviour:

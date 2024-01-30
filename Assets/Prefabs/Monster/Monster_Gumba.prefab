@@ -146,7 +146,7 @@ Transform:
   m_Children:
   - {fileID: 8695335075463258673}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &8498289628086749322
 CircleCollider2D:
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 154bd9215dc8f66468fcf48e9f95a42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthChangeDelay: 0
+  healthChangeDelay: 0.2
   damageClip: {fileID: 0}
 --- !u!114 &3992677515046434202
 MonoBehaviour:
@@ -281,7 +281,7 @@ MonoBehaviour:
   _baseStats:
     StatsChangeType: 0
     maxHealth: 1
-    speed: 5
+    speed: 3
     attackSO: {fileID: 11400000, guid: 51be480cf7f9c7a49a74e831c09be740, type: 2}
   statsModifiers: []
 --- !u!114 &3186324768712558082
