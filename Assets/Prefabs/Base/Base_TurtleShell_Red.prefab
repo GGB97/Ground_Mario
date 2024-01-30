@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3363158187624348201}
   - component: {fileID: 6133619406625194496}
   - component: {fileID: 8516834678190255758}
+  - component: {fileID: 8373819977262872411}
   m_Layer: 6
   m_Name: MainSprite
   m_TagString: Untagged
@@ -106,6 +107,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8373819977262872411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129236624917790754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470cef0196d3bc54f93cfc4664d4f1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &958877290987615394
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +315,8 @@ GameObject:
   - component: {fileID: 4973424387638478277}
   - component: {fileID: 6100946917611790425}
   - component: {fileID: 3660960858143268503}
-  - component: {fileID: 4897272677620939792}
+  - component: {fileID: 6222716770194411871}
+  - component: {fileID: 300350996202245611}
   m_Layer: 6
   m_Name: Base_TurtleShell_Red
   m_TagString: Base
@@ -326,7 +340,7 @@ Transform:
   - {fileID: 5594339890462183546}
   - {fileID: 4984665756399084307}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &6185183892586677458
 CircleCollider2D:
@@ -485,7 +499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _baseStats:
     StatsChangeType: 2
-    maxHealth: 20
+    maxHealth: 2
     speed: 5
     attackSO: {fileID: 11400000, guid: c9c21e02bdecf4e4c903e594b435f8b8, type: 2}
   statsModifiers: []
@@ -517,7 +531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPos: {fileID: 8155649614341070804}
---- !u!114 &4897272677620939792
+--- !u!114 &6222716770194411871
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -526,10 +540,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 4091877506784442052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cddcc6abb7a4ac34fa68ba85bc69eff0, type: 3}
+  m_Script: {fileID: 11500000, guid: 154bd9215dc8f66468fcf48e9f95a42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBase: 1
+  healthChangeDelay: 0.5
+  damageClip: {fileID: 0}
+--- !u!114 &300350996202245611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4091877506784442052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358840c920d9a1c4fbf7330008672e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponSprite: {fileID: 8720223705544993444}
 --- !u!1 &9157632572729766720
 GameObject:
   m_ObjectHideFlags: 0

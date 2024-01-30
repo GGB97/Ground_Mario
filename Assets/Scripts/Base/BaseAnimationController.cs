@@ -28,6 +28,7 @@ public class BaseAnimationController : PlayerAnimationController
     {
         GetComponent<PlayerInput>().enabled = false;
         weaponSprite.enabled = false;
+        GameManager.Instance.CallStateChangeEvent(GameState.Fail);
         basAnimatro.SetTrigger(Death);
     }
 }

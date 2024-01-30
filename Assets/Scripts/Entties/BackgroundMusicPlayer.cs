@@ -38,7 +38,7 @@ public class BackgroundMusicPlayer : MonoBehaviour
             case GameState.Fail:
                 bgmSource.Stop();
                 bgmSource.loop = false;
-                bgmSource.PlayOneShot(levelCompleteTheme);
+                bgmSource.PlayOneShot(deathSound);
                 break;
         }
     }
