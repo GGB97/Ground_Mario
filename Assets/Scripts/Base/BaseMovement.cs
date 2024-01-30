@@ -21,6 +21,7 @@ public class BaseMovement : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
         _controller = GetComponent<CharacterController>();
         _stats = GetComponent<CharStatsHandler>();
         _rigidbody = GetComponent<Rigidbody2D>();
