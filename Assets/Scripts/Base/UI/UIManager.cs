@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
@@ -15,6 +17,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Slider hpGaugeSlider;
     [SerializeField] private TMP_Text coinText;
     [SerializeField] private GameObject upgradeUI;
+    [SerializeField] private GameObject gamOverObj;
 
     private Resource_Data resource_Data;
     private HealthSystem playerHealthSystem;
@@ -22,6 +25,7 @@ public class UIManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        gamOverObj.SetActive(false);
     }
 
     private void Start()
@@ -34,6 +38,8 @@ public class UIManager : MonoBehaviour
 
         UpdateCoinUI();
         UpdateWaveUI();
+
+        GameManager.Instance.playerBase.GetComponent<HealthSystem>().OnDeath += OnDeathUI;
     }
 
     private void UpdateHPUI()
@@ -61,5 +67,15 @@ public class UIManager : MonoBehaviour
         {
             upgradeUI.SetActive(true);
         }
+    }
+
+    void OnDeathUI()
+    {
+        gamOverObj.SetActive(true);
+    }
+
+    public void ReTryBtn()
+    {
+        SceneManager.LoadScene("GameOver"); // 시작 씬으로 변경 예정
     }
 }

@@ -9,6 +9,7 @@ public class BackgroundMusicPlayer : MonoBehaviour
     [SerializeField] private AudioClip groundTheme;
     [SerializeField] private AudioClip undergroundTheme;
     [SerializeField] private AudioClip levelCompleteTheme;
+    [SerializeField] private AudioClip deathSound;
 
     public void Start()
     {

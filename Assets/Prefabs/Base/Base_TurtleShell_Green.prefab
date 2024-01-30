@@ -17,7 +17,8 @@ GameObject:
   - component: {fileID: 7567654143331496192}
   - component: {fileID: 8978095479617713591}
   - component: {fileID: 5126041610015046242}
-  - component: {fileID: 2922961788955289861}
+  - component: {fileID: 6134938316238609676}
+  - component: {fileID: 3936738364970533878}
   m_Layer: 6
   m_Name: Base_TurtleShell_Green
   m_TagString: Base
@@ -41,7 +42,7 @@ Transform:
   - {fileID: 6060910791213516167}
   - {fileID: 4927673137871948052}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1666487799681492913
 CircleCollider2D:
@@ -200,7 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _baseStats:
     StatsChangeType: 2
-    maxHealth: 20
+    maxHealth: 2
     speed: 5
     attackSO: {fileID: 11400000, guid: c9c21e02bdecf4e4c903e594b435f8b8, type: 2}
   statsModifiers: []
@@ -232,7 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPos: {fileID: 539511286046406560}
---- !u!114 &2922961788955289861
+--- !u!114 &6134938316238609676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -241,10 +242,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 334547916177628489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cddcc6abb7a4ac34fa68ba85bc69eff0, type: 3}
+  m_Script: {fileID: 11500000, guid: 154bd9215dc8f66468fcf48e9f95a42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBase: 1
+  healthChangeDelay: 0.5
+  damageClip: {fileID: 0}
+--- !u!114 &3936738364970533878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334547916177628489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 358840c920d9a1c4fbf7330008672e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponSprite: {fileID: 1230517195200133424}
 --- !u!1 &855571885335565482
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,6 +418,7 @@ GameObject:
   - component: {fileID: 5047443221673544870}
   - component: {fileID: 741554233537839510}
   - component: {fileID: 5827228821010198309}
+  - component: {fileID: 8105240042742321107}
   m_Layer: 6
   m_Name: MainSprite
   m_TagString: Untagged
@@ -498,6 +514,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8105240042742321107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5569466138660789346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470cef0196d3bc54f93cfc4664d4f1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5813419371699443234
 GameObject:
   m_ObjectHideFlags: 0

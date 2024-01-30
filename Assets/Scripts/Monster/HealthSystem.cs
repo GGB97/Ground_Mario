@@ -74,6 +74,7 @@ public class HealthSystem : MonoBehaviour
             CallDeath();
         }
 
+        Debug.Log(CurrentHealth);
         return true;
     }
 
