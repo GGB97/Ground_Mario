@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    CharacterController _controller;
+    protected CharacterController _controller;
 
-    Vector2 _moventDirection = Vector2.zero;
-    Rigidbody2D _rigidbody;
+    protected Vector2 _moventDirection = Vector2.zero;
+    protected Rigidbody2D _rigidbody;
 
-    Vector2 _knockback = Vector2.zero;
-    float knockbackDuration = 0;
-    private CharStatsHandler _stats;
+    protected Vector2 _knockback = Vector2.zero;
+    protected float knockbackDuration = 0;
+    protected CharStatsHandler _stats;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         _controller = GetComponent<CharacterController>();
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -40,7 +40,7 @@ public class Movement : MonoBehaviour
         _knockback = -(other.position - transform.position).normalized * power; // �˹� ����
     }
 
-    void Move(Vector2 direction)
+    protected virtual void Move(Vector2 direction)
     {
         _moventDirection = direction;
     }

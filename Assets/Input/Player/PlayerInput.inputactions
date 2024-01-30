@@ -59,7 +59,7 @@
                 {
                     "name": "down",
                     "id": "07756753-64bb-41f0-a70c-454ce88783a1",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "PC",
