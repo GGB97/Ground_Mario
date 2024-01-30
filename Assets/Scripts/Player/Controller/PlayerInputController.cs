@@ -45,4 +45,9 @@ public class PlayerInputController : CharacterController
     {
         isAttacking = value.isPressed;
     }
+
+    public void OnSwitch(InputValue value)
+    {
+        GameManager.Instance.Switch();
+    }
 }
