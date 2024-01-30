@@ -578,6 +578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e36b955ff780ca4bb940b9cc9a41afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 0}
   pools:
   - tag: Player_Projectile
     prefab: {fileID: 6921888379047190109, guid: c86461993512d04468d7cfe6b8c51f23, type: 3}
@@ -1064,6 +1065,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4218172777592016414, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
+      propertyPath: maxFlyingDuration
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4649549002282140626, guid: b2d3e0e872fa10a458121973935d4f4f, type: 3}
       propertyPath: tilemap
       value: 
@@ -1135,6 +1140,7 @@ MonoBehaviour:
   skyRallyPoint:
   - {fileID: 2094860800}
   - {fileID: 367419610}
+  MonsterPool: {fileID: 0}
 --- !u!114 &1509269536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1147,6 +1153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e36b955ff780ca4bb940b9cc9a41afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 0}
   pools:
   - tag: Bob_omb
     prefab: {fileID: 5499797943224107046, guid: 9e796f0c15ff57f43a331493a1e968a5, type: 3}
@@ -1393,7 +1400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1726938508}
-  seed: 0
+  gameState: 1
 --- !u!4 &1991543558
 Transform:
   m_ObjectHideFlags: 0

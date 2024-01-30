@@ -7,7 +7,7 @@ public class PlayerMovement : Movement
     LayerMask levelLayer;
     public bool _isFlying = false;
     public float maxFlyingDuration = 5f; // <- 이걸 어디에 배치하는게 제일 나으려나
-    public float flyingDuration { get; private set; }
+    public float flyingDuration;
 
     protected override void Awake()
     {
@@ -25,10 +25,17 @@ public class PlayerMovement : Movement
 
             if (flyingDuration < 0)
             {
-                _rigidbody.velocity = new Vector3(_rigidbody.velocity.x, 0);
                 _isFlying = false;
             }
         } 
+    }
+
+    protected override void ApplyMovent(Vector2 direction)
+    {
+        if (!_isFlying)
+            direction.y = 0;
+
+        base.ApplyMovent(direction);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
