@@ -23,17 +23,20 @@ public class BackgroundMusicPlayer : MonoBehaviour
             case GameState.Ground:
                 bgmSource.Stop();
                 bgmSource.loop = true;
-                bgmSource.PlayOneShot(groundTheme);
+                bgmSource.clip = groundTheme;
+                bgmSource.Play();
                 break;
             case GameState.Underground:
                 bgmSource.Stop();
                 bgmSource.loop = true;
-                bgmSource.PlayOneShot(undergroundTheme);
+                bgmSource.clip = undergroundTheme;
+                bgmSource.Play();
                 break;
             case GameState.MiddleTime:
                 bgmSource.Stop();
                 bgmSource.loop = false;
-                bgmSource.PlayOneShot(levelCompleteTheme);
+                bgmSource.clip = levelCompleteTheme;
+                bgmSource.Play();
                 break;
             case GameState.Fail:
                 bgmSource.Stop();

@@ -6,9 +6,9 @@ public class TimeScheduler
 {
     private readonly WaitForFixedUpdate _fixedUpdate = new WaitForFixedUpdate();
     
-    private float undergroundTime = 5f; //낮보단 길게
-    private float groundTime = 30f;
-    private float middleTime = 5f;
+    private float undergroundTime = 60f; //낮보단 길게
+    private float groundTime = 40f;
+    private float middleTime = 15f;
     
     public float CurrentTime;
 

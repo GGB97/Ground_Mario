@@ -78,6 +78,8 @@ public class GameManager : MonoBehaviour
 
     public void CallStateChangeEvent(GameState state)
     {
+        if (gameState == GameState.Fail)
+            return;
         OnStateChangeEvent?.Invoke(state);
     }
 
