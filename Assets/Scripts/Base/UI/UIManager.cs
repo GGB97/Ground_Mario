@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class UIManager : MonoBehaviour
 {
@@ -16,14 +17,13 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_Text coinText;
     [SerializeField] private GameObject upgradeUI;
 
+    private Resource_Data resource_Data;
     private HealthSystem playerHealthSystem;
-
-    private int waveCount;
-    private int coinCount;
 
     private void Start()
     {
         var playerObj = GameManager.Instance.playerBase;
+        resource_Data = GameManager.Instance.player.GetComponent<Resource_Data>();
         playerHealthSystem = playerObj.GetComponent<HealthSystem>();
         playerHealthSystem.OnDamage += UpdateHPUI;
         playerHealthSystem.OnHeal += UpdateHPUI;
@@ -34,19 +34,9 @@ public class UIManager : MonoBehaviour
         hpGaugeSlider.value = playerHealthSystem.CurrentHealth / playerHealthSystem.MaxHealth;
     }
 
-    private void UpdateFuelUI()
+    public void UpdateCoinUI()
     {
-        fuelGaugeSlider.value = playerHealthSystem.CurrentHealth / playerHealthSystem.MaxHealth;
-    }
-
-    private void UpdateWaveUI()
-    {
-        waveText.text = waveCount.ToString();
-    }
-
-    private void UpdateCoinUI()
-    {
-        coinText.text = coinCount.ToString();
+        coinText.text = resource_Data.coin.ToString();
     }
 
     public void OnClickUpgradeBtn()
@@ -59,10 +49,5 @@ public class UIManager : MonoBehaviour
         {
             upgradeUI.SetActive(true);
         }
-    }
-
-    private void OnClickTurretBtn()
-    {
-
     }
 }

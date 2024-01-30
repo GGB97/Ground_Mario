@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class BaseUpgrade : MonoBehaviour
 {
@@ -16,11 +17,13 @@ public class BaseUpgrade : MonoBehaviour
     [SerializeField] private TMP_Text droneUpgradeCount;
     [SerializeField] private GameObject turretBtn;
 
-    [SerializeField] private string _player = "Player";
+    [SerializeField] private GameObject _player;
 
     [SerializeField] private List<CharStats> statsModifiers;
     private CharStatsHandler _statsPlayer;
     private CharStatsHandler _statsBase;
+
+    public PlayerResourceController resource_Data;
 
     public class UpgradeOption
     {
@@ -55,14 +58,14 @@ public class BaseUpgrade : MonoBehaviour
         {
             Instance = this;
         }
-
-        
     }
 
     private void Start()
     {
+        _player = GameManager.Instance.player;
         _statsPlayer = GameManager.Instance.player.GetComponent<CharStatsHandler>();
         _statsBase = GameManager.Instance.playerBase.GetComponent<CharStatsHandler>();
+        resource_Data = _player.GetComponent<PlayerResourceController>();
     }
 
 
@@ -72,7 +75,9 @@ public class BaseUpgrade : MonoBehaviour
         _statsBase.AddStatModifier(statsModifiers[0]);
 
         var item = upgradeDictionary["Attack"];
+        resource_Data._data.coin -= item.price;
         attackUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
+        UIManager.instance.UpdateCoinUI();
     }
 
     public void UpgradeBaseHp()
@@ -81,7 +86,9 @@ public class BaseUpgrade : MonoBehaviour
         _statsBase.AddStatModifier(statsModifiers[1]);
 
         var item = upgradeDictionary["HP"];
+        resource_Data._data.coin -= item.price;
         hpUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
+        UIManager.instance.UpdateCoinUI();
     }
 
     public void UpgradeBaseSpeed()
@@ -90,7 +97,9 @@ public class BaseUpgrade : MonoBehaviour
         _statsBase.AddStatModifier(statsModifiers[2]);
 
         var item = upgradeDictionary["Speed"];
+        resource_Data._data.coin -= item.price;
         speedUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
+        UIManager.instance.UpdateCoinUI();
     }
 
     public void UpgradeBaseAttackspeed()
@@ -99,14 +108,18 @@ public class BaseUpgrade : MonoBehaviour
         _statsBase.AddStatModifier(statsModifiers[3]);
 
         var item = upgradeDictionary["Attackspeed"];
+        resource_Data._data.coin -= item.price;
         attackspeedUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
+        UIManager.instance.UpdateCoinUI();
     }
 
     public void UpgradeBaseDash()
     {
         BaseMovement.Instance.dashDelay -= 1f;
         var item = upgradeDictionary["Dash"];
+        resource_Data._data.coin -= item.price;
         dashUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
+        UIManager.instance.UpdateCoinUI();
     }
 
     public void UpgradeBaseDrone()
@@ -115,7 +128,9 @@ public class BaseUpgrade : MonoBehaviour
         BaseTurretMove.instance.CallBaseMoveEvent();
         turretBtn.SetActive(true);
         var item = upgradeDictionary["Drone"];
+        resource_Data._data.coin -= item.price;
         droneUpgradeCount.text = $"( {++item.upgradeCurrent} / {item.upgradeMax} )";
+        UIManager.instance.UpdateCoinUI();
     }
 
 
