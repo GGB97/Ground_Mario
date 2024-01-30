@@ -11,6 +11,7 @@ public class GroundMonser_Range : GroundMonsterControllrer
     private HealthSystem _healthSystem;
     private HealthSystem _collidingTargetHealthSystem;
     private Movement _collidingMovement;
+    private MonsterDisapear _monsterDisapear;
 
     private bool isFirst = true;
 
@@ -21,6 +22,7 @@ public class GroundMonser_Range : GroundMonsterControllrer
         isFirst = false;
         _characterRenderer = GetComponentInChildren<SpriteRenderer>();
         _healthSystem = GetComponent<HealthSystem>();
+        _monsterDisapear = GetComponent<MonsterDisapear>();
         //_healthSystem.OnDamage += OnDamage;
     }
 
@@ -67,7 +69,8 @@ public class GroundMonser_Range : GroundMonsterControllrer
             {
                 component.enabled = true;
             }
-        
+
+            _monsterDisapear.reset();
             _healthSystem.InitializeHealth();    
         }
     }

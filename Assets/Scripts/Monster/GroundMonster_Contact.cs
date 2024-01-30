@@ -8,7 +8,8 @@ public class GroundMonster_Contact : GroundMonsterControllrer
     [SerializeField] private string targetTag = "Player";
     private bool _isCollidingWithTarget;
     private SpriteRenderer _characterRenderer;
-    
+
+    private MonsterDisapear _monsterDisapear;
     private HealthSystem _healthSystem;
     private HealthSystem _collidingTargetHealthSystem;
     private Movement _collidingMovement;
@@ -21,6 +22,7 @@ public class GroundMonster_Contact : GroundMonsterControllrer
         isFirst = false;
         _characterRenderer = GetComponentInChildren<SpriteRenderer>();
         _healthSystem = GetComponent<HealthSystem>();
+        _monsterDisapear = GetComponent<MonsterDisapear>();
         //_healthSystem.OnDamage += OnDamage;
     }
 
@@ -108,7 +110,7 @@ public class GroundMonster_Contact : GroundMonsterControllrer
             {
                 component.enabled = true;
             }
-
+            _monsterDisapear.reset();
             _healthSystem.InitializeHealth();
         }
       

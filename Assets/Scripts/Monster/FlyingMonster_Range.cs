@@ -11,6 +11,7 @@ public class FlyingMonster_Range : FlyingMonsterContorller
     private float currenttime;
     private SpriteRenderer _characterRenderer;
 
+    private MonsterDisapear _monsterDisapear;
     private HealthSystem _healthSystem;
     private HealthSystem _collidingTargetHealthSystem;
     private Movement _collidingMovement;
@@ -25,6 +26,7 @@ public class FlyingMonster_Range : FlyingMonsterContorller
         isFirst = false;
         _characterRenderer = GetComponentInChildren<SpriteRenderer>();
         _healthSystem = GetComponent<HealthSystem>();
+        _monsterDisapear = GetComponent<MonsterDisapear>();
         currenttime = movingTime;
         //_healthSystem.OnDamage += OnDamage;
         StartCoroutine("checkTime");
@@ -86,6 +88,7 @@ public class FlyingMonster_Range : FlyingMonsterContorller
                 component.enabled = true;
             }
         
+            _monsterDisapear.reset();
             _healthSystem.InitializeHealth();
         }
        
