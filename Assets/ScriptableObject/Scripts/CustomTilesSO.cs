@@ -6,5 +6,5 @@ using UnityEngine.Tilemaps;
 public class CustomTilesSO : ScriptableObject
 {
     [Header("Tile Data List")] public List<CustomRuleTile> customRuleTiles;
-    [Header("Pass Tile Data List")] public List<TileBase> passTiles;
+    [Header("Pass Tile Data List")] public List<CustomRuleTile> passTiles;
 }

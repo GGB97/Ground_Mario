@@ -9,10 +9,12 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     [SerializeField] public GameObject player;
     [SerializeField] public GameObject playerBase;
+
     private int _randomSeed;
     public int WaveCnt { get; private set; }
     public event Action OnStartGameEvent;
     public GameState gameState = GameState.Ground;
+    public GameState playerState = GameState.Ground;
     public TilemapManager tilemapManager { get; private set; }
     public TimeScheduler timeScheduler { get; private set; }
     

@@ -8,8 +8,10 @@ public enum TileID
     soil,
     invisible,
     chest,
-    reward
+    reward,
+    pass
 }
+
 public enum TileType
 {
     Terrain,

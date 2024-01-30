@@ -29,7 +29,7 @@ public class Mining : MonoBehaviour
     private void TryMining()
     {
         // 마우스를 누르는 중일 때만 코드 처리
-        if (!Input.GetMouseButton(0))
+        if (!Input.GetMouseButton(0) || GameManager.Instance.playerState != GameState.Underground)
         {
             // 마우스를 때면 일시정지 처리
             DeactivateDestroyStage();
@@ -89,7 +89,7 @@ public class Mining : MonoBehaviour
     {
         if (target.isBreakable && !destroyStage.activeSelf)
         {
-            destroyStage.GetComponent<Animator>().speed = 1f / target.hardness;
+            destroyStage.GetComponent<Animator>().speed = 2f / target.hardness;
             destroyStage.GetComponent<DestroyTile>().targetPos = targetPos;
             destroyStage.transform.position = targetPos + new Vector3(0.5f, 0.5f);
             destroyStage.SetActive(true);

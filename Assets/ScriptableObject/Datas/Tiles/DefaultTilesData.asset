@@ -19,9 +19,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5de12a45cacf85b4ca1122ca7fb6857e, type: 2}
   - {fileID: 11400000, guid: 6d282bffbc900d642aab1ea060141408, type: 2}
   passTiles:
-  - {fileID: 11400000, guid: 7b04db829f3407345ba607bf747e679d, type: 2}
-  - {fileID: 11400000, guid: 62262a5d03faf2942a60ae4b5fca274e, type: 2}
-  - {fileID: 11400000, guid: e7d7fe0cd019c1a4094eb83c3860f79c, type: 2}
-  - {fileID: 11400000, guid: 54969c49cdb2e4a42b30da1313b064f3, type: 2}
-  - {fileID: 11400000, guid: 7b04db829f3407345ba607bf747e679d, type: 2}
-  - {fileID: 11400000, guid: 62262a5d03faf2942a60ae4b5fca274e, type: 2}
+  - {fileID: 11400000, guid: 265809b8be86cdd4f99077863304a541, type: 2}
+  - {fileID: 11400000, guid: f9c9daf63cbd86040971769e604a3389, type: 2}
+  - {fileID: 11400000, guid: a9fa17eb998f75544922e4bc889355cd, type: 2}
+  - {fileID: 11400000, guid: 87aefc765c97d80428af34ff127afb6d, type: 2}
+  - {fileID: 11400000, guid: 265809b8be86cdd4f99077863304a541, type: 2}
+  - {fileID: 11400000, guid: f9c9daf63cbd86040971769e604a3389, type: 2}
