@@ -313,10 +313,10 @@ GameObject:
   - component: {fileID: 4754452617491363948}
   - component: {fileID: 6058990009508435398}
   - component: {fileID: 4973424387638478277}
-  - component: {fileID: 6100946917611790425}
   - component: {fileID: 3660960858143268503}
   - component: {fileID: 6222716770194411871}
   - component: {fileID: 300350996202245611}
+  - component: {fileID: -1578767886219350104}
   m_Layer: 6
   m_Name: Base_TurtleShell_Red
   m_TagString: Base
@@ -340,7 +340,7 @@ Transform:
   - {fileID: 5594339890462183546}
   - {fileID: 4984665756399084307}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &6185183892586677458
 CircleCollider2D:
@@ -503,21 +503,6 @@ MonoBehaviour:
     speed: 5
     attackSO: {fileID: 11400000, guid: c9c21e02bdecf4e4c903e594b435f8b8, type: 2}
   statsModifiers: []
---- !u!114 &6100946917611790425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4091877506784442052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6b4cd931d4e8b74fbb02e94b6f8ca1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  armRenderer: {fileID: 8720223705544993444}
-  armPivot: {fileID: 2321704536540303844}
-  charRenderer: {fileID: 6133619406625194496}
 --- !u!114 &3660960858143268503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,6 +543,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponSprite: {fileID: 8720223705544993444}
+--- !u!114 &-1578767886219350104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4091877506784442052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2ac2a02749ff54f9e5f9f427e89c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armRenderer: {fileID: 8720223705544993444}
+  armPivot: {fileID: 2321704536540303844}
+  charRenderer: {fileID: 6133619406625194496}
 --- !u!1 &9157632572729766720
 GameObject:
   m_ObjectHideFlags: 0
