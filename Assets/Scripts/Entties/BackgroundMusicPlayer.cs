@@ -12,7 +12,7 @@ public class BackgroundMusicPlayer : MonoBehaviour
 
     public void Start()
     {
-        GameManager.Instance.OnStateChange += PlayMusic;
+        GameManager.Instance.OnStateChangeEvent += PlayMusic;
     }
 
     public void PlayMusic(GameState state)

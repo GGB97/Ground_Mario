@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public int WaveCnt { get; private set; }
     public event Action OnStartGameEvent;
     public event Action OnWaveUpEvent;
-    public event Action<GameState> OnStateChange;
+    public event Action<GameState> OnStateChangeEvent;
     
     public GameState gameState = GameState.Ground;
     public GameState playerState = GameState.Ground;
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         OnStartGameEvent += StartTimer;
-        OnStateChange += ChangeState;
+        OnStateChangeEvent += ChangeState;
         CallStartGameEvent();
     }
 
@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
 
     public void CallStateChangeEvent(GameState state)
     {
-        OnStateChange?.Invoke(state);
+        OnStateChangeEvent?.Invoke(state);
     }
 
     public void ChangeState(GameState state)
