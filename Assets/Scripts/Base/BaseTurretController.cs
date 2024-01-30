@@ -4,7 +4,7 @@ using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
-public class BaseDroneController : CharacterController
+public class BaseTurretController : CharacterController
 {
     private float shootRange = 15f;
 
@@ -26,6 +26,8 @@ public class BaseDroneController : CharacterController
         {
             yield return new WaitForSeconds(0.2f);
 
+            isAttacking = false;
+
             // 범위 안 모두 찾기
             var collisions = Physics2D.OverlapCircleAll(transform.position, shootRange, EnemyLayer);
             float _shortestDistance = float.MaxValue;
@@ -44,7 +46,7 @@ public class BaseDroneController : CharacterController
             }
 
 
-            if (_closestTarget != null)
+            if (_closestTarget != null && _closestTarget.gameObject.activeSelf)
             {
                 var direction = DirectionToTarget(_closestTarget.transform);
                 CallLookEvent(direction);

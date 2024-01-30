@@ -118,18 +118,18 @@
             "id": "d6be02f0-0c00-46d7-898e-0500d9f35613",
             "actions": [
                 {
-                    "name": "Move",
+                    "name": "Look",
                     "type": "Value",
-                    "id": "845750d6-855d-4952-8d5b-563b776d013b",
+                    "id": "22c9bfba-6572-4ff1-95d3-b832271c29e6",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Look",
+                    "name": "Move",
                     "type": "Value",
-                    "id": "22c9bfba-6572-4ff1-95d3-b832271c29e6",
+                    "id": "d1f510ff-3f15-4b00-87d8-d8ce8ea9c1c8",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -146,39 +146,6 @@
                 }
             ],
             "bindings": [
-                {
-                    "name": "2D Vector",
-                    "id": "0869146d-379c-4887-be45-e05d68089a97",
-                    "path": "2DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "left",
-                    "id": "d16e8298-f800-4d07-891e-730c141648c6",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PC",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "96b92179-0112-4e74-8b9e-e15038a075fe",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PC",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
                 {
                     "name": "",
                     "id": "05d1a08b-446a-432c-8ad1-e01390559fed",
@@ -200,6 +167,39 @@
                     "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "d1f5dc4a-f481-4f71-a5e6-30a24286b9b4",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "ff276adb-108a-4db6-9cf0-dc406ccad4c5",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "ce05dbab-cb03-41b8-893c-0f936a755d1f",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }

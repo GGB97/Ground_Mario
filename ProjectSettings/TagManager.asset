@@ -10,6 +10,7 @@ TagManager:
   - Monster
   - Base
   - DroneTarget
+  - Turret
   layers:
   - Default
   - TransparentFX
