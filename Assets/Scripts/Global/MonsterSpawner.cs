@@ -8,9 +8,14 @@ public class MonsterSpawner : MonoBehaviour
     [SerializeField] private GameObject[] groundSpawnPoint;
     [SerializeField] private GameObject[] skySpawnPoint;
     [SerializeField] private GameObject[] skyRallyPoint;
-    [SerializeField] private GameObject MonsterPool;
+    public GameObject[] MonsterPool;
+
+     public CharStats DefaultStat;
+     public  CharStats BombStat;
+     public  CharStats HammerbrosStat;
+     public  CharStats KimStat;
     
-    private ObjectPool _objectPool;
+    private MonsterObjectPool _objectPool;
     private GameManager _gameManager;
     private Transform _playerPos;
 
@@ -22,7 +27,7 @@ public class MonsterSpawner : MonoBehaviour
     void Start()
     {
         _gameManager = GameManager.Instance; //낮밤 받아오기용 매니저.
-        _objectPool = GetComponent<ObjectPool>();
+        _objectPool = GetComponent<MonsterObjectPool>();
     }
     
     //TODO : 1. 게임매니저에서 낮밤 구분 받아서 소환 할 지 말지 조건 걸어주고, 밤 시간동안 계속 스폰? 아니면 일정 마릿수만?
@@ -108,11 +113,22 @@ public class MonsterSpawner : MonoBehaviour
     
     private void DisableAllChildren()
     {
-        for (int i = 0; i < MonsterPool.transform.childCount; i++)
+        for (int i = 0; i < MonsterPool.Length; i++)
         {
-            Transform childTransform = MonsterPool.transform.GetChild(i);
-            childTransform.gameObject.SetActive(false);
+            for (int j = 0; j < MonsterPool[i].transform.childCount; j++)
+            {
+                Transform childTransform = MonsterPool[i].transform.GetChild(j);
+                childTransform.gameObject.SetActive(false);    
+            }
         }
+    }
+    
+    public void HealthUpgrade()
+    {
+        DefaultStat.maxHealth += 2;
+        KimStat.maxHealth += 2;
+        HammerbrosStat.maxHealth += 2;
+        BombStat.maxHealth += 2;
     }
 }
 

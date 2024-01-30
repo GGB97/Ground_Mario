@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &197423135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197423136}
+  m_Layer: 0
+  m_Name: Bob_omb(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &197423136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197423135}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 580503432}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &209701933 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6410219655682691284, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
@@ -302,6 +333,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInput: {fileID: 1726938516}
   baseInput: {fileID: 1762515932}
+--- !u!1 &296990054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 296990055}
+  m_Layer: 0
+  m_Name: Monster_HammerBros(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &296990055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296990054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 580503432}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &367419610
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +433,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1454307476}
+  - {fileID: 197423136}
+  - {fileID: 296990055}
+  - {fileID: 1959461584}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -420,7 +486,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e36b955ff780ca4bb940b9cc9a41afa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 647941380}
   pools:
   - tag: Player_Projectile
     prefab: {fileID: 6921888379047190109, guid: c86461993512d04468d7cfe6b8c51f23, type: 3}
@@ -437,6 +502,8 @@ MonoBehaviour:
   - tag: Base_Projectile
     prefab: {fileID: 7602973680582421752, guid: 1663c6997d959f043aab6f08f188334d, type: 3}
     size: 20
+  parents:
+  - {fileID: 647941380}
 --- !u!114 &607297410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,6 +1233,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1454307475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454307476}
+  m_Layer: 0
+  m_Name: Monster_Gumba(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1454307476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454307475}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 580503432}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1488287402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1236,8 +1334,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1509269534}
-  - component: {fileID: 1509269536}
   - component: {fileID: 1509269535}
+  - component: {fileID: 1509269537}
   m_Layer: 0
   m_Name: MonsterSpawner
   m_TagString: Untagged
@@ -1280,8 +1378,32 @@ MonoBehaviour:
   skyRallyPoint:
   - {fileID: 2094860800}
   - {fileID: 367419610}
-  MonsterPool: {fileID: 580503431}
---- !u!114 &1509269536
+  MonsterPool:
+  - {fileID: 1454307475}
+  - {fileID: 197423135}
+  - {fileID: 296990054}
+  - {fileID: 1959461583}
+  DefaultStat:
+    StatsChangeType: 2
+    maxHealth: 1
+    speed: 3
+    attackSO: {fileID: 11400000, guid: 51be480cf7f9c7a49a74e831c09be740, type: 2}
+  BombStat:
+    StatsChangeType: 2
+    maxHealth: 3
+    speed: 5
+    attackSO: {fileID: 11400000, guid: 720fce2fc631db8488e1b7ddbe24577c, type: 2}
+  HammerbrosStat:
+    StatsChangeType: 2
+    maxHealth: 4
+    speed: 3
+    attackSO: {fileID: 11400000, guid: 26e0e44cac52d5848a45d6a3acd3eb66, type: 2}
+  KimStat:
+    StatsChangeType: 2
+    maxHealth: 2
+    speed: 5
+    attackSO: {fileID: 11400000, guid: 62db93e97594ae843825da1a16ca86be, type: 2}
+--- !u!114 &1509269537
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1290,10 +1412,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1509269533}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e36b955ff780ca4bb940b9cc9a41afa, type: 3}
+  m_Script: {fileID: 11500000, guid: 532d319d3b9f80043925b591e145ac5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 580503432}
   pools:
   - tag: Bob_omb
     prefab: {fileID: 5499797943224107046, guid: 9e796f0c15ff57f43a331493a1e968a5, type: 3}
@@ -1307,6 +1428,11 @@ MonoBehaviour:
   - tag: HammerBros
     prefab: {fileID: 6374773717541639279, guid: f1b201ef620b17a4db14f9beb47bf7ba, type: 3}
     size: 5
+  parents:
+  - {fileID: 1454307476}
+  - {fileID: 197423136}
+  - {fileID: 296990055}
+  - {fileID: 1959461584}
 --- !u!1 &1527157893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,6 +1815,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1959461583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1959461584}
+  m_Layer: 0
+  m_Name: KimSuHanMu(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1959461584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959461583}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 580503432}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1975941411 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2190046433154636900, guid: 0dcb939ffafba8449b0c03c7e35529af, type: 3}
@@ -1725,6 +1882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1726938508}
   gameState: 1
+  monsterSpawner: {fileID: 1509269533}
 --- !u!4 &1991543558
 Transform:
   m_ObjectHideFlags: 0

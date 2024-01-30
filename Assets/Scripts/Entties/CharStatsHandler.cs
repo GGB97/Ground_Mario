@@ -28,7 +28,7 @@ public class CharStatsHandler : MonoBehaviour
 
     private const float MinSpeed = 0.1f;
 
-    private const int MinMaxHealth = 5;
+    private const int MinMaxHealth = 1;
 
     private void Awake()
     {
@@ -146,7 +146,7 @@ public class CharStatsHandler : MonoBehaviour
 
     private void LimitStats(ref float stat, float minVal)
     {
-        stat = Mathf.Max(stat, minVal);
+        stat = Mathf.Max(stat, minVal); //limit 상으로는 min이 적절함.
     }
 
     private void LimitAllStats()
@@ -161,7 +161,7 @@ public class CharStatsHandler : MonoBehaviour
         LimitStats(ref CurrentStates.attackSO.size, MinAttackSize);
         LimitStats(ref CurrentStates.attackSO.speed, MinAttackSpeed);
         LimitStats(ref CurrentStates.speed, MinSpeed);
-        CurrentStates.maxHealth = Mathf.Max(CurrentStates.maxHealth, MinMaxHealth);
+        CurrentStates.maxHealth = Mathf.Max(CurrentStates.maxHealth, MinMaxHealth); //둘 중 큰 수로 넣어달라는 뜻
     }
 }
 

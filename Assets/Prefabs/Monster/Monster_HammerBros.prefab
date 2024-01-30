@@ -177,7 +177,7 @@ Transform:
   - {fileID: 4874212086908135825}
   - {fileID: 5244210463139909713}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &7733055612430229474
 Rigidbody2D:
@@ -248,8 +248,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _baseStats:
     StatsChangeType: 0
-    maxHealth: 6
-    speed: 5
+    maxHealth: 4
+    speed: 3
     attackSO: {fileID: 11400000, guid: 26e0e44cac52d5848a45d6a3acd3eb66, type: 2}
   statsModifiers: []
 --- !u!114 &4450416835698340073

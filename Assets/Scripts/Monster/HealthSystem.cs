@@ -33,7 +33,6 @@ public class HealthSystem : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(CurrentHealth);
         if (_timeSinceLastChange < healthChangeDelay)
         {
             _timeSinceLastChange += Time.deltaTime;
@@ -63,8 +62,6 @@ public class HealthSystem : MonoBehaviour
         else
         {
             OnDamage?.Invoke();
-            Debug.Log(CurrentHealth);
-
             if (damageClip)
             {
                 //SoundManager.PlayClip(damageClip);

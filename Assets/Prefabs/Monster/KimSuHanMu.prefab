@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8794333938067667592}
   - component: {fileID: 145104313947300146}
   - component: {fileID: 8697928223321407663}
-  - component: {fileID: 657061510966435707}
+  - component: {fileID: 2901134292292108174}
   - component: {fileID: 1829924400370196116}
   - component: {fileID: 4375612290427824706}
   - component: {fileID: -7265763428627663253}
@@ -40,7 +40,7 @@ Transform:
   - {fileID: 1821275435474696878}
   - {fileID: 8690388852200153051}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &6656381036056314614
 Rigidbody2D:
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPos: {fileID: 798529008308122356}
---- !u!114 &657061510966435707
+--- !u!114 &2901134292292108174
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,9 +166,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2592483130446205516}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cdb1ba8d91f87e4e9052acd3a234be4, type: 3}
+  m_Script: {fileID: 11500000, guid: cddcc6abb7a4ac34fa68ba85bc69eff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBase: 0
 --- !u!114 &1829924400370196116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 154bd9215dc8f66468fcf48e9f95a42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthChangeDelay: 0
+  healthChangeDelay: 0.2
   damageClip: {fileID: 0}
 --- !u!114 &4375612290427824706
 MonoBehaviour:
@@ -197,7 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _baseStats:
     StatsChangeType: 0
-    maxHealth: 1
+    maxHealth: 2
     speed: 5
     attackSO: {fileID: 11400000, guid: 62db93e97594ae843825da1a16ca86be, type: 2}
   statsModifiers: []
@@ -223,6 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1821275435474696878}
   - component: {fileID: 7272793424287917821}
+  - component: {fileID: 858823309500190312}
   m_Layer: 8
   m_Name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_5
   m_TagString: Untagged
@@ -297,6 +299,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &858823309500190312
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4385878810914069251}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bc4b73f5194606b46bdd97531a0c8e88, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6691341539533428841
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,6 +330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8690388852200153051}
   - component: {fileID: 3219097694225776460}
+  - component: {fileID: 1205086116515993086}
   m_Layer: 8
   m_Name: NES-SuperMarioBros3-Enemies-ezgif.com-effects_6
   m_TagString: Untagged
@@ -381,3 +405,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1205086116515993086
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6691341539533428841}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd59edd98090dde4fb95a11912c34612, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

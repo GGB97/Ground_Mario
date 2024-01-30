@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-    [SerializeField] private Transform parent;
     [System.Serializable]
     public struct Pool
     {
@@ -13,10 +14,12 @@ public class ObjectPool : MonoBehaviour
         public int size;
     }
 
-    public List<Pool> pools;
-    public Dictionary<string, Queue<GameObject>> poolDictionary;
 
-    private void Awake()
+    public List<Pool> pools;
+    public Dictionary<string, Queue<GameObject>> poolDictionary; //여기로 접근하는 방법도 있음. 인덱스는 X, 포이치 가능.
+    [SerializeField] protected Transform[] parents;
+
+    protected virtual void Awake()
     {
         poolDictionary = new();
 
@@ -26,12 +29,18 @@ public class ObjectPool : MonoBehaviour
 
             for (int i = 0; i < pool.size; i++)
             {
-                GameObject obj = Instantiate(pool.prefab,parent);
-                obj.SetActive(false);
-                objectPool.Enqueue(obj);
+                    GameObject obj = Instantiate(pool.prefab, parents[0]);
+                    obj.SetActive(false);
+                    objectPool.Enqueue(obj);
             }
+
             poolDictionary.Add(pool.tag, objectPool);
         }
+    }
+
+    protected virtual void Start()
+    {
+        
     }
 
     public GameObject SpawnFromPool(string tag)
@@ -41,7 +50,9 @@ public class ObjectPool : MonoBehaviour
 
         GameObject obj = poolDictionary[tag].Dequeue();
         poolDictionary[tag].Enqueue(obj);
+        
 
         return obj;
     }
+  
 }
