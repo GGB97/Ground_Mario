@@ -34,11 +34,17 @@ public class UIManager : MonoBehaviour
         playerHealthSystem.OnHeal += UpdateHPUI;
 
         UpdateCoinUI();
+        UpdateWaveUI();
     }
 
     private void UpdateHPUI()
     {
         hpGaugeSlider.value = playerHealthSystem.CurrentHealth / playerHealthSystem.MaxHealth;
+    }
+
+    public void UpdateWaveUI()
+    {
+        waveText.text = GameManager.Instance.WaveCnt.ToString();
     }
 
     public void UpdateCoinUI()

@@ -50,7 +50,7 @@ public class BaseUpgradePopup : MonoBehaviour
             _UpgradeFailPopup.gameObject.SetActive(true);
             PopupFailText.text = "Max Upgrade";
         }
-        else if (item.price > BaseUpgrade.Instance.resource_Data._data.coin)
+        else if (item.price > BaseUpgrade.Instance.resource_Data.coin)
         {
             _UpgradeFailPopup.gameObject.SetActive(true);
             PopupFailText.text = "No Money";

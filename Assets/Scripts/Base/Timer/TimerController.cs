@@ -6,8 +6,6 @@ using UnityEngine;
 public class TimerController : MonoBehaviour
 {
     public static TimerController instance;
-
-    private int stageTime = 20;
     private float timeSeconds;
     [SerializeField] private int timeMinutes;
 
@@ -26,20 +24,17 @@ public class TimerController : MonoBehaviour
     {
         if (onTimer)
         {
-            if (timeSeconds <= 0)
+            if (timeSeconds >= 60)
             {
-                timeSeconds += 60f;
-                timeMinutes--;
+                timeSeconds -= 60f;
+                timeMinutes++;
             }
             else
             {
-                timeSeconds -= Time.deltaTime;
+                timeSeconds += Time.deltaTime;
             }
             SetTimer();
         }
-
-        if (timeMinutes == 0 && timeSeconds <= 0)
-            StopTimer();
     }
 
     private void SetTimer()
@@ -63,7 +58,7 @@ public class TimerController : MonoBehaviour
 
     public void ResetTimer()
     {
-        timeMinutes = stageTime;
+        timeMinutes = 0;
         timeSeconds = 0f;
     }
 }
