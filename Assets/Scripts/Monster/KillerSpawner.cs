@@ -26,11 +26,11 @@ public class KillerSpawner : MonoBehaviour
         if (_gameManager.gameState == GameState.Ground)
         {
             CurrentTime += Time.deltaTime;
-            _pivot = _gameManager.player.transform;
+            _pivot = _gameManager.playerBase.transform;
             if (CurrentTime > KiierSO.delay) 
             {
                 spawnposX = Random.Range(_pivot.position.x - 10, _pivot.position.x + 10);
-                spawnposy = _gameManager.player.transform.position.y + 13f;
+                spawnposy = _pivot.position.y + 13f;
                 RangedAttackData data = KiierSO as RangedAttackData;
                 Vector3 startpos = new Vector3(spawnposX, spawnposy, 0);
                 _projectileManager.ShootBullet(startpos, new Vector2(transform.position.x, -1), data);
