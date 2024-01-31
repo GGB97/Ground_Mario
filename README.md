@@ -28,3 +28,22 @@
 
 * 최철환
     * 구현 기능 :
+
+## 사용한 에셋
+<details> 
+<summary></summary>
+
+player 스프라이트 :
+https://www.spriters-resource.com/fullview/18081/
+
+기지 등껍질 :
+https://www.spriters-resource.com/nintendo_switch/supermariomaker2/
+
+Projectile-Energy, 폭발 이펙트 :
+https://assetstore.unity.com/packages/2d/environments/super-grotto-escape-pack-238393
+
+플레이 씬 스카이박스 :
+https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353
+
+  
+</details>
